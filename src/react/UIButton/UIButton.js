@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {mergeProps} from '../helpers';
+import { mergeProps } from '../helpers';
 
-export class UIButton extends React.Component {
+export default class UIButton extends React.Component {
   static propTypes = {
     alt: PropTypes.bool,
     flat: PropTypes.bool,
@@ -26,8 +26,19 @@ export class UIButton extends React.Component {
   }
 
   render() {
-    const {alt, flat, icon, iconPosition, iconOnly, large, small, kind, children, fullWidth, ...others} = this.props;
-
+    const {
+      alt,
+      flat,
+      icon,
+      iconPosition,
+      iconOnly,
+      large,
+      small,
+      kind,
+      children,
+      fullWidth,
+      ...others
+    } = this.props;
 
     const buttonClasses = {
       className: [
@@ -42,7 +53,7 @@ export class UIButton extends React.Component {
           'pui-btn-icon-right': !!icon && iconPosition === 'right',
           'pui-btn-full': fullWidth,
 
-          'btn': true,
+          btn: true,
           [`btn-${kind}-alt`]: alt,
           [`btn-${kind}-flat`]: flat,
           [`btn-${kind}`]: !alt && !flat,
@@ -56,48 +67,53 @@ export class UIButton extends React.Component {
     };
     let props = mergeProps(others, buttonClasses);
 
-    const buttonText = Array.isArray(children) ?
-      children.filter(child => typeof child === 'string').join(' ') :
-      typeof children === 'string' ? children.toString() : null;
+    const buttonText = Array.isArray(children)
+      ? children.filter(child => typeof child === 'string').join(' ')
+      : typeof children === 'string'
+        ? children.toString()
+        : null;
 
     let btnChildren = children;
 
     if (buttonText && !iconOnly) {
-      props = mergeProps(props, {'aria-label': buttonText});
-      btnChildren = (<span>{children}</span>);
+      props = mergeProps(props, { 'aria-label': buttonText });
+      btnChildren = <span>{children}</span>;
     }
 
     let buttonContent = (
       <span className="btn-inner-content pui-btn-inner-content">
         {icon}
         {btnChildren}
-      </span>);
+      </span>
+    );
 
     if (iconPosition === 'right') {
       buttonContent = (
         <span className="btn-inner-content pui-btn-inner-content">
           {btnChildren}
           {icon}
-        </span>);
+        </span>
+      );
     }
 
-    return this.props.href ?
-      <a {...props}>{buttonContent}</a> :
-      <button {...mergeProps(props, {type: 'button'})}>
+    return this.props.href ? (
+      <a {...props}>{buttonContent}</a>
+    ) : (
+      <button {...mergeProps(props, { type: 'button' })}>
         {buttonContent}
-      </button>;
-
+      </button>
+    );
   }
 }
 const defButton = propOverrides => {
   return class extends React.Component {
     render() {
-      return <UIButton {...this.props} {...propOverrides}/>;
+      return <UIButton {...this.props} {...propOverrides} />;
     }
   };
 };
 
 export const DefaultButton = defButton();
-export const PrimaryButton = defButton({kind: 'primary'});
-export const DangerButton = defButton({kind: 'danger'});
-export const BrandButton = defButton({kind: 'brand'});
+export const PrimaryButton = defButton({ kind: 'primary' });
+export const DangerButton = defButton({ kind: 'danger' });
+export const BrandButton = defButton({ kind: 'brand' });

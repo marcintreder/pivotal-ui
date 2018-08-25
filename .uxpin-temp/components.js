@@ -5,6 +5,7 @@ import Checkbox from '../src/react/checkbox/Checkbox';
 import Dialog from '../src/react/dialog/dialog';
 import Iconography from '../src/react/iconography/iconography';
 import ProgressBar from '../src/react/progress-bar/progress-bar';
+import UIButton from '../src/react/UIButton/UIButton';
 import Wrapper from '../Wrapper/UXPinWrapper.js';
 export {
   Alerts,
@@ -12,6 +13,7 @@ export {
   Dialog,
   Iconography,
   ProgressBar,
+  UIButton,
   Wrapper,
   React,
   ReactDOM,

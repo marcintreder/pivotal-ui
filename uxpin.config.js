@@ -8,7 +8,8 @@ module.exports = {
           'src/react/iconography/iconography.js',
           'src/react/dialog/dialog.js',
           'src/react/progress-bar/progress-bar.js',
-          'src/react/alerts/alerts.js'
+          'src/react/alerts/alerts.js',
+          'src/react/UIButton/UIButton.js'
         ]
       }
     ]

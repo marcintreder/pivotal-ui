@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { mergeProps } from '../helpers';
 import Iconography from '../iconography';
-import { DefaultButton } from '../buttons';
+import UIButton from '../UIButton';
 
 export default class Alerts extends React.PureComponent {
   static propTypes = {
@@ -76,8 +76,9 @@ export default class Alerts extends React.PureComponent {
     if (dismissable) {
       dismissableColumn = (
         <div className="col col-fixed pan">
-          <DefaultButton
+          <UIButton
             {...{
+              kind: 'default',
               className: 'pui-alert-close-btn',
               iconOnly: true,
               flat: true,
