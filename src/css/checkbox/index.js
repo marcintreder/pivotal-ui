@@ -1,4 +1,3 @@
 try {
-  require('./checkbox.css');
-} catch (e) {
-}
+  require('../../../dist/css/checkbox/checkbox.css');
+} catch (e) {}

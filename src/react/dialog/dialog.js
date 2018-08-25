@@ -3,7 +3,7 @@ import DomHelpers from '../helpers/dom-helpers';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
 
-export class Dialog extends React.PureComponent {
+export default class Dialog extends React.PureComponent {
   static propTypes = {
     animationDuration: PropTypes.number,
     animationEasing: PropTypes.string,
@@ -28,7 +28,7 @@ export class Dialog extends React.PureComponent {
   static ESC_KEY = 27;
   static TAB_KEY = 9;
 
-  state = {visible: false};
+  state = { visible: false };
 
   hide = () => this.props.onHide();
 
@@ -38,13 +38,13 @@ export class Dialog extends React.PureComponent {
   };
 
   closeDialog = () => {
-    this.setState({visible: false}, () => this.setParentZIndex(-1000));
+    this.setState({ visible: false }, () => this.setParentZIndex(-1000));
     this.setBodyScrolling(true);
   };
 
   openDialog = () => {
     this.setBodyScrolling(false);
-    this.setState({visible: true}, () => {
+    this.setState({ visible: true }, () => {
       const tabbableEls = DomHelpers.findTabbableElements(this.dialog) || [];
       tabbableEls[0] && tabbableEls[0].focus();
       this.setParentZIndex(1000);
@@ -53,15 +53,19 @@ export class Dialog extends React.PureComponent {
 
   setBodyScrolling = canScroll => {
     if (canScroll) {
-      return DomHelpers.enableBodyScrolling({overflow: this.savedOverflow, document: global.document});
+      return DomHelpers.enableBodyScrolling({
+        overflow: this.savedOverflow,
+        document: global.document
+      });
     }
     this.savedOverflow = DomHelpers.disableBodyScrolling(global.document);
   };
 
-  onBackdropClick = ({target}) => (target === this.backdrop) && this.props.hideOnBackdropClick && this.hide();
+  onBackdropClick = ({ target }) =>
+    target === this.backdrop && this.props.hideOnBackdropClick && this.hide();
 
   onKeyDown = e => {
-    const {hideOnEscKeyDown} = this.props;
+    const { hideOnEscKeyDown } = this.props;
 
     if (hideOnEscKeyDown && e.keyCode === Dialog.ESC_KEY) return this.hide();
     if (e.keyCode !== Dialog.TAB_KEY) return;
@@ -73,7 +77,11 @@ export class Dialog extends React.PureComponent {
     const lastTabbableEl = tabbableElements[e.shiftKey ? 0 : maxTabIndex];
     const focused = DomHelpers.getActiveElement();
 
-    if (focused !== lastTabbableEl && Array.from(tabbableElements).indexOf(focused) !== -1) return;
+    if (
+      focused !== lastTabbableEl &&
+      Array.from(tabbableElements).indexOf(focused) !== -1
+    )
+      return;
 
     e.preventDefault();
     const firstTabbableEl = tabbableElements[e.shiftKey ? maxTabIndex : 0];
@@ -90,7 +98,7 @@ export class Dialog extends React.PureComponent {
   }
 
   componentDidUpdate(oldProps) {
-    const {show, animationDuration} = this.props;
+    const { show, animationDuration } = this.props;
     if (oldProps.show === show) return;
 
     if (show) {
@@ -103,9 +111,10 @@ export class Dialog extends React.PureComponent {
 
     global.document.removeEventListener('keydown', this.onKeyDown);
     this.lastFocusedElement && this.lastFocusedElement.focus();
-    this.closingTimeout = animationDuration <= 0
-      ? this.closeDialog()
-      : DomHelpers.setTimeout(this.closeDialog, animationDuration);
+    this.closingTimeout =
+      animationDuration <= 0
+        ? this.closeDialog()
+        : DomHelpers.setTimeout(this.closeDialog, animationDuration);
   }
 
   componentWillUnmount() {
@@ -113,40 +122,64 @@ export class Dialog extends React.PureComponent {
   }
 
   render() {
-    const {show, animationDuration, animationEasing, className, dialogClassName, ariaLabelledBy, width, children} = this.props;
-    const {visible} = this.state;
+    const {
+      show,
+      animationDuration,
+      animationEasing,
+      className,
+      dialogClassName,
+      ariaLabelledBy,
+      width,
+      children
+    } = this.props;
+    const { visible } = this.state;
 
     const disableAnimation = animationDuration <= 0;
 
     const visibility = visible ? 'visible' : 'hidden';
 
-    const backdropStyle = {visibility};
-    const dialogStyle = {width};
+    const backdropStyle = { visibility };
+    const dialogStyle = { width };
     if (!disableAnimation) {
       backdropStyle.transition = `opacity ${animationDuration}ms ${animationEasing} 0s`;
       dialogStyle.transition = `transform ${animationDuration}ms ${animationEasing} 0s`;
     }
 
     return (
-      <div className={classnames('pui-dialog-container', {
-        'pui-dialog-visible': visible
-      })} ref={el => this.el = el}>
-        <div {...{
-          className: classnames('pui-dialog-backdrop', {
-            'pui-dialog-show': show
-          }, className),
-          style: backdropStyle,
-          onClick: this.onBackdropClick,
-          'aria-hidden': !show,
-          ref: el => this.backdrop = el
-        }}>
-          <div {...{
-            role: 'dialog',
-            'aria-labelledby': ariaLabelledBy,
-            ref: el => this.dialog = el,
-            className: classnames('pui-dialog', {'pui-dialog-show': show}, dialogClassName),
-            style: dialogStyle
-          }}>
+      <div
+        className={classnames('pui-dialog-container', {
+          'pui-dialog-visible': visible
+        })}
+        ref={el => (this.el = el)}
+      >
+        <div
+          {...{
+            className: classnames(
+              'pui-dialog-backdrop',
+              {
+                'pui-dialog-show': show
+              },
+              className
+            ),
+            style: backdropStyle,
+            onClick: this.onBackdropClick,
+            'aria-hidden': !show,
+            ref: el => (this.backdrop = el)
+          }}
+        >
+          <div
+            {...{
+              role: 'dialog',
+              'aria-labelledby': ariaLabelledBy,
+              ref: el => (this.dialog = el),
+              className: classnames(
+                'pui-dialog',
+                { 'pui-dialog-show': show },
+                dialogClassName
+              ),
+              style: dialogStyle
+            }}
+          >
             {visible && children}
           </div>
         </div>

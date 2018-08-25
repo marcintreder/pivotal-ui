@@ -1,10 +1,10 @@
 import React from 'react';
 import classnames from 'classnames';
-import {Icon} from '../iconography';
+import Icon from '../iconography/iconography';
 import PropTypes from 'prop-types';
 import uniqueId from 'lodash.uniqueid';
 
-export class Checkbox extends React.Component {
+export default class Checkbox extends React.Component {
   static propTypes = {
     checked: PropTypes.bool,
     className: PropTypes.string,
@@ -37,25 +37,42 @@ export class Checkbox extends React.Component {
   }
 
   render() {
-    const {indeterminate, className, disabled, children, labelClassName, style, id = uniqueId('checkbox'), ...others} = this.props;
+    const {
+      indeterminate,
+      className,
+      disabled,
+      children,
+      labelClassName,
+      style,
+      id = uniqueId('checkbox'),
+      ...others
+    } = this.props;
 
     return (
-      <div {...{className: classnames('pui-checkbox', className), style}}>
-        <input {...{
-          ...others,
-          className: 'pui-checkbox-input',
-          type: 'checkbox',
-          id,
-          disabled,
-          ref: el => this.el = el,
-          'aria-disabled': disabled
-        }}/>
-        <label {...{className: classnames('pui-checkbox-label', labelClassName), htmlFor: id}}>
+      <div {...{ className: classnames('pui-checkbox', className), style }}>
+        <input
+          {...{
+            ...others,
+            className: 'pui-checkbox-input',
+            type: 'checkbox',
+            id,
+            disabled,
+            ref: el => (this.el = el),
+            'aria-disabled': disabled
+          }}
+        />
+        <label
+          {...{
+            className: classnames('pui-checkbox-label', labelClassName),
+            htmlFor: id
+          }}
+        >
           <span className="pui-checkbox-control">
-            <Icon src={indeterminate ? 'remove' : 'check'}/>
+            <Icon src={indeterminate ? 'remove' : 'check'} />
           </span>
           {children}
         </label>
-      </div>);
+      </div>
+    );
   }
 }
