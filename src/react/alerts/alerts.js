@@ -2,7 +2,7 @@ import classnames from 'classnames';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { mergeProps } from '../helpers';
-import { Icon } from '../iconography';
+import Iconography from '../iconography';
 import { DefaultButton } from '../buttons';
 
 export default class Alerts extends React.PureComponent {
@@ -67,7 +67,7 @@ export default class Alerts extends React.PureComponent {
     if (withIcon) {
       iconColumn = (
         <div className="col col-fixed col-middle pan">
-          <Icon src={alertIcon} />
+          <Iconography src={alertIcon} />
         </div>
       );
     }
@@ -83,7 +83,7 @@ export default class Alerts extends React.PureComponent {
               flat: true,
               'aria-label': closeLabel,
               onClick: this.handleAlertDismiss,
-              icon: <Icon src="close" />
+              icon: <Iconography src="close" />
             }}
           />
         </div>

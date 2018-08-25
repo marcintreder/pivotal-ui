@@ -4,7 +4,7 @@ import React from 'react';
 import classnames from 'classnames';
 import Icons from './icons';
 
-export default class Icon extends React.Component {
+export default class Iconography extends React.Component {
   static propTypes = {
     src: PropTypes.string.isRequired,
     style: PropTypes.object,

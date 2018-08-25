@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import Icon from '../iconography/iconography';
+import Iconography from '../iconography/iconography';
 import PropTypes from 'prop-types';
 import uniqueId from 'lodash.uniqueid';
 
@@ -68,7 +68,7 @@ export default class Checkbox extends React.Component {
           }}
         >
           <span className="pui-checkbox-control">
-            <Icon src={indeterminate ? 'remove' : 'check'} />
+            <Iconography src={indeterminate ? 'remove' : 'check'} />
           </span>
           {children}
         </label>
