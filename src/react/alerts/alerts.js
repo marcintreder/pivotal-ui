@@ -2,8 +2,8 @@ import classnames from 'classnames';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { mergeProps } from '../helpers';
-import Iconography from '../iconography';
-import UIButton from '../UIButton';
+import Iconography from '../iconography/iconography';
+import UIButton from '../UIButton/UIButton';
 
 export default class Alerts extends React.PureComponent {
   static propTypes = {
