@@ -18,6 +18,8 @@ import Grid from '../src/react/grid/grid';
 import Iconography from '../src/react/iconography/iconography';
 import Image from '../src/react/image/image';
 import Input from '../src/react/input/input';
+import List from '../src/react/list/list';
+import ListItem from '../src/react/list-item/list-item';
 import ProgressBar from '../src/react/progress-bar/progress-bar';
 import Toggle from '../src/react/toggle/toggle';
 import TooltipTrigger from '../src/react/tooltip-trigger/tooltip-trigger';
@@ -42,6 +44,8 @@ export {
   Iconography,
   Image,
   Input,
+  List,
+  ListItem,
   ProgressBar,
   Toggle,
   TooltipTrigger,

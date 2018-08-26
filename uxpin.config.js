@@ -25,7 +25,9 @@ module.exports = {
           'src/react/input/input.js',
           'src/react/toggle/toggle.js',
           'src/react/form/form.js',
-          'src/react/image/image.js'
+          'src/react/image/image.js',
+          'src/react/list-item/list-item.js',
+          'src/react/list/list.js'
         ]
       }
     ]
