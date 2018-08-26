@@ -32,6 +32,7 @@ import Panel from '../src/react/panel/panel';
 import ProgressBar from '../src/react/progress-bar/progress-bar';
 import Radio from '../src/react/radio/radio';
 import RadioGroup from '../src/react/radio-group/radio-group';
+import Select from '../src/react/select/select';
 import Toggle from '../src/react/toggle/toggle';
 import Tooltip from '../src/react/tooltip/tooltip';
 import TooltipTrigger from '../src/react/tooltip-trigger/tooltip-trigger';
@@ -70,6 +71,7 @@ export {
   ProgressBar,
   Radio,
   RadioGroup,
+  Select,
   Toggle,
   Tooltip,
   TooltipTrigger,

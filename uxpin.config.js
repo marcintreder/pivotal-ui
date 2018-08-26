@@ -39,7 +39,8 @@ module.exports = {
           'src/react/pagination/pagination.js',
           'src/react/panel/panel.js',
           'src/react/radio/radio.js',
-          'src/react/radio-group/radio-group.js'
+          'src/react/radio-group/radio-group.js',
+          'src/react/select/select.js'
         ]
       }
     ]

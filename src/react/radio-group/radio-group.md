@@ -2,7 +2,7 @@
 
 ```javascript
 <RadioGroup
-  value={selection}
+  value="UXPin"
   name="radio-group"
   onChange={event => console.log(event.target.value)}
 >
