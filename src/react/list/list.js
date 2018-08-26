@@ -23,7 +23,7 @@ export default class List extends React.Component {
   render() {
     let { className, children, unstyled, divider, ...others } = this.props;
 
-    if (this.props.kind === 'breadcrumb') {
+    if (this.props.kind === 'list-breadcrumb') {
       return <ul className="list-breadcrumb">{children}</ul>;
     } else if (this.props.kind === 'list-inline') {
       children = React.Children.map(children, child =>
