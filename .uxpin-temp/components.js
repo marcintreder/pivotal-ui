@@ -16,6 +16,7 @@ import Flyout from '../src/react/flyout/flyout';
 import Form from '../src/react/form/form';
 import Grid from '../src/react/grid/grid';
 import Iconography from '../src/react/iconography/iconography';
+import Image from '../src/react/image/image';
 import Input from '../src/react/input/input';
 import ProgressBar from '../src/react/progress-bar/progress-bar';
 import Toggle from '../src/react/toggle/toggle';
@@ -39,6 +40,7 @@ export {
   Form,
   Grid,
   Iconography,
+  Image,
   Input,
   ProgressBar,
   Toggle,

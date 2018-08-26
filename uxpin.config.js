@@ -24,7 +24,8 @@ module.exports = {
           'src/react/flyout/flyout.js',
           'src/react/input/input.js',
           'src/react/toggle/toggle.js',
-          'src/react/form/form.js'
+          'src/react/form/form.js',
+          'src/react/image/image.js'
         ]
       }
     ]
