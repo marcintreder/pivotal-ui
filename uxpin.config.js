@@ -11,7 +11,8 @@ module.exports = {
           'src/react/alerts/alerts.js',
           'src/react/UIButton/UIButton.js',
           'src/react/autocomplete/autocomplete.js',
-          'src/react/back-to-top/back-to-top.js'
+          'src/react/back-to-top/back-to-top.js',
+          'src/react/dropdown/dropdown.js'
         ]
       }
     ]
