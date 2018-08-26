@@ -39,6 +39,7 @@ import TableFlex from '../src/react/table-flex/table-flex';
 import TableSortable from '../src/react/table-sortable/table-sortable';
 import TableSortableFlex from '../src/react/table-sortable-flex/table-sortable-flex';
 import TabsUxpin from '../src/react/tabs-uxpin/tabs-uxpin';
+import TextFilter from '../src/react/text-filter/text-filter';
 import Toggle from '../src/react/toggle/toggle';
 import Tooltip from '../src/react/tooltip/tooltip';
 import TooltipTrigger from '../src/react/tooltip-trigger/tooltip-trigger';
@@ -84,6 +85,7 @@ export {
   TableSortable,
   TableSortableFlex,
   TabsUxpin,
+  TextFilter,
   Toggle,
   Tooltip,
   TooltipTrigger,
