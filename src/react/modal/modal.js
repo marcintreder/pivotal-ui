@@ -1,12 +1,12 @@
-import React, {PureComponent} from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import uniqueId from 'lodash.uniqueid';
-import {Icon} from '../iconography';
-import {DefaultButton} from '../buttons';
-import {Dialog} from '../dialog';
+import Iconography from '../iconography/iconography.js';
+import UIButton from '../UIButton/UIButton.js';
+import Dialog from '../dialog/dialog.js';
 
-export class Modal extends PureComponent {
+export default class Modal extends PureComponent {
   static propTypes = {
     animationDuration: PropTypes.number,
     animationEasing: PropTypes.string,
@@ -36,33 +36,71 @@ export class Modal extends PureComponent {
 
   render() {
     const {
-      title, size, children, onHide, dialogClassName, footer, bodyClassName, footerClassName, ...props
+      title,
+      size,
+      children,
+      onHide,
+      dialogClassName,
+      footer,
+      bodyClassName,
+      footerClassName,
+      ...props
     } = this.props;
 
     const sizeClass = Modal.sizeClasses[size];
-    const mergedDialogClassNames = classnames('pui-modal-dialog', dialogClassName, sizeClass);
+    const mergedDialogClassNames = classnames(
+      'pui-modal-dialog',
+      dialogClassName,
+      sizeClass
+    );
     const width = sizeClass ? null : size;
     const dialogProps = {
-      ...props, hideOnBackdropClick: true, hideOnEscKeyDown: true, dialogClassName: mergedDialogClassNames, onHide,
-      ariaLabelledBy: this.titleId, className: 'pui-modal-dialog-backdrop'
+      ...props,
+      hideOnBackdropClick: true,
+      hideOnEscKeyDown: true,
+      dialogClassName: mergedDialogClassNames,
+      onHide,
+      ariaLabelledBy: this.titleId,
+      className: 'pui-modal-dialog-backdrop'
     };
     width && (dialogProps.width = width);
 
     return (
       <Dialog {...dialogProps}>
         <div className="pui-modal-header">
-          <h3 className="pui-modal-title em-high" id={this.titleId}>{title}</h3>
+          <h3 className="pui-modal-title em-high" id={this.titleId}>
+            {title}
+          </h3>
         </div>
-        <div {...{className: classnames('pui-modal-body', {'pui-modal-has-footer': footer}, bodyClassName)}}>{children}</div>
-        {footer && <div {...{className: classnames('pui-modal-footer', footerClassName)}}>{footer}</div>}
-        <DefaultButton {...{
-          className: 'pui-modal-close-btn',
-          iconOnly: true,
-          flat: true,
-          'aria-label': 'Close',
-          onClick: onHide,
-          icon: <Icon src="close"/>
-        }}/>
+        <div
+          {...{
+            className: classnames(
+              'pui-modal-body',
+              { 'pui-modal-has-footer': footer },
+              bodyClassName
+            )
+          }}
+        >
+          {children}
+        </div>
+        {footer && (
+          <div
+            {...{ className: classnames('pui-modal-footer', footerClassName) }}
+          >
+            {footer}
+          </div>
+        )}
+        <UIButton
+          {...{
+            kind: 'defualt',
+            className: 'pui-modal-close-btn',
+            iconOnly: true,
+            flat: true,
+            'aria-label': 'Close',
+            onClick: onHide,
+            icon: <Iconography src="close" />
+          }}
+        />
       </Dialog>
     );
   }

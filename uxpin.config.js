@@ -28,7 +28,8 @@ module.exports = {
           'src/react/image/image.js',
           'src/react/list-item/list-item.js',
           'src/react/list/list.js',
-          'src/react/media/media.js'
+          'src/react/media/media.js',
+          'src/react/modal-container/modal-container.js'
         ]
       }
     ]
