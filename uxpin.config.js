@@ -16,7 +16,8 @@ module.exports = {
           'src/react/grid/grid.js',
           'src/react/flex-col/flex-col.js',
           'src/react/checkbox-dropdown/checkbox-dropdown.js',
-          'src/react/tooltip-trigger/tooltip-trigger.js'
+          'src/react/tooltip-trigger/tooltip-trigger.js',
+          'src/react/copy-to-clipboard/copy-to-clipboard.js'
         ]
       }
     ]

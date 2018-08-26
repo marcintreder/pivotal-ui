@@ -2,7 +2,7 @@ import React from 'react';
 import { copy } from './clipboard-helper';
 import { mergeProps } from '../helpers';
 import PropTypes from 'prop-types';
-import { TooltipTrigger } from '../tooltip';
+import TooltipTrigger from '../tooltip-trigger/tooltip-trigger';
 
 export default class CopyToClipboard extends React.PureComponent {
   static propTypes = {
