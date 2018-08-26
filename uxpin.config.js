@@ -21,7 +21,8 @@ module.exports = {
           'src/react/divider/divider.js',
           'src/react/draggable-list-item/draggable-list-item.js',
           'src/react/draggable-list/draggable-list.js',
-          'src/react/flyout/flyout.js'
+          'src/react/flyout/flyout.js',
+          'src/react/input/input.js'
         ]
       }
     ]

@@ -15,6 +15,7 @@ import FlexCol from '../src/react/flex-col/flex-col';
 import Flyout from '../src/react/flyout/flyout';
 import Grid from '../src/react/grid/grid';
 import Iconography from '../src/react/iconography/iconography';
+import Input from '../src/react/input/input';
 import ProgressBar from '../src/react/progress-bar/progress-bar';
 import TooltipTrigger from '../src/react/tooltip-trigger/tooltip-trigger';
 import UIButton from '../src/react/UIButton/UIButton';
@@ -35,6 +36,7 @@ export {
   Flyout,
   Grid,
   Iconography,
+  Input,
   ProgressBar,
   TooltipTrigger,
   UIButton,
