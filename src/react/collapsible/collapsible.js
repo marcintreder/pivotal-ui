@@ -1,16 +1,16 @@
 import React from 'react';
 import Animation from '../mixins/mixins/animation_mixin';
-import {default as mixin} from '../mixins';
-import {mergeProps} from '../helpers';
+import { default as mixin } from '../mixins';
+import { mergeProps } from '../helpers';
 import PropTypes from 'prop-types';
-import {useBoundingClientRect} from '../mixins/components/bounding_client_rect';
+import { useBoundingClientRect } from '../mixins/components/bounding_client_rect';
 
 const privates = new WeakMap();
 
 class CollapsibleComponent extends mixin(React.Component).with(Animation) {
   constructor(props, context) {
     super(props, context);
-    privates.set(this, {isAnimating: false, expanded: props.expanded});
+    privates.set(this, { isAnimating: false, expanded: props.expanded });
   }
 
   static propTypes = {
@@ -33,21 +33,35 @@ class CollapsibleComponent extends mixin(React.Component).with(Animation) {
     require('../../css/collapse');
   }
 
-  toggleAnimation = isAnimating => privates.set(this, {isAnimating});
+  toggleAnimation = isAnimating => privates.set(this, { isAnimating });
 
   triggerExpansionCallbacks = isAnimating => {
     if (isAnimating) return;
-    const {expanded, onEntered, onExited} = this.props;
+    const { expanded, onEntered, onExited } = this.props;
     expanded && onEntered && onEntered();
     !expanded && onExited && onExited();
-    privates.set(this, {expanded});
+    privates.set(this, { expanded });
   };
 
   render() {
-    let {boundingClientRect: {height = 0}, children, container, containerReady, delay, expanded, onEntered, onExited, ...others} = this.props;
+    let {
+      boundingClientRect: { height = 0 },
+      children,
+      container,
+      containerReady,
+      delay,
+      expanded,
+      onEntered,
+      onExited,
+      ...others
+    } = this.props;
     const fractionOpen = this.animate('fractionOpen', expanded ? 1 : 0, delay);
-    const isAnimating = (!expanded && fractionOpen > 0) || (expanded && fractionOpen < 1);
-    const style = (height && isAnimating) ? {marginBottom: -height * (1 - fractionOpen)} : {};
+    const isAnimating =
+      (!expanded && fractionOpen > 0) || (expanded && fractionOpen < 1);
+    const style =
+      height && isAnimating
+        ? { marginBottom: -height * (1 - fractionOpen) }
+        : {};
 
     if (privates.get(this).isAnimating !== isAnimating) {
       this.toggleAnimation(isAnimating);
@@ -58,16 +72,22 @@ class CollapsibleComponent extends mixin(React.Component).with(Animation) {
     }
 
     const props = mergeProps(others, {
-      className: ['pui-collapsible', 'collapse', {'in': expanded || isAnimating}],
-      style: isAnimating ? {overflow: 'hidden'} : {},
+      className: [
+        'pui-collapsible',
+        'collapse',
+        { in: expanded || isAnimating }
+      ],
+      style: isAnimating ? { overflow: 'hidden' } : {},
       'aria-hidden': !expanded
     });
 
-    return (<div {...props}>
-      <div className="pui-collapsible-shield collapse-shield" style={style}>
-        {children}
+    return (
+      <div {...props}>
+        <div className="pui-collapsible-shield collapse-shield" style={style}>
+          {children}
+        </div>
       </div>
-    </div>);
+    );
   }
 }
 

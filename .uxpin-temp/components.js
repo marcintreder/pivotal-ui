@@ -11,6 +11,7 @@ import FlexCol from '../src/react/flex-col/flex-col';
 import Grid from '../src/react/grid/grid';
 import Iconography from '../src/react/iconography/iconography';
 import ProgressBar from '../src/react/progress-bar/progress-bar';
+import TooltipTrigger from '../src/react/tooltip-trigger/tooltip-trigger';
 import UIButton from '../src/react/UIButton/UIButton';
 import Wrapper from '../Wrapper/UXPinWrapper.js';
 export {
@@ -25,6 +26,7 @@ export {
   Grid,
   Iconography,
   ProgressBar,
+  TooltipTrigger,
   UIButton,
   Wrapper,
   React,

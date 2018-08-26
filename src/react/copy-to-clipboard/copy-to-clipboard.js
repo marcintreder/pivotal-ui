@@ -1,10 +1,10 @@
 import React from 'react';
-import {copy} from './clipboard-helper';
-import {mergeProps} from '../helpers';
+import { copy } from './clipboard-helper';
+import { mergeProps } from '../helpers';
 import PropTypes from 'prop-types';
-import {TooltipTrigger} from '../tooltip';
+import { TooltipTrigger } from '../tooltip';
 
-export class CopyToClipboard extends React.PureComponent {
+export default class CopyToClipboard extends React.PureComponent {
   static propTypes = {
     text: PropTypes.string.isRequired,
     onClick: PropTypes.func,
@@ -15,13 +15,19 @@ export class CopyToClipboard extends React.PureComponent {
     require('../../css/copy-to-clipboard');
   }
 
-  click = ({onClick, text}, e) => {
+  click = ({ onClick, text }, e) => {
     copy(document, text);
     if (onClick) onClick(e);
   };
 
   render() {
-    const {children, text, onClick, tooltip = 'Copied', ...others} = this.props;
+    const {
+      children,
+      text,
+      onClick,
+      tooltip = 'Copied',
+      ...others
+    } = this.props;
 
     const anchorProps = mergeProps(others, {
       className: 'copy-to-clipboard pui-copy-to-clipboard',
@@ -31,7 +37,7 @@ export class CopyToClipboard extends React.PureComponent {
 
     return (
       <a {...anchorProps}>
-        <TooltipTrigger {...{tooltip, trigger: 'click'}}>
+        <TooltipTrigger {...{ tooltip, trigger: 'click' }}>
           {children}
         </TooltipTrigger>
       </a>
