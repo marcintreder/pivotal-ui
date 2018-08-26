@@ -1,1 +1,1 @@
-export {Flyout} from './flyout';
+export Flyout from './flyout';
