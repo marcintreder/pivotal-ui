@@ -1,11 +1,11 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import classnames from 'classnames';
-import {Icon} from '../../iconography';
+import Iconography from '../../iconography/iconography.js';
 import sortBy from 'lodash.sortby';
-import {find} from '../../helpers';
+import { find } from '../../helpers';
 
-import {TablePlugin} from '../table-plugin';
+import { TablePlugin } from '../table-plugin';
 
 const SORT_ORDER = {
   asc: 0,
@@ -18,23 +18,26 @@ export function withSorting(Table) {
     constructor(props) {
       super(props);
 
-      const {columns = [], defaultSort} = props;
+      const { columns = [], defaultSort } = props;
 
       this.state = {
-        sortColumn: find(columns, ({sortable, attribute}) =>
-          defaultSort ? attribute === defaultSort : sortable
+        sortColumn: find(
+          columns,
+          ({ sortable, attribute }) =>
+            defaultSort ? attribute === defaultSort : sortable
         ),
         sortOrder: SORT_ORDER.asc
       };
     }
 
     updateSort(column) {
-      const {sortColumn} = this.state;
+      const { sortColumn } = this.state;
       const isSortColumn = column === sortColumn;
 
       if (isSortColumn) {
-        const sortOrder = ++this.state.sortOrder % Object.keys(SORT_ORDER).length;
-        return this.setState({sortOrder});
+        const sortOrder =
+          ++this.state.sortOrder % Object.keys(SORT_ORDER).length;
+        return this.setState({ sortOrder });
       }
 
       this.setState({
@@ -44,8 +47,8 @@ export function withSorting(Table) {
     }
 
     sort() {
-      const {data} = this.props;
-      const {sortColumn, sortOrder} = this.state;
+      const { data } = this.props;
+      const { sortColumn, sortOrder } = this.state;
       if (!sortColumn || sortOrder === SORT_ORDER.none) return data;
       const sorted = sortBy(data, datum => {
         const rankFunction = sortColumn.sortBy || (i => i);
@@ -59,33 +62,46 @@ export function withSorting(Table) {
 
     render() {
       return this.renderTable(Table, {
-        table: () => ({className: 'table-sortable'}),
-        th: (props, {column, column: {sortable}}) => {
+        table: () => ({ className: 'table-sortable' }),
+        th: (props, { column, column: { sortable } }) => {
           if (!sortable) return props;
 
-          const {children: oldChildren} = props;
-          const {sortColumn, sortOrder} = this.state;
+          const { children: oldChildren } = props;
+          const { sortColumn, sortOrder } = this.state;
           const isSortColumn = column === sortColumn;
           let className, icon;
 
           if (isSortColumn) {
             className = ['sorted-asc', 'sorted-desc', ''][sortOrder];
             icon = [
-              <Icon key={0} verticalAlign="baseline" src="arrow_drop_up"/>,
-              <Icon key={0} verticalAlign="baseline" src="arrow_drop_down"/>,
+              <Iconography
+                key={0}
+                verticalAlign="baseline"
+                src="arrow_drop_up"
+              />,
+              <Iconography
+                key={0}
+                verticalAlign="baseline"
+                src="arrow_drop_down"
+              />,
               null
             ][sortOrder];
           }
 
           const onClick = () => this.updateSort(column);
-          const children = <div>{oldChildren}{icon}</div>;
+          const children = (
+            <div>
+              {oldChildren}
+              {icon}
+            </div>
+          );
 
           return {
-            className: classnames({sortable}, className),
+            className: classnames({ sortable }, className),
             disabled: !sortable,
             children,
             onClick,
-            onKeyDown: ({key}) => key === 'Enter' && onClick(),
+            onKeyDown: ({ key }) => key === 'Enter' && onClick(),
             role: 'button',
             tabIndex: 0
           };

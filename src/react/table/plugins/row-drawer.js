@@ -1,11 +1,11 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Collapsible} from '../../collapsible';
-import {Icon} from '../../iconography';
+import { Collapsible } from '../../collapsible';
+import Iconography from '../../iconography/iconography.js';
 import classnames from 'classnames';
 
-import {TablePlugin} from '../table-plugin';
+import { TablePlugin } from '../table-plugin';
 
 const privates = new WeakMap();
 const TABLE_KEYS = {
@@ -32,15 +32,15 @@ export function withRowDrawer(Table) {
     componentWillMount() {
       if (!this.props.keyboardNavigation) return;
       const keyDownListener = e => this.handleKeyDown(e);
-      privates.set(this, {keyDownListener});
+      privates.set(this, { keyDownListener });
       document.addEventListener('keydown', keyDownListener);
     }
 
     componentWillUnmount() {
-      const {keyDownListener} = privates.get(this);
+      const { keyDownListener } = privates.get(this);
       if (!keyDownListener) return;
       document.removeEventListener('keydown', keyDownListener);
-      privates.set(this, {keyDownListener: null});
+      privates.set(this, { keyDownListener: null });
     }
 
     handleKeyDown(e) {
@@ -48,8 +48,8 @@ export function withRowDrawer(Table) {
 
       e.preventDefault();
 
-      const {children} = this.props;
-      const {selectedRow} = this.state;
+      const { children } = this.props;
+      const { selectedRow } = this.state;
 
       const currentRow = typeof selectedRow === 'number' ? selectedRow : -1;
 
@@ -60,20 +60,22 @@ export function withRowDrawer(Table) {
         newSelectedRow = Math.min(children.length - 1, currentRow + 1);
       }
 
-      this.setState({selectedRow: newSelectedRow});
+      this.setState({ selectedRow: newSelectedRow });
     }
 
     render() {
-      const {selectedRow} = this.state;
+      const { selectedRow } = this.state;
       // eslint-disable-next-line no-unused-vars
-      const {children: oldChildren, keyboardNavigation, ...props} = this.props;
-      const children = oldChildren
-        .filter(child => child)
-        .map((child, i) => {
-          const isSelected = i === selectedRow;
-          if (!isSelected) return child;
-          return React.cloneElement(child, {isSelected});
-        });
+      const {
+        children: oldChildren,
+        keyboardNavigation,
+        ...props
+      } = this.props;
+      const children = oldChildren.filter(child => child).map((child, i) => {
+        const isSelected = i === selectedRow;
+        if (!isSelected) return child;
+        return React.cloneElement(child, { isSelected });
+      });
       return <div {...props}>{children}</div>;
     }
   }
@@ -89,22 +91,22 @@ export function withRowDrawer(Table) {
 
     constructor(props) {
       super(props);
-      this.state = {expanded: false};
+      this.state = { expanded: false };
       privates.set(this, {});
     }
 
     componentWillMount() {
       if (!this.props.keyboardNavigation) return;
       const keyDownListener = e => this.handleKeyDown(e);
-      privates.set(this, {keyDownListener});
+      privates.set(this, { keyDownListener });
       document.addEventListener('keydown', keyDownListener);
     }
 
     componentWillUnmount() {
-      const {keyDownListener} = privates.get(this);
+      const { keyDownListener } = privates.get(this);
       if (!keyDownListener) return;
       document.removeEventListener('keydown', keyDownListener);
-      privates.set(this, {keyDownListener: null});
+      privates.set(this, { keyDownListener: null });
     }
 
     handleKeyDown(e) {
@@ -112,49 +114,71 @@ export function withRowDrawer(Table) {
 
       e.preventDefault();
 
-      const {isSelected} = this.props;
+      const { isSelected } = this.props;
       if (!isSelected) return;
 
-      const {rowDrawer, rowIndex, rowDatum} = this.props;
+      const { rowDrawer, rowIndex, rowDatum } = this.props;
       const drawerContent = rowIndex !== -1 && rowDrawer(rowIndex, rowDatum);
       if (!drawerContent) return;
 
       if (e.keyCode === ROW_KEYS.RIGHT) {
-        this.setState({expanded: true});
+        this.setState({ expanded: true });
       } else {
-        this.setState({expanded: false});
+        this.setState({ expanded: false });
       }
     }
 
     render() {
       // eslint-disable-next-line no-unused-vars
-      const {children, rowDrawer, rowIndex, rowDatum, keyboardNavigation, isSelected, ...props} = this.props;
-      const {expanded} = this.state;
+      const {
+        children,
+        rowDrawer,
+        rowIndex,
+        rowDatum,
+        keyboardNavigation,
+        isSelected,
+        ...props
+      } = this.props;
+      const { expanded } = this.state;
 
       const drawerContent = rowIndex !== -1 && rowDrawer(rowIndex, rowDatum);
-      const onClick = () => drawerContent && this.setState({expanded: !expanded});
+      const onClick = () =>
+        drawerContent && this.setState({ expanded: !expanded });
       const src = expanded ? 'chevron_down' : 'chevron_right';
-      const className = classnames(props.className, {expandable: rowIndex !== -1}, {expanded},
-        {'tr-selected': isSelected}, {'no-drawer-content': rowIndex !== -1 && !drawerContent});
+      const className = classnames(
+        props.className,
+        { expandable: rowIndex !== -1 },
+        { expanded },
+        { 'tr-selected': isSelected },
+        { 'no-drawer-content': rowIndex !== -1 && !drawerContent }
+      );
 
       let leftColumn;
       if (rowIndex !== -1) {
-        leftColumn = <Icon {...{className: 'expand-icon', src}}/>;
+        leftColumn = <Iconography {...{ className: 'expand-icon', src }} />;
       } else {
-        leftColumn = (<div {...{
-          className: 'th col col-fixed',
-          style: {borderRightWidth: '0px', width: '36px'}
-        }}/> );
+        leftColumn = (
+          <div
+            {...{
+              className: 'th col col-fixed',
+              style: { borderRightWidth: '0px', width: '36px' }
+            }}
+          />
+        );
       }
       return (
         <div className="tr-drawer">
-          <div {...props} {...{onClick, className}}>
+          <div {...props} {...{ onClick, className }}>
             {leftColumn}
             {children}
           </div>
-          {rowIndex !== -1 && <Collapsible {...{expanded: expanded && !!drawerContent, delay: 200}}>
-            {drawerContent}
-          </Collapsible>}
+          {rowIndex !== -1 && (
+            <Collapsible
+              {...{ expanded: expanded && !!drawerContent, delay: 200 }}
+            >
+              {drawerContent}
+            </Collapsible>
+          )}
         </div>
       );
     }
@@ -167,18 +191,23 @@ export function withRowDrawer(Table) {
     };
 
     render() {
-      const {rowDrawer, keyboardNavigation, ...props} = this.props;
-      return this.renderTable(Table, {
-        tbodyTag: () => rowDrawer && TbodyWithDrawer,
-        trTag: () => rowDrawer && RowWithDrawer,
-        tbody: () => rowDrawer && {keyboardNavigation},
-        tr: (props, {rowIndex, rowDatum}) => rowDrawer && {
-          rowDrawer,
-          rowIndex,
-          rowDatum,
-          keyboardNavigation
-        }
-      }, props);
+      const { rowDrawer, keyboardNavigation, ...props } = this.props;
+      return this.renderTable(
+        Table,
+        {
+          tbodyTag: () => rowDrawer && TbodyWithDrawer,
+          trTag: () => rowDrawer && RowWithDrawer,
+          tbody: () => rowDrawer && { keyboardNavigation },
+          tr: (props, { rowIndex, rowDatum }) =>
+            rowDrawer && {
+              rowDrawer,
+              rowIndex,
+              rowDatum,
+              keyboardNavigation
+            }
+        },
+        props
+      );
     }
   };
 }

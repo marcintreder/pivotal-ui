@@ -40,7 +40,11 @@ module.exports = {
           'src/react/panel/panel.js',
           'src/react/radio/radio.js',
           'src/react/radio-group/radio-group.js',
-          'src/react/select/select.js'
+          'src/react/select/select.js',
+          'src/react/table-sortable-flex/table-sortable-flex.js',
+          'src/react/table-sortable/table-sortable.js',
+          'src/react/table-basic/table-basic.js',
+          'src/react/table-flex/table-flex.js'
         ]
       }
     ]

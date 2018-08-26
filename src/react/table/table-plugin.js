@@ -36,7 +36,8 @@ export class TablePlugin extends React.Component {
   }
 
   plugTag(method, tag, pluginContext = {}) {
-    const pluggedTag = this.props[`${method}Tag`] && this.props[`${method}Tag`](pluginContext);
+    const pluggedTag =
+      this.props[`${method}Tag`] && this.props[`${method}Tag`](pluginContext);
     return this.props.plugTag(method, pluggedTag, pluginContext) || tag;
   }
 
@@ -45,18 +46,47 @@ export class TablePlugin extends React.Component {
       ...props1,
       ...props2,
       className: classnames(props1.className, props2.className),
-      style: {...props1.style, ...props2.style}
+      style: { ...props1.style, ...props2.style }
     };
   }
 
   plugProps(method, props = {}, pluginContext = {}) {
-    const pluggedProps = this.props[method] && this.mergeProps(props, this.props[method](props, pluginContext));
+    const pluggedProps =
+      this.props[method] &&
+      this.mergeProps(props, this.props[method](props, pluginContext));
     return this.props.plugProps(method, pluggedProps || props, pluginContext);
   }
 
   renderTable(Table, methods, props = this.props) {
-    const {plugTag, tableTag, theadTag, tbodyTag, tfootTag, trTag, thTag, tdTag, plugProps, table, thead, tbody, tfoot, tr, th, td, ...others} = props;
-    return (<Table {...{...others, ...methods, plugTag: this.plugTag, plugProps: this.plugProps}}/>);
+    const {
+      plugTag,
+      tableTag,
+      theadTag,
+      tbodyTag,
+      tfootTag,
+      trTag,
+      thTag,
+      tdTag,
+      plugProps,
+      table,
+      thead,
+      tbody,
+      tfoot,
+      tr,
+      th,
+      td,
+      ...others
+    } = props;
+    return (
+      <Table
+        {...{
+          ...others,
+          ...methods,
+          plugTag: this.plugTag,
+          plugProps: this.plugProps
+        }}
+      />
+    );
   }
 
   render() {
