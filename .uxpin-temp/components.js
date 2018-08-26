@@ -8,6 +8,8 @@ import CheckboxDropdown from '../src/react/checkbox-dropdown/checkbox-dropdown';
 import CopyToClipboard from '../src/react/copy-to-clipboard/copy-to-clipboard';
 import Dialog from '../src/react/dialog/dialog';
 import Divider from '../src/react/divider/divider';
+import DraggableList from '../src/react/draggable-list/draggable-list';
+import DraggableListItem from '../src/react/draggable-list-item/draggable-list-item';
 import Dropdown from '../src/react/dropdown/dropdown';
 import FlexCol from '../src/react/flex-col/flex-col';
 import Grid from '../src/react/grid/grid';
@@ -25,6 +27,8 @@ export {
   CopyToClipboard,
   Dialog,
   Divider,
+  DraggableList,
+  DraggableListItem,
   Dropdown,
   FlexCol,
   Grid,

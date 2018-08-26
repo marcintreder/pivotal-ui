@@ -18,7 +18,9 @@ module.exports = {
           'src/react/checkbox-dropdown/checkbox-dropdown.js',
           'src/react/tooltip-trigger/tooltip-trigger.js',
           'src/react/copy-to-clipboard/copy-to-clipboard.js',
-          'src/react/divider/divider.js'
+          'src/react/divider/divider.js',
+          'src/react/draggable-list-item/draggable-list-item.js',
+          'src/react/draggable-list/draggable-list.js'
         ]
       }
     ]
