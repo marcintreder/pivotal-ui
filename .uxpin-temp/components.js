@@ -20,6 +20,7 @@ import Image from '../src/react/image/image';
 import Input from '../src/react/input/input';
 import List from '../src/react/list/list';
 import ListItem from '../src/react/list-item/list-item';
+import Media from '../src/react/media/media';
 import ProgressBar from '../src/react/progress-bar/progress-bar';
 import Toggle from '../src/react/toggle/toggle';
 import TooltipTrigger from '../src/react/tooltip-trigger/tooltip-trigger';
@@ -46,6 +47,7 @@ export {
   Input,
   List,
   ListItem,
+  Media,
   ProgressBar,
   Toggle,
   TooltipTrigger,

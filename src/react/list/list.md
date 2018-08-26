@@ -1,4 +1,4 @@
-#List
+# List
 
 ```javascript
 <List kind="list-breadcrumb">

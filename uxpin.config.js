@@ -27,7 +27,8 @@ module.exports = {
           'src/react/form/form.js',
           'src/react/image/image.js',
           'src/react/list-item/list-item.js',
-          'src/react/list/list.js'
+          'src/react/list/list.js',
+          'src/react/media/media.js'
         ]
       }
     ]

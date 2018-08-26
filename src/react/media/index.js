@@ -1,1 +1,1 @@
-export {Flag, Media} from './media';
+export Media, { Flag } from './media';
