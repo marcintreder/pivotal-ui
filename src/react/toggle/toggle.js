@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import uniqueid from 'lodash.uniqueid';
 import classnames from 'classnames';
-import {mergeProps} from '../helpers';
+import { mergeProps } from '../helpers';
 
-export class Toggle extends React.PureComponent {
+export default class Toggle extends React.PureComponent {
   static propTypes = {
     id: PropTypes.string,
     size: PropTypes.oneOf(['small', 'medium', 'large']),
@@ -21,7 +21,7 @@ export class Toggle extends React.PureComponent {
   }
 
   render() {
-    const {children, id, size, className, ...others} = this.props;
+    const { children, id, size, className, ...others } = this.props;
     const toggleId = id || uniqueid('toggle');
 
     const inputProps = mergeProps(others, {
@@ -30,9 +30,15 @@ export class Toggle extends React.PureComponent {
       type: 'checkbox'
     });
 
-    return (<div className="pui-toggle">
-      <input {...inputProps}/>
-      <label {...{htmlFor: toggleId, className: classnames(size, className)}}>{children}</label>
-    </div>);
+    return (
+      <div className="pui-toggle">
+        <input {...inputProps} />
+        <label
+          {...{ htmlFor: toggleId, className: classnames(size, className) }}
+        >
+          {children}
+        </label>
+      </div>
+    );
   }
 }

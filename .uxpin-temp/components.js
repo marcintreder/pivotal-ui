@@ -17,6 +17,7 @@ import Grid from '../src/react/grid/grid';
 import Iconography from '../src/react/iconography/iconography';
 import Input from '../src/react/input/input';
 import ProgressBar from '../src/react/progress-bar/progress-bar';
+import Toggle from '../src/react/toggle/toggle';
 import TooltipTrigger from '../src/react/tooltip-trigger/tooltip-trigger';
 import UIButton from '../src/react/UIButton/UIButton';
 import Wrapper from '../Wrapper/UXPinWrapper.js';
@@ -38,6 +39,7 @@ export {
   Iconography,
   Input,
   ProgressBar,
+  Toggle,
   TooltipTrigger,
   UIButton,
   Wrapper,
