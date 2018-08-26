@@ -1,13 +1,14 @@
-import {Icon} from '../iconography';
+import Icon from '../iconography/iconography';
 import React from 'react';
 import PropTypes from 'prop-types';
 import throttle from 'lodash.throttle';
 import ScrollTop from './scroll-top';
-import {mergeProps} from '../helpers';
-import {default as mixin} from '../mixins';
+import { mergeProps } from '../helpers';
+import { default as mixin } from '../mixins';
 import Animation from '../mixins/mixins/animation_mixin';
 
-const isFirefox = () => navigator.userAgent.toLowerCase().indexOf('firefox') !== -1;
+const isFirefox = () =>
+  navigator.userAgent.toLowerCase().indexOf('firefox') !== -1;
 
 function getElement(id) {
   if (id) return document.getElementById(id);
@@ -17,7 +18,9 @@ function getElement(id) {
 
 const privates = new WeakMap();
 
-export class BackToTop extends mixin(React.PureComponent).with(Animation) {
+export default class BackToTop extends mixin(React.PureComponent).with(
+  Animation
+) {
   static propTypes = {
     alwaysVisible: PropTypes.bool,
     scrollableId: PropTypes.string
@@ -29,16 +32,16 @@ export class BackToTop extends mixin(React.PureComponent).with(Animation) {
 
   constructor(props, context) {
     super(props, context);
-    this.state = {visible: false};
+    this.state = { visible: false };
   }
 
   componentDidMount() {
     require('../../css/back-to-top');
     this.updateScroll = throttle(this.updateScroll, 100);
     window.addEventListener('scroll', this.updateScroll);
-    const {scrollableId} = this.props;
+    const { scrollableId } = this.props;
     const element = getElement(scrollableId);
-    privates.set(this, {element});
+    privates.set(this, { element });
   }
 
   componentWillUnmount() {
@@ -46,26 +49,35 @@ export class BackToTop extends mixin(React.PureComponent).with(Animation) {
   }
 
   updateScroll = () => {
-    const {element} = privates.get(this);
-    this.setState({visible: ScrollTop.getScrollTop(element) > BackToTop.VISIBILITY_HEIGHT});
+    const { element } = privates.get(this);
+    this.setState({
+      visible: ScrollTop.getScrollTop(element) > BackToTop.VISIBILITY_HEIGHT
+    });
   };
 
   scrollToTop = () => {
     const key = `pui-back-to-top-${Date.now()}`;
-    this.setState({key});
+    this.setState({ key });
   };
 
   render() {
-    const {alwaysVisible, scrollableId, ...others} = this.props;
-    const {visible: visibleState} = this.state;
-    const {element} = privates.get(this) || {};
+    const { alwaysVisible, scrollableId, ...others } = this.props;
+    const { visible: visibleState } = this.state;
+    const { element } = privates.get(this) || {};
     const visible = alwaysVisible || visibleState;
     const props = mergeProps(others, {
       className: 'back-to-top pui-back-to-top',
-      style: {display: 'inline', opacity: this.animate('opacity', visible ? 1 : 0, BackToTop.FADE_DURATION)}
+      style: {
+        display: 'inline',
+        opacity: this.animate(
+          'opacity',
+          visible ? 1 : 0,
+          BackToTop.FADE_DURATION
+        )
+      }
     });
 
-    const {key} = this.state;
+    const { key } = this.state;
     if (key) {
       const startValue = ScrollTop.getScrollTop(element);
       const scrollTarget = this.animate(key, 0, BackToTop.SCROLL_DURATION, {
@@ -73,11 +85,13 @@ export class BackToTop extends mixin(React.PureComponent).with(Animation) {
         easing: 'easeOutCubic'
       });
       ScrollTop.setScrollTop(scrollTarget, element);
-      if (!scrollTarget) setTimeout(() => this.setState({key: null}), 10);
+      if (!scrollTarget) setTimeout(() => this.setState({ key: null }), 10);
     }
 
-    return (<a {...props} onClick={this.scrollToTop} aria-label="Back to top">
-      <Icon style={{strokeWidth: 100}} src="arrow_upward"/>
-    </a>);
+    return (
+      <a {...props} onClick={this.scrollToTop} aria-label="Back to top">
+        <Icon style={{ strokeWidth: 100 }} src="arrow_upward" />
+      </a>
+    );
   }
 }
