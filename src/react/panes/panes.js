@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {mergeProps} from '../helpers';
+import { mergeProps } from '../helpers';
 
 export class BasePane extends React.PureComponent {
   static propTypes = {
@@ -13,13 +13,18 @@ export class BasePane extends React.PureComponent {
   }
 
   render() {
-    const {innerClassName, children, ...other} = this.props;
-    const outerProps = mergeProps(other, {className: 'pane'});
-    const innerProps = mergeProps({className: innerClassName}, {className: 'container'});
+    const { innerClassName, children, ...other } = this.props;
+    const outerProps = mergeProps(other, { className: 'pane' });
+    const innerProps = mergeProps(
+      { className: innerClassName },
+      { className: 'container' }
+    );
 
-    return (<div {...outerProps} >
-      <div {...innerProps}>{children}</div>
-    </div>);
+    return (
+      <div {...outerProps}>
+        <div {...innerProps}>{children}</div>
+      </div>
+    );
   }
 }
 
@@ -33,7 +38,7 @@ export class Pane extends React.PureComponent {
   }
 
   render() {
-    const {className, ...other} = this.props;
-    return <BasePane {...other} className={className}/>;
+    const { className, ...other } = this.props;
+    return <BasePane {...other} className={className} />;
   }
 }

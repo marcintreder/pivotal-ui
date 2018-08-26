@@ -1,1 +1,1 @@
-export {BasePane, Pane} from './panes';
+export { BasePane, Pane } from './panes';
