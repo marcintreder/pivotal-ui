@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Scrim from '../mixins/mixins/scrim_mixin';
 import TetherComponent from '../react-tether/TetherComponent';
 import uniqueid from 'lodash.uniqueid';
-import {default as mixin} from '../mixins';
+import { default as mixin } from '../mixins';
 
 const TETHER_PLACEMENTS = {
   top: 'bottom center',
@@ -15,7 +15,7 @@ const TETHER_PLACEMENTS = {
 
 const privates = new WeakMap();
 
-export class OverlayTrigger extends mixin(React.Component).with(Scrim) {
+export default class OverlayTrigger extends mixin(React.Component).with(Scrim) {
   constructor(props, context) {
     super(props, context);
     privates.set(this, {});
@@ -49,21 +49,21 @@ export class OverlayTrigger extends mixin(React.Component).with(Scrim) {
     trigger: 'hover'
   };
 
-  componentWillReceiveProps({display}) {
-    if(display !== this.props.display) this.setDisplay(display);
+  componentWillReceiveProps({ display }) {
+    if (display !== this.props.display) this.setDisplay(display);
   }
 
   componentDidUpdate(prevProps, prevState) {
     require('../../css/tooltips');
-    if(prevState.display !== this.state.display) {
-      const {onEntered, onExited} = this.props;
+    if (prevState.display !== this.state.display) {
+      const { onEntered, onExited } = this.props;
       const callback = this.state.display ? onEntered : onExited;
       callback && callback();
     }
   }
 
   componentWillUnmount() {
-    if(super.componentWillUnmount) super.componentWillUnmount();
+    if (super.componentWillUnmount) super.componentWillUnmount();
     clearTimeout(privates.get(this).timeout);
   }
 
@@ -84,39 +84,39 @@ export class OverlayTrigger extends mixin(React.Component).with(Scrim) {
   };
 
   getDelay = display => {
-    const {delay, delayHide, delayShow, isSticky} = this.props;
-    if(display && delayShow) return delayShow;
-    if(!display && delayHide) return delayHide;
-    if(!display && isSticky && !delay) return 50;
+    const { delay, delayHide, delayShow, isSticky } = this.props;
+    if (display && delayShow) return delayShow;
+    if (!display && delayHide) return delayHide;
+    if (!display && isSticky && !delay) return 50;
     return delay;
   };
 
   scrimClick = () => this.hide();
 
-  setDisplay = (display) => {
+  setDisplay = display => {
     const oldTimeout = privates.get(this).timeout;
 
-    if(display === this.state.display) {
+    if (display === this.state.display) {
       clearTimeout(oldTimeout);
-      privates.set(this, {timeout: null});
+      privates.set(this, { timeout: null });
       return;
     }
 
     const delay = this.getDelay(display);
 
-    if(oldTimeout && delay) return;
+    if (oldTimeout && delay) return;
 
     let timeout;
-    if(delay) {
+    if (delay) {
       timeout = setTimeout(() => {
-        privates.set(this, {timeout: null});
-        this.setState({display});
+        privates.set(this, { timeout: null });
+        this.setState({ display });
       }, delay);
     } else {
-      this.setState({display});
+      this.setState({ display });
     }
 
-    privates.set(this, {timeout});
+    privates.set(this, { timeout });
   };
 
   click = (...args) => {
@@ -130,26 +130,35 @@ export class OverlayTrigger extends mixin(React.Component).with(Scrim) {
   hide = () => this.setDisplay(false);
 
   render() {
-    let {children, isSticky, overlay, pin, placement, theme, trigger, ...props} = this.props;
-    const {display} = this.state;
+    let {
+      children,
+      isSticky,
+      overlay,
+      pin,
+      placement,
+      theme,
+      trigger,
+      ...props
+    } = this.props;
+    const { display } = this.state;
 
     const triggerHandlers = {
-      'manual': {},
-      'hover': {
+      manual: {},
+      hover: {
         onMouseOver: this.triggerShow('onMouseOver'),
         onMouseOut: this.triggerHide('onMouseOut')
       },
-      'focus': {
+      focus: {
         onFocus: this.triggerShow('onFocus'),
         onBlur: this.triggerHide('onBlur')
       },
-      'click': {
+      click: {
         onClick: this.click
       }
     }[trigger];
 
     const overlayId = overlay.props.id || uniqueid('overlay');
-    overlay = React.cloneElement(overlay, {id: overlayId});
+    overlay = React.cloneElement(overlay, { id: overlayId });
 
     if (isSticky) {
       overlay = React.cloneElement(overlay, {
@@ -164,21 +173,24 @@ export class OverlayTrigger extends mixin(React.Component).with(Scrim) {
     });
 
     const classes = classnames('tooltip', {
-        'tooltip-light': theme === 'light'
-      }
-    );
+      'tooltip-light': theme === 'light'
+    });
 
     const tetherProps = {
       attachment: TETHER_PLACEMENTS[placement],
-      constraints: pin ? [{to: 'window', attachment: 'together', pin: true}] : [],
+      constraints: pin
+        ? [{ to: 'window', attachment: 'together', pin: true }]
+        : [],
       className: classes,
-      classes: {'target-attached': 'tooltip'},
+      classes: { 'target-attached': 'tooltip' },
       ...props
     };
 
-    return (<TetherComponent {...tetherProps} >
-      {children}
-      {display && overlay}
-    </TetherComponent>);
+    return (
+      <TetherComponent {...tetherProps}>
+        {children}
+        {display && overlay}
+      </TetherComponent>
+    );
   }
 }

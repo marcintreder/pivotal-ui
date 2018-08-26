@@ -17,6 +17,7 @@ module.exports = {
           'src/react/flex-col/flex-col.js',
           'src/react/checkbox-dropdown/checkbox-dropdown.js',
           'src/react/tooltip-trigger/tooltip-trigger.js',
+          'src/react/tooltip/tooltip.js',
           'src/react/copy-to-clipboard/copy-to-clipboard.js',
           'src/react/divider/divider.js',
           'src/react/draggable-list-item/draggable-list-item.js',
@@ -33,7 +34,8 @@ module.exports = {
           'src/react/modal-container/modal-container.js',
           'src/react/notification/notification.js',
           'src/react/notification-alert/notification-alert.js',
-          'src/react/notification-item/notification-item.js'
+          'src/react/notification-item/notification-item.js',
+          'src/react/overlay-trigger/overlay-trigger.js'
         ]
       }
     ]

@@ -1,53 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-
-export class Tooltip extends React.PureComponent {
-  static propTypes = {
-    visible: PropTypes.bool,
-    size: PropTypes.oneOf(['auto', 'sm', 'md', 'lg']),
-    isSticky: PropTypes.bool
-  };
-
-  static defaultProps = {
-    visible: true,
-    size: 'auto',
-    isSticky: false
-  };
-
-  constructor(props) {
-    super(props);
-  }
-
-  componentDidMount() {
-    require('../../css/tooltips');
-  }
-
-  render() {
-    let {
-      isSticky,
-      visible,
-      size,
-      className,
-      children,
-      ...others
-    } = this.props;
-
-    const newClasses = classnames(
-      'tooltip-container',
-      visible ? 'tooltip-container-visible' : 'tooltip-container-hidden',
-      size === 'auto' ? null : `tooltip-${size}`,
-      isSticky ? 'tooltip-hoverable' : null,
-      className
-    );
-
-    return (
-      <div className={newClasses} {...others}>
-        <div className="tooltip-content">{children}</div>
-      </div>
-    );
-  }
-}
+import Tooltip from '../tooltip/tooltip.js';
 
 export default class TooltipTrigger extends React.Component {
   static propTypes = {
