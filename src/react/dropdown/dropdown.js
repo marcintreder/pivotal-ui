@@ -5,7 +5,8 @@ import { default as mixin } from '../mixins';
 import Scrim from '../mixins/mixins/scrim_mixin';
 import Transition from '../mixins/mixins/transition_mixin';
 import Iconography from '../iconography/iconography';
-import { Grid, FlexCol } from '../flex-grids';
+import FlexCol from '../flex-col';
+import Grid from '../grid';
 
 const defaultToggleNode = (
   showIcon,

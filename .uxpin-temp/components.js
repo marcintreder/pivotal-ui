@@ -6,6 +6,8 @@ import BackToTop from '../src/react/back-to-top/back-to-top';
 import Checkbox from '../src/react/checkbox/Checkbox';
 import Dialog from '../src/react/dialog/dialog';
 import Dropdown from '../src/react/dropdown/dropdown';
+import FlexCol from '../src/react/flex-col/flex-col';
+import Grid from '../src/react/grid/grid';
 import Iconography from '../src/react/iconography/iconography';
 import ProgressBar from '../src/react/progress-bar/progress-bar';
 import UIButton from '../src/react/UIButton/UIButton';
@@ -17,6 +19,8 @@ export {
   Checkbox,
   Dialog,
   Dropdown,
+  FlexCol,
+  Grid,
   Iconography,
   ProgressBar,
   UIButton,

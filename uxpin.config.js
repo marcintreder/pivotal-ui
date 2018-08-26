@@ -12,7 +12,9 @@ module.exports = {
           'src/react/UIButton/UIButton.js',
           'src/react/autocomplete/autocomplete.js',
           'src/react/back-to-top/back-to-top.js',
-          'src/react/dropdown/dropdown.js'
+          'src/react/dropdown/dropdown.js',
+          'src/react/grid/grid.js',
+          'src/react/flex-col/flex-col.js'
         ]
       }
     ]
