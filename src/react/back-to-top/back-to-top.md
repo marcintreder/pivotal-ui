@@ -1,5 +1,5 @@
 # Back to Top
 
 ```javascript
-<BackToTop alwaysVisible scrollableId="test" />
+<BackToTop alwaysVisible scrollableId="root" />
 ```
