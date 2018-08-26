@@ -37,7 +37,9 @@ module.exports = {
           'src/react/notification-item/notification-item.js',
           'src/react/overlay-trigger/overlay-trigger.js',
           'src/react/pagination/pagination.js',
-          'src/react/panel/panel.js'
+          'src/react/panel/panel.js',
+          'src/react/radio/radio.js',
+          'src/react/radio-group/radio-group.js'
         ]
       }
     ]

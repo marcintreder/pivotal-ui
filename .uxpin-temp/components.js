@@ -28,9 +28,10 @@ import NotificationAlert from '../src/react/notification-alert/notification-aler
 import NotificationItem from '../src/react/notification-item/notification-item';
 import OverlayTrigger from '../src/react/overlay-trigger/overlay-trigger';
 import Pagination from '../src/react/pagination/pagination';
-import Pane from '../src/react/pane/pane';
 import Panel from '../src/react/panel/panel';
 import ProgressBar from '../src/react/progress-bar/progress-bar';
+import Radio from '../src/react/radio/radio';
+import RadioGroup from '../src/react/radio-group/radio-group';
 import Toggle from '../src/react/toggle/toggle';
 import Tooltip from '../src/react/tooltip/tooltip';
 import TooltipTrigger from '../src/react/tooltip-trigger/tooltip-trigger';
@@ -65,9 +66,10 @@ export {
   NotificationItem,
   OverlayTrigger,
   Pagination,
-  Pane,
   Panel,
   ProgressBar,
+  Radio,
+  RadioGroup,
   Toggle,
   Tooltip,
   TooltipTrigger,
