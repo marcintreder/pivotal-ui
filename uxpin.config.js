@@ -20,7 +20,8 @@ module.exports = {
           'src/react/copy-to-clipboard/copy-to-clipboard.js',
           'src/react/divider/divider.js',
           'src/react/draggable-list-item/draggable-list-item.js',
-          'src/react/draggable-list/draggable-list.js'
+          'src/react/draggable-list/draggable-list.js',
+          'src/react/flyout/flyout.js'
         ]
       }
     ]

@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {DefaultButton} from '../buttons';
-import {Icon} from '../iconography';
+import UIButton from '../UIButton/UIButton.js';
+import Iconography from '../iconography/iconography.js';
 import classnames from 'classnames';
-import {Dialog} from '../dialog';
-import {Grid, FlexCol} from '../flex-grids';
+import Dialog from '../dialog/dialog.js';
+import Grid from '../grid/grid.js';
+import FlexCol from '../flex-col/flex-col.js';
 
-export class Flyout extends React.PureComponent {
+export default class Flyout extends React.PureComponent {
   static propTypes = {
     animationDuration: PropTypes.number,
     animationEasing: PropTypes.string,
@@ -32,9 +33,22 @@ export class Flyout extends React.PureComponent {
   }
 
   render() {
-    const {dialogClassName, buttonAriaLabel, header, onHide, children, headerClassName, bodyClassName, iconSrc, ...props} = this.props;
+    const {
+      dialogClassName,
+      buttonAriaLabel,
+      header,
+      onHide,
+      children,
+      headerClassName,
+      bodyClassName,
+      iconSrc,
+      ...props
+    } = this.props;
 
-    const mergedDialogClassNames = classnames(dialogClassName, 'pui-flyout-dialog');
+    const mergedDialogClassNames = classnames(
+      dialogClassName,
+      'pui-flyout-dialog'
+    );
     const dialogProps = {
       ...props,
       hideOnBackdropClick: false,
@@ -49,18 +63,23 @@ export class Flyout extends React.PureComponent {
       <Dialog {...dialogProps}>
         <Grid className={classnames('pui-flyout-header', headerClassName)}>
           <FlexCol fixed>
-            <DefaultButton {...{
-              className: 'pui-flyout-icon-btn',
-              iconOnly: true,
-              flat: true,
-              'aria-label': buttonAriaLabel,
-              onClick: onHide,
-              icon: <Icon {...{src: iconSrc}}/>
-            }}/>
+            <UIButton
+              {...{
+                kind: 'default',
+                className: 'pui-flyout-icon-btn',
+                iconOnly: true,
+                flat: true,
+                'aria-label': buttonAriaLabel,
+                onClick: onHide,
+                icon: <Iconography {...{ src: iconSrc }} />
+              }}
+            />
           </FlexCol>
           <FlexCol>{header}</FlexCol>
         </Grid>
-        <div className={classnames('pui-flyout-body', bodyClassName)}>{children}</div>
+        <div className={classnames('pui-flyout-body', bodyClassName)}>
+          {children}
+        </div>
       </Dialog>
     );
   }

@@ -12,6 +12,7 @@ import DraggableList from '../src/react/draggable-list/draggable-list';
 import DraggableListItem from '../src/react/draggable-list-item/draggable-list-item';
 import Dropdown from '../src/react/dropdown/dropdown';
 import FlexCol from '../src/react/flex-col/flex-col';
+import Flyout from '../src/react/flyout/flyout';
 import Grid from '../src/react/grid/grid';
 import Iconography from '../src/react/iconography/iconography';
 import ProgressBar from '../src/react/progress-bar/progress-bar';
@@ -31,6 +32,7 @@ export {
   DraggableListItem,
   Dropdown,
   FlexCol,
+  Flyout,
   Grid,
   Iconography,
   ProgressBar,
