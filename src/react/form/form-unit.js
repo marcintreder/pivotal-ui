@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {TooltipTrigger} from '../tooltip';
-import {Icon} from '../iconography';
-import {Grid, FlexCol} from '../flex-grids';
+import TooltipTrigger from '../tooltip-trigger/tooltip-trigger.js';
+import Iconography from '../iconography/iconography.js';
+import Grid from '../grid/grid.js';
+import FlexCol from '../flex-col/flex-col.js';
 import classnames from 'classnames';
 
 export class FormUnit extends React.Component {
@@ -40,77 +41,147 @@ export class FormUnit extends React.Component {
   }
 
   newTooltipIcon = () => {
-    const {tooltip, tooltipSize, tooltipPlacement} = this.props;
-    return tooltip &&
-      <TooltipTrigger {...{tooltip, className: 'tooltip-light', size: tooltipSize, placement: tooltipPlacement}}>
-        <Icon verticalAlign="baseline" src="info_outline"/>
-      </TooltipTrigger>;
+    const { tooltip, tooltipSize, tooltipPlacement } = this.props;
+    return (
+      tooltip && (
+        <TooltipTrigger
+          {...{
+            tooltip,
+            className: 'tooltip-light',
+            size: tooltipSize,
+            placement: tooltipPlacement
+          }}
+        >
+          <Iconography verticalAlign="baseline" src="info_outline" />
+        </TooltipTrigger>
+      )
+    );
   };
 
   newLabelElement = tooltipIcon => {
-    const {labelClassName, labelFor, label, optional, optionalText} = this.props;
+    const {
+      labelClassName,
+      labelFor,
+      label,
+      optional,
+      optionalText
+    } = this.props;
     return (
-      <label {...{className: labelClassName, htmlFor: labelFor}}>
+      <label {...{ className: labelClassName, htmlFor: labelFor }}>
         {label}
         {tooltipIcon}
-        {label && optional && <span
-          className="optional-text type-neutral-4">
-                  {optionalText || optionalText === '' ? optionalText : '(Optional)'}
-                </span>}
+        {label &&
+          optional && (
+            <span className="optional-text type-neutral-4">
+              {optionalText || optionalText === ''
+                ? optionalText
+                : '(Optional)'}
+            </span>
+          )}
       </label>
     );
   };
 
   newLabelRow = () => {
-    const {label, retainLabelHeight, postLabel, inline, labelRowClassName, state, setValues} = this.props;
+    const {
+      label,
+      retainLabelHeight,
+      postLabel,
+      inline,
+      labelRowClassName,
+      state,
+      setValues
+    } = this.props;
     const tooltipIcon = this.newTooltipIcon();
     const labelElement = this.newLabelElement(tooltipIcon);
-    return (label || retainLabelHeight || postLabel) && (
-      inline
-        ? labelElement
-        : (
-          <Grid {...{key: 'label-row', className: classnames('label-row', labelRowClassName), gutter: false}}>
-            <FlexCol>{labelElement}</FlexCol>
-            <FlexCol fixed contentAlignment="middle" className="post-label">
-              {typeof postLabel === 'function' ? postLabel({state, setValues}) : postLabel}
-            </FlexCol>
-          </Grid>
-        )
+    return (
+      (label || retainLabelHeight || postLabel) &&
+      (inline ? (
+        labelElement
+      ) : (
+        <Grid
+          {...{
+            key: 'label-row',
+            className: classnames('label-row', labelRowClassName),
+            gutter: false
+          }}
+        >
+          <FlexCol>{labelElement}</FlexCol>
+          <FlexCol fixed contentAlignment="middle" className="post-label">
+            {typeof postLabel === 'function'
+              ? postLabel({ state, setValues })
+              : postLabel}
+          </FlexCol>
+        </Grid>
+      ))
     );
   };
 
   newFieldRow = () => {
-    const {children, inline, fieldRowClassName} = this.props;
-    return children && (inline
-      ? children
-      : <div className={classnames('field-row', fieldRowClassName)} key="field-row">{children}</div>);
+    const { children, inline, fieldRowClassName } = this.props;
+    return (
+      children &&
+      (inline ? (
+        children
+      ) : (
+        <div
+          className={classnames('field-row', fieldRowClassName)}
+          key="field-row"
+        >
+          {children}
+        </div>
+      ))
+    );
   };
 
   newContent = (labelRow, fieldRow, helpRow) => {
-    const {inline, labelRowClassName, labelPosition, fieldRowClassName, hideHelpRow} = this.props;
-    const sections = labelPosition === 'after' ? [fieldRow, labelRow] : [labelRow, fieldRow];
-    const showRowClassNames = (key, position) => key === position && labelPosition !== 'after' || key === (1 - position) && labelPosition === 'after';
-    const content = inline ? ([
-        <Grid className="grid-inline" key="top">
-          {sections.map((col, key) => (
-            <FlexCol {...{
-              key,
-              fixed: key === 0,
-              className: classnames({
-                [classnames('label-row', labelRowClassName)]: showRowClassNames(key, 0),
-                [classnames('field-row', fieldRowClassName)]: showRowClassNames(key, 1)
-              })
-            }}>{col}</FlexCol>
-          ))}
-        </Grid>]
-    ) : sections;
+    const {
+      inline,
+      labelRowClassName,
+      labelPosition,
+      fieldRowClassName,
+      hideHelpRow
+    } = this.props;
+    const sections =
+      labelPosition === 'after' ? [fieldRow, labelRow] : [labelRow, fieldRow];
+    const showRowClassNames = (key, position) =>
+      (key === position && labelPosition !== 'after') ||
+      (key === 1 - position && labelPosition === 'after');
+    const content = inline
+      ? [
+          <Grid className="grid-inline" key="top">
+            {sections.map((col, key) => (
+              <FlexCol
+                {...{
+                  key,
+                  fixed: key === 0,
+                  className: classnames({
+                    [classnames(
+                      'label-row',
+                      labelRowClassName
+                    )]: showRowClassNames(key, 0),
+                    [classnames(
+                      'field-row',
+                      fieldRowClassName
+                    )]: showRowClassNames(key, 1)
+                  })
+                }}
+              >
+                {col}
+              </FlexCol>
+            ))}
+          </Grid>
+        ]
+      : sections;
     !hideHelpRow && content.push(helpRow);
     return content;
   };
 
   newHelpRow = () => {
-    const {inline, hasError, help} = this.props;
-    const helpRowClassName = classnames('help-row', {'type-dark-5': !hasError});
+    const { inline, hasError, help } = this.props;
+    const helpRowClassName = classnames('help-row', {
+      'type-dark-5': !hasError
+    });
     if (inline) {
       return (
         <Grid key="bottom">
@@ -118,11 +189,15 @@ export class FormUnit extends React.Component {
         </Grid>
       );
     }
-    return <div className={helpRowClassName} key="help-row">{help}</div>;
+    return (
+      <div className={helpRowClassName} key="help-row">
+        {help}
+      </div>
+    );
   };
 
   render() {
-    const {className, inline, label, children, help, hasError} = this.props;
+    const { className, inline, label, children, help, hasError } = this.props;
 
     if (!label && !children && !help) return null;
 
@@ -131,7 +206,12 @@ export class FormUnit extends React.Component {
     const helpRow = this.newHelpRow();
 
     return (
-      <div className={classnames('form-unit', className, {'has-error': hasError, 'inline-form-unit': inline})}>
+      <div
+        className={classnames('form-unit', className, {
+          'has-error': hasError,
+          'inline-form-unit': inline
+        })}
+      >
         {this.newContent(labelRow, fieldRow, helpRow)}
       </div>
     );

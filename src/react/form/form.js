@@ -4,7 +4,7 @@ import classnames from 'classnames';
 import deepEqual from 'deep-equal';
 import { FormUnit } from './form-unit';
 import { find } from '../helpers';
-import { Input } from '../inputs';
+import Input from '../input/input.js';
 import crypto from 'crypto';
 
 const deepClone = o => JSON.parse(JSON.stringify(o));

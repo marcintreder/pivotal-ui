@@ -13,6 +13,7 @@ import DraggableListItem from '../src/react/draggable-list-item/draggable-list-i
 import Dropdown from '../src/react/dropdown/dropdown';
 import FlexCol from '../src/react/flex-col/flex-col';
 import Flyout from '../src/react/flyout/flyout';
+import Form from '../src/react/form/form';
 import Grid from '../src/react/grid/grid';
 import Iconography from '../src/react/iconography/iconography';
 import Input from '../src/react/input/input';
@@ -35,6 +36,7 @@ export {
   Dropdown,
   FlexCol,
   Flyout,
+  Form,
   Grid,
   Iconography,
   Input,

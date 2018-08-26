@@ -23,7 +23,8 @@ module.exports = {
           'src/react/draggable-list/draggable-list.js',
           'src/react/flyout/flyout.js',
           'src/react/input/input.js',
-          'src/react/toggle/toggle.js'
+          'src/react/toggle/toggle.js',
+          'src/react/form/form.js'
         ]
       }
     ]
