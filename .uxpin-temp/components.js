@@ -23,6 +23,9 @@ import List from '../src/react/list/list';
 import ListItem from '../src/react/list-item/list-item';
 import Media from '../src/react/media/media';
 import ModalContainer from '../src/react/modal-container/modal-container';
+import Notification from '../src/react/notification/notification';
+import NotificationAlert from '../src/react/notification-alert/notification-alert';
+import NotificationItem from '../src/react/notification-item/notification-item';
 import ProgressBar from '../src/react/progress-bar/progress-bar';
 import Toggle from '../src/react/toggle/toggle';
 import TooltipTrigger from '../src/react/tooltip-trigger/tooltip-trigger';
@@ -52,6 +55,9 @@ export {
   ListItem,
   Media,
   ModalContainer,
+  Notification,
+  NotificationAlert,
+  NotificationItem,
   ProgressBar,
   Toggle,
   TooltipTrigger,

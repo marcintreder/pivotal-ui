@@ -30,7 +30,10 @@ module.exports = {
           'src/react/list-item/list-item.js',
           'src/react/list/list.js',
           'src/react/media/media.js',
-          'src/react/modal-container/modal-container.js'
+          'src/react/modal-container/modal-container.js',
+          'src/react/notification/notification.js',
+          'src/react/notification-alert/notification-alert.js',
+          'src/react/notification-item/notification-item.js'
         ]
       }
     ]
