@@ -35,7 +35,8 @@ module.exports = {
           'src/react/notification/notification.js',
           'src/react/notification-alert/notification-alert.js',
           'src/react/notification-item/notification-item.js',
-          'src/react/overlay-trigger/overlay-trigger.js'
+          'src/react/overlay-trigger/overlay-trigger.js',
+          'src/react/pagination/pagination.js'
         ]
       }
     ]

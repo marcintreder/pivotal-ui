@@ -27,6 +27,7 @@ import Notification from '../src/react/notification/notification';
 import NotificationAlert from '../src/react/notification-alert/notification-alert';
 import NotificationItem from '../src/react/notification-item/notification-item';
 import OverlayTrigger from '../src/react/overlay-trigger/overlay-trigger';
+import Pagination from '../src/react/pagination/pagination';
 import ProgressBar from '../src/react/progress-bar/progress-bar';
 import Toggle from '../src/react/toggle/toggle';
 import Tooltip from '../src/react/tooltip/tooltip';
@@ -61,6 +62,7 @@ export {
   NotificationAlert,
   NotificationItem,
   OverlayTrigger,
+  Pagination,
   ProgressBar,
   Toggle,
   Tooltip,
