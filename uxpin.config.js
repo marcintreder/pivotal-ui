@@ -47,7 +47,9 @@ module.exports = {
           'src/react/table-flex/table-flex.js',
           'src/react/tab/tab.js',
           'src/react/tabs-uxpin/tabs-uxpin.js',
-          'src/react/text-filter/text-filter.js'
+          'src/react/text-filter/text-filter.js',
+          'src/react/tile-layout/tile-layout.js',
+          'src/react/tile-layout-item/tile-layout-item.js'
         ]
       }
     ]

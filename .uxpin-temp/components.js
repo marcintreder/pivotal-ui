@@ -40,6 +40,8 @@ import TableSortable from '../src/react/table-sortable/table-sortable';
 import TableSortableFlex from '../src/react/table-sortable-flex/table-sortable-flex';
 import TabsUxpin from '../src/react/tabs-uxpin/tabs-uxpin';
 import TextFilter from '../src/react/text-filter/text-filter';
+import TileLayout from '../src/react/tile-layout/tile-layout';
+import TileLayoutItem from '../src/react/tile-layout-item/tile-layout-item';
 import Toggle from '../src/react/toggle/toggle';
 import Tooltip from '../src/react/tooltip/tooltip';
 import TooltipTrigger from '../src/react/tooltip-trigger/tooltip-trigger';
@@ -86,6 +88,8 @@ export {
   TableSortableFlex,
   TabsUxpin,
   TextFilter,
+  TileLayout,
+  TileLayoutItem,
   Toggle,
   Tooltip,
   TooltipTrigger,

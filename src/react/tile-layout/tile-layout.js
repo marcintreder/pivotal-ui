@@ -1,14 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import {mergeProps} from '../helpers';
+import { mergeProps } from '../helpers';
 
-export class TileLayout extends React.Component {
+export default class TileLayout extends React.Component {
   static propTypes = {
-    columns: PropTypes.oneOfType([
-      PropTypes.number,
-      PropTypes.object
-    ]),
+    columns: PropTypes.oneOfType([PropTypes.number, PropTypes.object]),
     noGutter: PropTypes.bool
   };
 
@@ -33,17 +30,15 @@ export class TileLayout extends React.Component {
   };
 
   render() {
-    const {children, columns, noGutter, ...others} = this.props;
+    const { children, columns, noGutter, ...others } = this.props;
 
     const classes = classnames(
       this.getColumnClasses(columns),
       noGutter ? null : 'tile-gutter',
       'tile-layout'
     );
-    const props = mergeProps({className: classes}, others);
-    return (<div {...props}>
-      {children}
-    </div>);
+    const props = mergeProps({ className: classes }, others);
+    return <div {...props}>{children}</div>;
   }
 }
 
@@ -53,6 +48,6 @@ export class TileLayoutItem extends React.Component {
   }
 
   render() {
-    return <div {...mergeProps({className: 'tile-item'}, this.props)}/>;
+    return <div {...mergeProps({ className: 'tile-item' }, this.props)} />;
   }
 }
