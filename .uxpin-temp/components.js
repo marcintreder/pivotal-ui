@@ -7,6 +7,7 @@ import Checkbox from '../src/react/checkbox/checkbox';
 import CheckboxDropdown from '../src/react/checkbox-dropdown/checkbox-dropdown';
 import CopyToClipboard from '../src/react/copy-to-clipboard/copy-to-clipboard';
 import Dialog from '../src/react/dialog/dialog';
+import Divider from '../src/react/divider/divider';
 import Dropdown from '../src/react/dropdown/dropdown';
 import FlexCol from '../src/react/flex-col/flex-col';
 import Grid from '../src/react/grid/grid';
@@ -23,6 +24,7 @@ export {
   CheckboxDropdown,
   CopyToClipboard,
   Dialog,
+  Divider,
   Dropdown,
   FlexCol,
   Grid,

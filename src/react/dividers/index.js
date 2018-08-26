@@ -1,1 +1,0 @@
-export {Divider, InverseDivider} from './dividers';

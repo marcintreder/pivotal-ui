@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {mergeProps} from '../helpers';
+import { mergeProps } from '../helpers';
 
-export class Divider extends React.PureComponent {
+export default class Divider extends React.PureComponent {
   static propTypes = {
     inverse: PropTypes.bool,
     size: PropTypes.oneOf(['large'])
@@ -13,7 +13,7 @@ export class Divider extends React.PureComponent {
   }
 
   render() {
-    const {inverse, size, ...others} = this.props;
+    const { inverse, size, ...others } = this.props;
     const dividerClass = {
       'divider-1': inverse && size !== 'large',
       'divider-2': inverse && size === 'large',
@@ -21,9 +21,9 @@ export class Divider extends React.PureComponent {
       'divider-alternate-2': !inverse && size === 'large'
     };
 
-    const props = mergeProps(others, {className: dividerClass});
+    const props = mergeProps(others, { className: dividerClass });
 
-    return <hr {...props}/>;
+    return <hr {...props} />;
   }
 }
 
@@ -40,4 +40,4 @@ const defDivider = props => {
   };
 };
 
-export const InverseDivider = defDivider({inverse: true});
+export const InverseDivider = defDivider({ inverse: true });
