@@ -33,10 +33,12 @@ import ProgressBar from '../src/react/progress-bar/progress-bar';
 import Radio from '../src/react/radio/radio';
 import RadioGroup from '../src/react/radio-group/radio-group';
 import Select from '../src/react/select/select';
+import Tab from '../src/react/tab/tab';
 import TableBasic from '../src/react/table-basic/table-basic';
 import TableFlex from '../src/react/table-flex/table-flex';
 import TableSortable from '../src/react/table-sortable/table-sortable';
 import TableSortableFlex from '../src/react/table-sortable-flex/table-sortable-flex';
+import Tabs from '../src/react/tabs/tabs';
 import Toggle from '../src/react/toggle/toggle';
 import Tooltip from '../src/react/tooltip/tooltip';
 import TooltipTrigger from '../src/react/tooltip-trigger/tooltip-trigger';
@@ -76,10 +78,12 @@ export {
   Radio,
   RadioGroup,
   Select,
+  Tab,
   TableBasic,
   TableFlex,
   TableSortable,
   TableSortableFlex,
+  Tabs,
   Toggle,
   Tooltip,
   TooltipTrigger,

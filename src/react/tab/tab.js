@@ -2,7 +2,7 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
-export class Tab extends React.PureComponent {
+export default class Tab extends React.PureComponent {
   static propTypes = {
     'aria-labelledby': PropTypes.string,
     className: PropTypes.string,

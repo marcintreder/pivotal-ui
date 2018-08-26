@@ -44,7 +44,9 @@ module.exports = {
           'src/react/table-sortable-flex/table-sortable-flex.js',
           'src/react/table-sortable/table-sortable.js',
           'src/react/table-basic/table-basic.js',
-          'src/react/table-flex/table-flex.js'
+          'src/react/table-flex/table-flex.js',
+          'src/react/tab/tab.js',
+          'src/react/tabs/tabs.js'
         ]
       }
     ]
