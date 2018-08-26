@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Dropdown from '../dropdowns';
-import Checkbox from '../checkbox';
+import Dropdown from '../dropdown/dropdown.js';
+import Checkbox from '../checkbox/checkbox.js';
 import classnames from 'classnames';
 
 function doNothing() {}
 
-export class CheckboxDropdown extends React.Component {
+export default class CheckboxDropdown extends React.Component {
   static propTypes = {
     buttonAriaLabel: PropTypes.string,
     buttonClassName: PropTypes.string,
