@@ -1,0 +1,11 @@
+{
+  "rootId": "divider1000071171651840",
+  "elements": {
+    "divider1000071171651840": {
+      "name": "Divider",
+      "props": {
+        "size": "large"
+      }
+    }
+  }
+}

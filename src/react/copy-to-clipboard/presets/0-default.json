@@ -1,11 +1,23 @@
 {
-  "rootId": "dialog1000053611981350",
+  "rootId": "copy-to-clipboard1000047821644702",
   "elements": {
-    "dialog1000053611981350": {
-      "name": "I got copied by a button",
+    "copy-to-clipboard1000047821644702": {
+      "name": "Copy to Clipboard",
       "props": {
-        "animationDuration": 400,
-        "width": 300
+        "text": "I got copied by a button",
+        "children": [
+          {
+            "uxpinPresetElementId": "button1000072440215919"
+          }
+        ]
+      },
+      "button1000072440215919": {
+        "name": "UI Button",
+        "props": {
+          "children": "Click Me To Copy",
+          "flat": true,
+          "alt": true
+        }
       }
     }
   }
