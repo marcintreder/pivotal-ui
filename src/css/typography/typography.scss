@@ -1,5 +1,6 @@
 @import '../pui-variables';
 
+/* Global scope styles are moved to uxpin-wrapper
 p {
   margin: 0 0 ($base-unit * 2);
 }
@@ -7,7 +8,7 @@ p {
 body {
   font-size: $font-size-base;
   line-height: $pui-line-height-medium;
-}
+}*/
 
 @mixin font-helper($name, $weight, $style) {
   @font-face {
@@ -27,6 +28,7 @@ body {
 @include font-helper('sourcesanspro-semibold-webfont', 600, normal);
 @include font-helper('sourcesanspro-bold-webfont', 700, normal);
 
+/*
 h1,
 h2,
 h3,
@@ -94,7 +96,9 @@ small,
 .type-sm {
   font-size: $font-size-small !important;
   line-height: $pui-line-height-small;
+
 }
+*/
 
 .type-xs {
   font-size: $font-size-extra-small !important;
@@ -380,8 +384,10 @@ a:hover.type-inverse {
   color: $error-color !important;
 }
 
+/*
 address {
   margin-bottom: 20px;
   font-style: normal;
   line-height: $pui-line-height-small;
 }
+*/

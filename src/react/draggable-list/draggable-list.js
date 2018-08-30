@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 import move from './move_helper';
-// import Iconography from '../iconography/iconography';
+import Iconography from '../iconography/iconography';
 import { mergeProps } from '../helpers';
 import PropTypes from 'prop-types';
 

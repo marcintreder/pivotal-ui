@@ -6,11 +6,93 @@
   /* Reset and Common style files had to be reduced to
   ** avoid style interference and conflicts.
   */
+
+  p {
+    margin: 0 0 ($base-unit * 2);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    color: $headings-color;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  h1,
+  .h1 {
+    font-size: $font-size-h1;
+    line-height: $line-height-h1;
+    letter-spacing: -0.5px;
+  }
+
+  h2,
+  .h2 {
+    font-size: $font-size-h2;
+    line-height: $line-height-h2;
+    letter-spacing: -0.5px;
+  }
+
+  h3,
+  .h3 {
+    font-size: $font-size-h3;
+    line-height: $line-height-h3;
+  }
+
+  h4,
+  .h4 {
+    font-size: $font-size-h4;
+    line-height: $line-height-h4;
+  }
+
+  h5,
+  .h5 {
+    font-size: $font-size-h5;
+    line-height: $line-height-h5;
+  }
+
+  h6,
+  .h6 {
+    font-size: $font-size-h6;
+    line-height: $line-height-h6;
+    letter-spacing: 0.25px;
+  }
+
+  .type-lg {
+    font-size: $font-size-large;
+    line-height: $pui-line-height-medium;
+  }
+
+  small,
+  .type-sm {
+    font-size: $font-size-small !important;
+    line-height: $pui-line-height-small;
+  }
+
+  body {
+    font-size: $font-size-base;
+    line-height: $pui-line-height-medium;
+  }
+
+  address {
+    margin-bottom: 20px;
+    font-style: normal;
+    line-height: $pui-line-height-small;
+  }
+
   & * {
     @include box-sizing(border-box);
-  }
-  span {
-    color: red;
   }
 
   &::before,
