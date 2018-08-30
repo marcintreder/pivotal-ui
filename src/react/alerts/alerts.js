@@ -111,7 +111,7 @@ const defAlert = props => {
     };
 
     componentDidMount() {
-      require('../../css/alerts');
+      //require('../../css/alerts/alerts.scss');
     }
 
     render() {

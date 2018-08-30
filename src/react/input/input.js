@@ -9,7 +9,7 @@ export default class Input extends React.Component {
     icon: PropTypes.string
   };
   componentDidMount() {
-    require('../../css/inputs');
+    //require('../../css/inputs/input.scss');
   }
 
   render() {

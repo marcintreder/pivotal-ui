@@ -30,7 +30,7 @@ class CollapsibleComponent extends mixin(React.Component).with(Animation) {
   };
 
   componentDidMount() {
-    require('../../css/collapse');
+    //require('../../css/collapse/collapse.scss');
   }
 
   toggleAnimation = isAnimating => privates.set(this, { isAnimating });

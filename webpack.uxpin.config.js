@@ -35,7 +35,8 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+        exclude: [path.resolve(__dirname, 'src/css/common/common.scss')]
       },
       {
         use: ['file-loader'],

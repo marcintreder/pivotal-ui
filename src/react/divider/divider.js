@@ -9,7 +9,7 @@ export default class Divider extends React.PureComponent {
   };
 
   componentDidMount() {
-    require('../../css/dividers');
+    //require('../../css/dividers/dividers.scss');
   }
 
   render() {

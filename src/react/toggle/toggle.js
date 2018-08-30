@@ -17,7 +17,7 @@ export default class Toggle extends React.PureComponent {
   };
 
   componentDidMount() {
-    require('../../css/toggle');
+    //require('../../css/toggle/toggle.scss');
   }
 
   render() {

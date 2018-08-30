@@ -1,4 +1,4 @@
-@import "../pui-variables";
+@import '../pui-variables';
 
 p {
   margin: 0 0 ($base-unit * 2);
@@ -12,10 +12,10 @@ body {
 @mixin font-helper($name, $weight, $style) {
   @font-face {
     font-family: 'SourceSansPro';
-    src: url("fonts/#{$name}.eot");
-    src: url("fonts/#{$name}.eot?#iefix") format("embedded-opentype"),
-    url("fonts/#{$name}.woff") format("woff"),
-    url("fonts/#{$name}.ttf") format("truetype");
+    src: url('fonts/#{$name}.eot');
+    src: url('fonts/#{$name}.eot?#iefix') format('embedded-opentype'),
+      url('fonts/#{$name}.woff') format('woff'),
+      url('fonts/#{$name}.ttf') format('truetype');
     font-weight: $weight;
     font-style: $style;
   }
@@ -27,8 +27,18 @@ body {
 @include font-helper('sourcesanspro-semibold-webfont', 600, normal);
 @include font-helper('sourcesanspro-bold-webfont', 700, normal);
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   font-family: $headings-font-family;
   font-weight: $headings-font-weight;
   color: $headings-color;
@@ -36,37 +46,43 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 0;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: $font-size-h1;
   line-height: $line-height-h1;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: $font-size-h2;
   line-height: $line-height-h2;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: $font-size-h3;
   line-height: $line-height-h3;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: $font-size-h4;
   line-height: $line-height-h4;
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: $font-size-h5;
   line-height: $line-height-h5;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: $font-size-h6;
   line-height: $line-height-h6;
-  letter-spacing: .25px;
+  letter-spacing: 0.25px;
 }
 
 .type-lg {
@@ -74,7 +90,8 @@ h6, .h6 {
   line-height: $pui-line-height-medium;
 }
 
-small, .type-sm {
+small,
+.type-sm {
   font-size: $font-size-small !important;
   line-height: $pui-line-height-small;
 }
@@ -82,7 +99,7 @@ small, .type-sm {
 .type-xs {
   font-size: $font-size-extra-small !important;
   line-height: $pui-line-height-small;
-  letter-spacing: .25px;
+  letter-spacing: 0.25px;
 }
 
 .title {

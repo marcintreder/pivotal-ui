@@ -29,7 +29,7 @@ export default class Flyout extends React.PureComponent {
   };
 
   componentDidMount() {
-    require('../../css/flyout');
+    //require('../../css/flyout/flyout.scss');
   }
 
   render() {

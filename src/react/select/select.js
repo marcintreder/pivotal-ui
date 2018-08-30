@@ -35,7 +35,7 @@ export default class Select extends mixin(React.Component).with(
 
   componentDidMount() {
     super.componentDidMount();
-    require('../../css/select');
+    //require('../../css/select/select.scss');
   }
 
   toggle = () => this.setState({ open: !this.state.open });

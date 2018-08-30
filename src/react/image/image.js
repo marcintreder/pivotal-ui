@@ -11,7 +11,7 @@ export default class Image extends React.PureComponent {
   };
 
   componentDidMount() {
-    require('../../css/images');
+    //require('../../css/images/images.scss');
   }
 
   render() {

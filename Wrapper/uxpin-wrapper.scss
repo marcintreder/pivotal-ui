@@ -1,0 +1,80 @@
+@import '../src/css/pui-variables.scss';
+@import '../src/css/mixins.scss';
+@import '../src/css/typography/typography.scss';
+
+.uxpin-wrapper {
+  /* Reset and Common style files had to be reduced to
+  ** avoid style interference and conflicts.
+  */
+  & * {
+    @include box-sizing(border-box);
+  }
+  span {
+    color: red;
+  }
+
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: $font-family-base !important;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $text-color;
+  background-color: $body-bg;
+
+  [role='button'] {
+    cursor: pointer;
+  }
+
+  .fade {
+    opacity: 0;
+    @include transition(opacity 0.2s linear);
+    &.in {
+      opacity: 1;
+    }
+  }
+
+  /* Components styles are imported inside of a class
+  ** to avoid style interference and conflicts.
+   */
+  @import '../src/css/forms/forms.scss';
+  @import '../src/css/inputs/input.scss';
+  @import '../src/css/flex-grids/flex-grids.scss';
+  @import '../src/css/whitespace/whitespace.scss';
+  @import '../src/css/vertical-alignment/vertical-alignment.scss';
+  @import '../src/css/inputs/input.scss';
+  @import '../src/css/select/select.scss';
+  @import '../src/css/checkbox/checkbox.scss';
+  // @import '../src/css/forms/forms.scss';
+  @import '../src/css/iconography/iconography.scss';
+  @import '../src/css/dialog/dialog.scss';
+  @import '../src/css/progress-bar/progress-bar.scss';
+  @import '../src/css/buttons/buttons.scss';
+  @import '../src/css/alerts/alerts.scss';
+  @import '../src/css/autocomplete/autocomplete.scss';
+  @import '../src/css/back-to-top/back-to-top.scss';
+  @import '../src/css/dropdowns/dropdowns.scss';
+  @import '../src/css/checkbox-dropdown/checkbox-dropdown.scss';
+  @import '../src/css/tooltips/tooltips.scss';
+  @import '../src/css/copy-to-clipboard/copy-to-clipboard.scss';
+  @import '../src/css/dividers/dividers.scss';
+  @import '../src/css/lists/lists.scss';
+  @import '../src/css/flyout/flyout.scss';
+  @import '../src/css/toggle/toggle.scss';
+  @import '../src/css/images/images.scss';
+  @import '../src/css/links/links.scss';
+  @import '../src/css/media/media.scss';
+  @import '../src/css/modal/modal.scss';
+  @import '../src/css/notifications/notifications.scss';
+  @import '../src/css/pagination/pagination.scss';
+  @import '../src/css/panels/panels.scss';
+  @import '../src/css/box-shadows/box-shadows.scss';
+  @import '../src/css/radio/radio.scss';
+  @import '../src/css/tables/tables.scss';
+  @import '../src/css/tabs/tabs.scss';
+  @import '../src/css/text-filter/text_filter.scss';
+  @import '../src/css/tile-layout/tile-layout.scss';
+}

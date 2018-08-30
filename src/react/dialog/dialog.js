@@ -89,7 +89,7 @@ export default class Dialog extends React.PureComponent {
   };
 
   componentDidMount() {
-    require('../../css/dialog');
+    //require('../../css/dialog/dialog.scss');
     this.setParentZIndex(-1000);
     if (!this.props.show) return;
     global.document.addEventListener('keydown', this.onKeyDown);

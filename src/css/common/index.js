@@ -1,3 +1,3 @@
 try {
-  require('./common.scss');
+  require('./common.css');
 } catch (e) {}

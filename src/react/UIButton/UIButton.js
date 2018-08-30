@@ -22,7 +22,7 @@ export default class UIButton extends React.Component {
   };
 
   componentDidMount() {
-    require('../../css/buttons');
+    //require('../../css/buttons/buttons.scss');
   }
 
   render() {

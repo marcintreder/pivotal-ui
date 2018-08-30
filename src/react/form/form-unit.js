@@ -37,7 +37,7 @@ export class FormUnit extends React.Component {
   };
 
   componentDidMount() {
-    require('../../css/forms');
+    //require('../../css/forms/forms.scss');
   }
 
   newTooltipIcon = () => {

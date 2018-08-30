@@ -20,7 +20,7 @@ export default class Tooltip extends React.PureComponent {
   }
 
   componentDidMount() {
-    require('../../css/tooltips');
+    //require('../../css/tooltips/tooltips.scss');
   }
 
   render() {

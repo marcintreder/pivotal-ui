@@ -81,7 +81,7 @@ export default class Autocomplete extends mixin(React.Component).with(Scrim) {
 
   componentDidMount() {
     super.componentDidMount();
-    require('../../css/autocomplete');
+    //require('../../css/autocomplete/autocomplete.scss');
     this.props.onInitializeItems((searchableItems = []) => {
       return trieFromSearchableItems(
         searchableItems,

@@ -34,7 +34,7 @@ export class Pane extends React.PureComponent {
   };
 
   componentDidMount() {
-    require('../../css/panes');
+    //require('../../css/panes/panes.scss');
   }
 
   render() {

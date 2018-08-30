@@ -18,7 +18,7 @@ export default class Notifications extends React.PureComponent {
   };
 
   componentDidMount() {
-    require('../../css/notifications');
+    //require('../../css/notifications/notifications.scss');
   }
 
   render() {

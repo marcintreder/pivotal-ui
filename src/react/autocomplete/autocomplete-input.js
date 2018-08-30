@@ -13,7 +13,8 @@ export class AutocompleteInput extends React.Component {
     $autocomplete: PropTypes.object,
     autoFocus: PropTypes.bool,
     children(props, name) {
-      if (props[name] && props[name].length) return new Error('AutocompleteInput can only wrap one element');
+      if (props[name] && props[name].length)
+        return new Error('AutocompleteInput can only wrap one element');
     },
     disabled: PropTypes.bool,
     onClick: PropTypes.func,
@@ -35,27 +36,43 @@ export class AutocompleteInput extends React.Component {
   static UP_KEY = UP_KEY;
 
   componentDidMount() {
-    require('../../css/inputs');
-    require('../../css/forms');
+    //require('../../css/inputs/input.scss');
+    //require('../../css/forms/forms.scss');
   }
 
   change = e => {
-    const {value} = e.currentTarget;
+    const { value } = e.currentTarget;
     this.props.onSearch(value, suggestedValues => {
-      this.props.$autocomplete.merge({hidden: false, highlightedSuggestion: 0, value, suggestedValues}).flush();
+      this.props.$autocomplete
+        .merge({
+          hidden: false,
+          highlightedSuggestion: 0,
+          value,
+          suggestedValues
+        })
+        .flush();
     });
   };
 
   keyDown = e => {
-    const {keyCode} = e;
-    const {highlightedSuggestion, suggestedValues} = this.props.$autocomplete.get();
-    const {onPicking = () => suggestedValues} = this.props;
+    const { keyCode } = e;
+    const {
+      highlightedSuggestion,
+      suggestedValues
+    } = this.props.$autocomplete.get();
+    const { onPicking = () => suggestedValues } = this.props;
 
     const pickItem = () => {
       const selectableSuggestions = onPicking(suggestedValues);
-      e && (keyCode === ENTER_KEY) && e.preventDefault();
-      this.props.$autocomplete.merge({highlightedSuggestion: -1, hidden: true}).flush();
-      this.props.onPick(selectableSuggestions[highlightedSuggestion] || {value: this.props.$autocomplete.get('value')});
+      e && keyCode === ENTER_KEY && e.preventDefault();
+      this.props.$autocomplete
+        .merge({ highlightedSuggestion: -1, hidden: true })
+        .flush();
+      this.props.onPick(
+        selectableSuggestions[highlightedSuggestion] || {
+          value: this.props.$autocomplete.get('value')
+        }
+      );
     };
 
     const keyCodes = {
@@ -63,13 +80,18 @@ export class AutocompleteInput extends React.Component {
         const selectableSuggestions = onPicking(suggestedValues);
         this.props.$autocomplete.merge({
           hidden: false,
-          highlightedSuggestion: Math.min(highlightedSuggestion + 1, selectableSuggestions.length - 1)
+          highlightedSuggestion: Math.min(
+            highlightedSuggestion + 1,
+            selectableSuggestions.length - 1
+          )
         });
         this.props.scrollIntoView();
       },
 
       [UP_KEY]: () => {
-        this.props.$autocomplete.merge({highlightedSuggestion: Math.max(highlightedSuggestion - 1, -1)});
+        this.props.$autocomplete.merge({
+          highlightedSuggestion: Math.max(highlightedSuggestion - 1, -1)
+        });
         this.props.scrollIntoView();
       },
 
@@ -78,27 +100,54 @@ export class AutocompleteInput extends React.Component {
       [ENTER_KEY]: pickItem,
 
       [ESC_KEY]: () => {
-        this.props.$autocomplete.merge({highlightedSuggestion: -1, hidden: true});
+        this.props.$autocomplete.merge({
+          highlightedSuggestion: -1,
+          hidden: true
+        });
       },
 
-      noop: () => {
-      }
+      noop: () => {}
     };
 
     keyCodes[keyCode in keyCodes ? keyCode : 'noop']();
   };
 
   renderDefault(props) {
-    return (<input {...props} className={classnames('autocomplete-input', 'form-control', props.className)} type="search"
-                             value={props.value} aria-label={props.placeholder}/>);
+    return (
+      <input
+        {...props}
+        className={classnames(
+          'autocomplete-input',
+          'form-control',
+          props.className
+        )}
+        type="search"
+        value={props.value}
+        aria-label={props.placeholder}
+      />
+    );
   }
 
   render() {
-    let {autoFocus, children, $autocomplete, onPick, onPicking, onSearch, scrollIntoView, ...props} = this.props;
+    let {
+      autoFocus,
+      children,
+      $autocomplete,
+      onPick,
+      onPicking,
+      onSearch,
+      scrollIntoView,
+      ...props
+    } = this.props;
     if (!$autocomplete) return null;
-    const {value} = $autocomplete.get();
-    const otherProps = {autoFocus, value, onChange: this.change, onKeyDown: this.keyDown};
-    props = {...props, ...otherProps};
+    const { value } = $autocomplete.get();
+    const otherProps = {
+      autoFocus,
+      value,
+      onChange: this.change,
+      onKeyDown: this.keyDown
+    };
+    props = { ...props, ...otherProps };
     if (!children) return this.renderDefault(props);
     children = React.Children.map(children, e => React.cloneElement(e, props));
 

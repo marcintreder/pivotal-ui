@@ -29,7 +29,7 @@ export default class TextFilter extends React.Component {
   }
 
   componentDidMount() {
-    require('../../css/text-filter');
+    //require('../../css/text-filter/text_filter.scss');
   }
 
   onFilterTextChange({ target: { value } }) {

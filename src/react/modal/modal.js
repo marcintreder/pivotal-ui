@@ -31,7 +31,7 @@ export default class Modal extends PureComponent {
   titleId = uniqueId('pui-modal-title');
 
   componentDidMount() {
-    require('../../css/modal');
+    require('../../css/modal/modal.scss');
   }
 
   render() {

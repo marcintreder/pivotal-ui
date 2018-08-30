@@ -46,6 +46,7 @@ import Toggle from '../src/react/toggle/toggle';
 import Tooltip from '../src/react/tooltip/tooltip';
 import TooltipTrigger from '../src/react/tooltip-trigger/tooltip-trigger';
 import UIButton from '../src/react/UIButton/UIButton';
+import Wizard from '../src/react/wizard/wizard';
 import Wrapper from '../Wrapper/UXPinWrapper.js';
 export {
   Alerts,
@@ -94,6 +95,7 @@ export {
   Tooltip,
   TooltipTrigger,
   UIButton,
+  Wizard,
   Wrapper,
   React,
   ReactDOM,

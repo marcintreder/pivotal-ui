@@ -23,7 +23,7 @@ export default class DraggableListItem extends React.Component {
   }
 
   componentDidMount() {
-    require('../../css/lists');
+    //require('../../css/lists/lists.scss');
   }
 
   onMouseEnter = () => this.setState({ hover: true });

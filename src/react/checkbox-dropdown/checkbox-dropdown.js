@@ -34,7 +34,7 @@ export default class CheckboxDropdown extends React.Component {
   }
 
   componentDidMount() {
-    require('../../css/checkbox-dropdown');
+    //require('../../css/checkbox-dropdown/checkbox-dropdown.scss');
 
     const { onChange } = this.props;
     const { options } = this.state;

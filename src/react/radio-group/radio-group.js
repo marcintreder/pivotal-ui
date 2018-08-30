@@ -11,7 +11,7 @@ export default class RadioGroup extends React.Component {
   };
 
   componentDidMount() {
-    require('../../css/forms');
+    //require('../../css/forms/forms.scss');
   }
 
   render() {

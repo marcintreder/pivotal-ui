@@ -8,7 +8,7 @@ export class Table extends TablePlugin {
   static defaultProps = { ...TablePlugin.defaultProps };
 
   componentDidMount() {
-    require('../../css/tables');
+    //require('../../css/tables/tables.scss');
   }
 
   render() {

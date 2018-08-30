@@ -54,7 +54,7 @@ export default class OverlayTrigger extends mixin(React.Component).with(Scrim) {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    require('../../css/tooltips');
+    //require('../../css/tooltips/tooltips.scss');
     if (prevState.display !== this.state.display) {
       const { onEntered, onExited } = this.props;
       const callback = this.state.display ? onEntered : onExited;

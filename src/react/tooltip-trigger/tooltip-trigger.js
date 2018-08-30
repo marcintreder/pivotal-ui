@@ -40,7 +40,7 @@ export default class TooltipTrigger extends React.Component {
   }
 
   componentDidMount() {
-    require('../../css/tooltips');
+    //require('../../css/tooltips/tooltips.scss');
   }
 
   hoverHandler(e) {

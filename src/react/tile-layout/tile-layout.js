@@ -10,7 +10,7 @@ export default class TileLayout extends React.Component {
   };
 
   componentDidMount() {
-    require('../../css/tile-layout');
+    //require('../../css/tile-layout/tile-layout.scss');
   }
 
   getColumnClasses = columns => {
@@ -44,7 +44,7 @@ export default class TileLayout extends React.Component {
 
 export class TileLayoutItem extends React.Component {
   componentDidMount() {
-    require('../../css/tile-layout');
+    //require('../../css/tile-layout/tile-layout.scss');
   }
 
   render() {

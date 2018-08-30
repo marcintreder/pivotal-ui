@@ -5,7 +5,7 @@ import { mergeProps } from '../helpers';
 
 export default class TileLayoutItem extends React.Component {
   componentDidMount() {
-    require('../../css/tile-layout');
+    //require('../../css/tile-layout/tile-layout.scss');
   }
 
   render() {

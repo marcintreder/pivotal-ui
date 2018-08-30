@@ -1,0 +1,36 @@
+const ids = [13333, 14711, 15409];
+
+
+Promise.all(ids.map(id => {
+      const url =
+            "https://uxpin.tpondemand.com/api/v2/Feature/" +
+             id +
+             "/?select={name,PlannedEndDate,%20%20ResponsibleTeam}&access_token=OTA6MDRnYmdOWkdLZTFWSEFsNk1iZlovZkh3VWU1SGI4UDhMRWNublNTRnlpUT0=";
+      return fetch(url).then(res => res.json()).then(json => callback(json))})).then(data => data);
+
+let requestsArray = ids.map(id => {
+  const url =
+        "https://uxpin.tpondemand.com/api/v2/Feature/" +
+         id +
+         "/?select={name,PlannedEndDate,%20%20ResponsibleTeam}&access_token=OTA6MDRnYmdOWkdLZTFWSEFsNk1iZlovZkh3VWU1SGI4UDhMRWNublNTRnlpUT0=";
+  return fetch(url).then(res => {
+    const data = res.json()
+    callback(null, data);
+  }).catch(callback);
+});
+
+Promise.all(requestsArray).then(allData => allData);
+
+
+
+    // Promise.all(
+    //   ids
+    //     .map(id => {
+    //       const url =
+    //         "https://uxpin.tpondemand.com/api/v2/Feature/" +
+    //         id +
+    //         "/?select={name,PlannedEndDate,%20%20ResponsibleTeam}&access_token=OTA6MDRnYmdOWkdLZTFWSEFsNk1iZlovZkh3VWU1SGI4UDhMRWNublNTRnlpUT0=";
+    //       return fetch(url).then(resp => resp.json());
+    //     }))
+    //     .then(json => callback(null, json))
+    //     .catch(callback);

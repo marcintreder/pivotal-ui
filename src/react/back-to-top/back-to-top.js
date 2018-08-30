@@ -36,7 +36,7 @@ export default class BackToTop extends mixin(React.PureComponent).with(
   }
 
   componentDidMount() {
-    require('../../css/back-to-top');
+    //require('../../css/back-to-top/back-to-top.scss');
     this.updateScroll = throttle(this.updateScroll, 100);
     window.addEventListener('scroll', this.updateScroll);
     const { scrollableId } = this.props;

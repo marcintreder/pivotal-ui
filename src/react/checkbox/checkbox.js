@@ -26,8 +26,8 @@ export default class Checkbox extends React.Component {
 
   componentDidMount() {
     this.el.indeterminate = this.props.indeterminate;
-    require('../../css/forms');
-    require('../../css/checkbox');
+    //require('../../css/forms/forms.scss');
+    //require('../../css/checkbox/checkbox.scss');
   }
 
   componentDidUpdate(prevProps) {

@@ -63,7 +63,7 @@ export default class Tabs extends mixin(React.Component).with(Animation) {
   static ANIMATION_TIME = 400;
 
   componentDidMount() {
-    require('../../css/tabs');
+    //require('../../css/tabs/tabs.scss');
     window.addEventListener('resize', this.checkScreenSize);
     this.checkScreenSize();
   }
@@ -197,7 +197,7 @@ export class LeftTabs extends React.PureComponent {
   };
 
   componentDidMount() {
-    require('../../css/tabs');
+    require('../../css/tabs/tabs.scss');
   }
 
   render() {

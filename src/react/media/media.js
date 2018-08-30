@@ -22,7 +22,7 @@ export default class Media extends React.Component {
   };
 
   componentDidMount() {
-    require('../../css/media');
+    //require('../../css/media/media.scss');
   }
 
   render() {
@@ -70,7 +70,7 @@ export default class Media extends React.Component {
 
 export class Flag extends React.Component {
   componentDidMount() {
-    require('../../css/media');
+    require('../../css/media/media.scss');
   }
 
   render() {

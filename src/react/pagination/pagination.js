@@ -14,7 +14,7 @@ export class PaginationButton extends React.PureComponent {
   };
 
   componentDidMount() {
-    require('../../css/pagination');
+    //require('../../css/pagination/pagination.scss');
   }
 
   click = e => {
@@ -65,7 +65,7 @@ export default class Pagination extends React.PureComponent {
   };
 
   componentDidMount() {
-    require('../../css/pagination');
+    require('../../css/pagination/pagination.scss');
   }
 
   render() {

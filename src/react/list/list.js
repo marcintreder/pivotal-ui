@@ -17,7 +17,7 @@ export default class List extends React.Component {
   };
 
   componentDidMount() {
-    require('../../css/lists');
+    //require('../../css/lists/lists.scss');
   }
 
   render() {

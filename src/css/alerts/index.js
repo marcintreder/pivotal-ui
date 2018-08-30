@@ -3,5 +3,4 @@ require('../iconography');
 require('../typography');
 try {
   require('./alerts.css');
-} catch (e) {
-}
+} catch (e) {}

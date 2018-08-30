@@ -1,4 +1,3 @@
 try {
   require('./alignment.css');
-} catch (e) {
-}
+} catch (e) {}

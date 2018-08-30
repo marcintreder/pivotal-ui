@@ -18,7 +18,7 @@ export default class Iconography extends React.Component {
   };
 
   componentDidMount() {
-    require('../../css/iconography');
+    //require('../../css/iconography/iconography.scss');
   }
 
   render() {

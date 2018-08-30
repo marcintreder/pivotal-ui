@@ -17,7 +17,7 @@ export class BaseCollapse extends React.PureComponent {
   }
 
   componentDidMount() {
-    require('../../css/collapse');
+    //require('../../css/collapse/collapse.scss');
   }
 
   handleSelect = e => {

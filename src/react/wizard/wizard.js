@@ -1,14 +1,13 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import types from 'prop-types';
-import {PrimaryButton} from '../buttons';
-import {Icon} from '../iconography';
+import UIButton from '../UIButton/UIButton.js';
+import Iconography from '../iconography/iconography.js';
 import classnames from 'classnames';
 
-function noop() {
-}
+function noop() {}
 
-export class Wizard extends React.Component {
+export default class Wizard extends React.Component {
   static propTypes = {
     pages: types.array.isRequired,
     cancel: types.func,
@@ -30,7 +29,7 @@ export class Wizard extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {currentPage: 0};
+    this.state = { currentPage: 0 };
     this.onClickCancel = this.onClickCancel.bind(this);
     this.onClickBack = this.onClickBack.bind(this);
     this.onClickNext = this.onClickNext.bind(this);
@@ -45,7 +44,9 @@ export class Wizard extends React.Component {
   }
 
   setPage(page) {
-    this.setState({currentPage: Math.min(this.props.pages.length - 1, Math.max(0, page))});
+    this.setState({
+      currentPage: Math.min(this.props.pages.length - 1, Math.max(0, page))
+    });
   }
 
   onClickCancel() {
@@ -53,25 +54,26 @@ export class Wizard extends React.Component {
   }
 
   onClickBack() {
-    const {currentPage} = this.state;
-    const {pages} = this.props;
+    const { currentPage } = this.state;
+    const { pages } = this.props;
     const page = pages[currentPage];
-    const {onClickBack} = page;
+    const { onClickBack } = page;
 
     const customPage = onClickBack ? onClickBack() : null;
-    const target = typeof customPage === 'number' ? customPage : currentPage - 1;
+    const target =
+      typeof customPage === 'number' ? customPage : currentPage - 1;
     this.setPage(target);
   }
 
   onClickNext() {
-    const {currentPage} = this.state;
-    const {pages} = this.props;
+    const { currentPage } = this.state;
+    const { pages } = this.props;
     const page = pages[currentPage];
-    const {onClickNext} = page;
+    const { onClickNext } = page;
 
     onClickNext && onClickNext();
 
-    this.setState({currentPage: this.state.currentPage + 1});
+    this.setState({ currentPage: this.state.currentPage + 1 });
   }
 
   onClickFinish() {
@@ -79,51 +81,89 @@ export class Wizard extends React.Component {
   }
 
   render() {
-    const {cancel, cancelText, className, pages, finishText, style, saving, savingText} = this.props;
-    const {currentPage} = this.state;
+    const {
+      cancel,
+      cancelText,
+      className,
+      pages,
+      finishText,
+      style,
+      saving,
+      savingText
+    } = this.props;
+    const { currentPage } = this.state;
 
     const page = pages[currentPage];
     const {
-      hideBackButton, hideNextButton, hideFinishButton, nextText = () => 'Next', backComponent, finishComponent
+      hideBackButton,
+      hideNextButton,
+      hideFinishButton,
+      nextText = () => 'Next',
+      backComponent,
+      finishComponent
     } = page;
 
     const lastPage = currentPage >= pages.length - 1;
     const firstPage = currentPage === 0;
 
-    const nextDisabled = page.nextEnabled ? !page.nextEnabled(this.getPage) : false;
+    const nextDisabled = page.nextEnabled
+      ? !page.nextEnabled(this.getPage)
+      : false;
 
-    const {onClickNext, setPage, getPage} = this;
-    const renderedPage = page.render({onClickNext, setPage, getPage});
+    const { onClickNext, setPage, getPage } = this;
+    const renderedPage = page.render({ onClickNext, setPage, getPage });
 
     const cancelButton = (
-      <PrimaryButton alt className="wizard-cancel-btn"
-                     onClick={this.onClickCancel}>{cancelText}</PrimaryButton>
+      <UIButton
+        kind="primary"
+        alt
+        className="wizard-cancel-btn"
+        onClick={this.onClickCancel}
+      >
+        {cancelText}
+      </UIButton>
     );
 
     const backButton = backComponent || (
-        <PrimaryButton alt className="wizard-back-btn" disabled={saving}
-                       onClick={this.onClickBack}>Back</PrimaryButton>
-      );
+      <UIButton
+        kind="primary"
+        alt
+        className="wizard-back-btn"
+        disabled={saving}
+        onClick={this.onClickBack}
+      >
+        Back
+      </UIButton>
+    );
 
-    const icon = saving && <Icon src="spinner-sm"/>;
+    const icon = saving && <Iconography src="spinner-sm" />;
     const finishButton = finishComponent || (
-        <PrimaryButton {...{
+      <UIButton
+        {...{
+          kind: 'primary',
           className: 'wizard-finish-btn',
           icon,
           onClick: this.onClickFinish
-        }}>{saving ? savingText : finishText}</PrimaryButton>
-      );
+        }}
+      >
+        {saving ? savingText : finishText}
+      </UIButton>
+    );
 
     const nextButton = (
-      <PrimaryButton className="wizard-next-btn" disabled={nextDisabled}
-                     onClick={this.onClickNext}>{nextText()}</PrimaryButton>
+      <UIButton
+        kind="primary"
+        className="wizard-next-btn"
+        disabled={nextDisabled}
+        onClick={this.onClickNext}
+      >
+        {nextText()}
+      </UIButton>
     );
 
     return (
-      <div {...{className: classnames('wizard', className), style}}>
-        <div className="wizard-page">
-          {renderedPage}
-        </div>
+      <div {...{ className: classnames('wizard', className), style }}>
+        <div className="wizard-page">{renderedPage}</div>
         <div className="wizard-footer grid ptxl">
           <div className="col">
             {cancel && cancelButton}

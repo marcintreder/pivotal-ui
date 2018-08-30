@@ -12,7 +12,7 @@ export default class CopyToClipboard extends React.PureComponent {
   };
 
   componentDidMount() {
-    require('../../css/copy-to-clipboard');
+    //require('../../css/copy-to-clipboard/copy-to-clipboard.scss');
   }
 
   click = ({ onClick, text }, e) => {

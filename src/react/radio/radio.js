@@ -18,8 +18,8 @@ export default class Radio extends React.Component {
   };
 
   componentDidMount() {
-    require('../../css/forms');
-    require('../../css/radio');
+    //require('../../css/forms/forms.scss');
+    //require('../../css/radio/radio.scss');
   }
 
   render() {

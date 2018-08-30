@@ -83,7 +83,7 @@ export default class Dropdown extends mixin(React.Component).with(
 
   componentDidMount() {
     super.componentDidMount();
-    require('../../css/dropdowns');
+    //require('../../css/dropdowns/dropdowns.scss');
   }
 
   click = event => {

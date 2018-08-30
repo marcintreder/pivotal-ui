@@ -14,7 +14,7 @@ export default class FlexCol extends React.Component {
   };
 
   componentDidMount() {
-    require('../../css/flex-grids');
+    //require('../../css/flex-grids/flex-grids.scss');
   }
 
   render() {

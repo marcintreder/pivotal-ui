@@ -21,7 +21,7 @@ export default class Grid extends React.PureComponent {
   };
 
   componentDidMount() {
-    require('../../css/flex-grids');
+    //require('../../css/flex-grids/flex-grids.scss');
   }
 
   render() {

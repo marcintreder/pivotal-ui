@@ -1,4 +1,4 @@
-@import "../pui-variables";
+@import '../pui-variables';
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -7,7 +7,7 @@ textarea,
 select {
   display: block;
   width: 100%;
-  height: ($base-unit*4);
+  height: ($base-unit * 4);
   padding: 4px $base-unit;
   /* The 6px vertically centers text on FF, ignored by Webkit */
   font-size: 14px;
@@ -69,8 +69,10 @@ legend {
 }
 
 html body {
-  textarea, select {
-    &.disabled, &:disabled {
+  textarea,
+  select {
+    &.disabled,
+    &:disabled {
       background-color: $input-disabled;
       cursor: not-allowed;
       color: $dark-5;
@@ -80,11 +82,11 @@ html body {
 }
 
 $form-icon-size-lg: 20px;
-$form-icon-padding-lg: (($base-unit*5) - $form-icon-size-lg) / 2;
+$form-icon-padding-lg: (($base-unit * 5) - $form-icon-size-lg) / 2;
 $form-icon-size-sm: 12px;
-$form-icon-padding-sm: (($base-unit*3) - $form-icon-size-sm) / 2;
+$form-icon-padding-sm: (($base-unit * 3) - $form-icon-size-sm) / 2;
 select {
-  :not(input[type="radio"], input[type="checkbox"]) {
+  :not(input[type='radio'], input[type='checkbox']) {
     height: $base-unit * 4;
   }
 
@@ -124,14 +126,14 @@ select {
 //-------------------------------------
 
 .form-group {
-  margin-bottom: ($base-unit*2);
+  margin-bottom: ($base-unit * 2);
   position: relative;
   label {
     position: relative;
     display: block;
     font-size: 14px;
     font-weight: 600;
-    line-height: ($base-unit*4);
+    line-height: ($base-unit * 4);
     margin-bottom: 0;
     margin-right: $base-unit;
     .icon {
@@ -143,11 +145,11 @@ select {
     }
     &.label-sm {
       font-size: 12px;
-      line-height: ($base-unit *3)
+      line-height: ($base-unit * 3);
     }
     &.label-lg {
       font-size: 16px;
-      line-height: ($base-unit *5)
+      line-height: ($base-unit * 5);
     }
   }
 
@@ -161,7 +163,7 @@ select {
 
   //Validation Icons
   $form-icon-size: 18px;
-  $form-icon-padding: (($base-unit*4) - $form-icon-size) / 2;
+  $form-icon-padding: (($base-unit * 4) - $form-icon-size) / 2;
 
   .icon {
     pointer-events: none;
@@ -231,7 +233,7 @@ select {
     line-height: 40;
   }
   input {
-    height: ($base-unit*5);
+    height: ($base-unit * 5);
     font-size: 16px;
   }
   .icon {
@@ -241,10 +243,10 @@ select {
   }
 }
 
-.radio input[type="radio"],
-.radio-inline input[type="radio"],
-.checkbox input[type="checkbox"],
-.checkbox-inline input[type="checkbox"] {
+.radio input[type='radio'],
+.radio-inline input[type='radio'],
+.checkbox input[type='checkbox'],
+.checkbox-inline input[type='checkbox'] {
   position: relative;
   margin-left: 0;
   margin-top: 0;
@@ -266,7 +268,7 @@ select {
 
 .form-inline.form-lg {
   label {
-    line-height: ($base-unit*5);
+    line-height: ($base-unit * 5);
   }
 }
 
@@ -274,14 +276,14 @@ select {
   display: inline-flex;
   vertical-align: top;
   &:not(.col) + .form-inline {
-    margin-left: ($base-unit*2);
+    margin-left: ($base-unit * 2);
   }
   &:not(.col) + .btn {
-    margin-left: ($base-unit*2);
+    margin-left: ($base-unit * 2);
   }
   label {
     margin-right: $base-unit;
-    line-height: ($base-unit*4);
+    line-height: ($base-unit * 4);
   }
   .help-block {
     right: 0;
@@ -309,14 +311,17 @@ textarea.valid {
     color: $input-invalid-text;
   }
 
-  input, textarea, select {
+  input,
+  textarea,
+  select {
     border-color: $input-invalid-text;
   }
 }
 
 // Input Icons
 //-------------------------------------
-.form-group-left-icon, .form-group.form-group-left-icon {
+.form-group-left-icon,
+.form-group.form-group-left-icon {
   input {
     padding-left: 32px;
   }
@@ -337,7 +342,7 @@ textarea.valid {
 }
 
 .input-wrapper {
-  position: relative
+  position: relative;
 }
 
 .form fieldset {
@@ -373,7 +378,7 @@ textarea.valid {
       min-width: 100%;
     }
 
-    > input[type="checkbox"] {
+    > input[type='checkbox'] {
       min-width: initial;
     }
   }
@@ -406,16 +411,17 @@ textarea.valid {
     }
 
     input,
-    input[type="email"],
-    input[type="number"],
-    input[type="search"],
-    input[type="text"],
-    input[type="tel"],
-    input[type="url"],
-    input[type="password"],
+    input[type='email'],
+    input[type='number'],
+    input[type='search'],
+    input[type='text'],
+    input[type='tel'],
+    input[type='url'],
+    input[type='password'],
     textarea,
     select {
-      &, &:focus {
+      &,
+      &:focus {
         border: 1px solid $input-border-invalid;
       }
     }
