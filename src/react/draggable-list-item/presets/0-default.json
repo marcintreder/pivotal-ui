@@ -1,0 +1,11 @@
+{
+  "rootId": "draggable-list-item1000061766069305",
+  "elements": {
+    "draggable-list-item1000061766069305": {
+      "name": "Draggable List Item",
+      "props": {
+        "children": "Merge"
+      }
+    }
+  }
+}
