@@ -1,0 +1,13 @@
+{
+  "rootId": "dropdown1000091231981883",
+  "elements": {
+    "dropdown1000091231981883": {
+      "name": "Dropdown",
+      "props": {
+        "title": "Float Dropdown Menu",
+        "floatMenu": true,
+        "menuAlign": "left"
+      }
+    }
+  }
+}
