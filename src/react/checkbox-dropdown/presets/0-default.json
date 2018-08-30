@@ -1,0 +1,11 @@
+{
+  "rootId": "checkbox-dropdown1000092148429842",
+  "elements": {
+    "checkbox-dropdown1000092148429842": {
+      "name": "Checkbox-dropdown",
+      "props": {
+        "labels": ["DEBUG", "WARNING", "ERROR"]
+      }
+    }
+  }
+}
