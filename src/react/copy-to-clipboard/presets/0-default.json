@@ -1,0 +1,24 @@
+{
+  "rootId": "copy-to-clipboard1000047821644702",
+  "elements": {
+    "copy-to-clipboard1000047821644702": {
+      "name": "I got copied by a button",
+      "props": {
+        "text": ["DEBUG", "WARNING", "ERROR"],
+        "children": [
+          {
+            "uxpinPresetElementId": "button1000072440215919"
+          }
+        ]
+      },
+      "button1000072440215919": {
+        "name": "UI Button",
+        "props": {
+          "children": "Click Me To Copy",
+          "flat": true,
+          "alt": true
+        }
+      }
+    }
+  }
+}
