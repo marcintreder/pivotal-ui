@@ -8,7 +8,7 @@ const paddingDirection = { left: 'r', right: 'l' };
 
 export default class Media extends React.Component {
   static propTypes = {
-    image: PropTypes.oneOfType([PropTypes.node, PropTypes.object]).isRequired,
+    image: PropTypes.oneOfType([PropTypes.node, PropTypes.object]),
     innerClassName: PropTypes.string,
     mediaSpacing: PropTypes.oneOf(['small', 'medium', 'large', 'xlarge']),
     stackSize: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large']),

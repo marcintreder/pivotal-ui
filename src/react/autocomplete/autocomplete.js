@@ -38,7 +38,7 @@ export default class Autocomplete extends mixin(React.Component).with(Scrim) {
   static propTypes = {
     className: PropTypes.string,
     disabled: PropTypes.bool,
-    input: PropTypes.object,
+    input: PropTypes.node,
     maxItems: PropTypes.number,
     onClick: PropTypes.func,
     onFilter: PropTypes.func,

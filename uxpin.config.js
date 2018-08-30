@@ -10,7 +10,6 @@ module.exports = {
           'src/react/progress-bar/progress-bar.js',
           'src/react/alerts/alerts.js',
           'src/react/UIButton/UIButton.js',
-          'src/react/autocomplete/autocomplete.js',
           'src/react/back-to-top/back-to-top.js',
           'src/react/dropdown/dropdown.js',
           'src/react/grid/grid.js',
@@ -30,13 +29,11 @@ module.exports = {
           'src/react/image/image.js',
           'src/react/list-item/list-item.js',
           'src/react/list/list.js',
-          'src/react/media/media.js',
           'src/react/modal-container/modal-container.js',
           'src/react/notification/notification.js',
           'src/react/notification-alert/notification-alert.js',
           'src/react/notification-item/notification-item.js',
           'src/react/overlay-trigger/overlay-trigger.js',
-          'src/react/pagination/pagination.js',
           'src/react/panel/panel.js',
           'src/react/radio/radio.js',
           'src/react/radio-group/radio-group.js',
@@ -48,8 +45,6 @@ module.exports = {
           'src/react/tab/tab.js',
           'src/react/tabs-uxpin/tabs-uxpin.js',
           'src/react/text-filter/text-filter.js',
-          'src/react/tile-layout/tile-layout.js',
-          'src/react/tile-layout-item/tile-layout-item.js',
           'src/react/wizard/wizard.js'
         ]
       }

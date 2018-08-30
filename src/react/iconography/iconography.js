@@ -8,7 +8,8 @@ export default class Iconography extends React.Component {
   static propTypes = {
     src: PropTypes.string.isRequired,
     style: PropTypes.object,
-    verticalAlign: PropTypes.oneOf(['middle', 'baseline'])
+    verticalAlign: PropTypes.oneOf(['middle', 'baseline']),
+    size: PropTypes.string.isRequired
   };
 
   static defaultProps = {

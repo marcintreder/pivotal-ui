@@ -8,7 +8,7 @@ const ESC_KEY = 27;
 const TAB_KEY = 9;
 const UP_KEY = 38;
 
-export class AutocompleteInput extends React.Component {
+export default class AutocompleteInput extends React.Component {
   static propTypes = {
     $autocomplete: PropTypes.object,
     autoFocus: PropTypes.bool,

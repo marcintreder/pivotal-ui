@@ -60,7 +60,6 @@ export default class Pagination extends React.PureComponent {
     items: 1,
     next: true,
     prev: true,
-    onSelect: () => {},
     activePage: 1
   };
 
