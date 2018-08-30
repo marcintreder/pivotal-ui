@@ -1,0 +1,16 @@
+{
+  "rootId": "alertsK6Y3(JhUei8Vhc",
+  "elements": {
+    "alertsK6Y3(JhUei8Vhc": {
+      "name": "Alerts",
+      "props": {
+        "bsStyle": "info",
+        "dismissable": true,
+        "withIcon": true,
+        "show": true,
+        "alertIcon": "info",
+        "children": "Merge is a code based revolution in design!"
+      }
+    }
+  }
+}
