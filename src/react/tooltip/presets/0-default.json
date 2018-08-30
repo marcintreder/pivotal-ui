@@ -1,0 +1,12 @@
+{
+  "rootId": "tooltip-1000067066459040",
+  "elements": {
+    "tooltip-1000067066459040": {
+      "Name": "Tooltip",
+      "props": {
+        "size": "md",
+        "visible": true
+      }
+    }
+  }
+}

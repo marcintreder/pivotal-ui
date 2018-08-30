@@ -1,0 +1,35 @@
+{
+  "rootId": "radio-group-1000098659777573",
+  "elements": {
+    "radio-group-1000098659777573": {
+      "name": "Radio Group",
+      "props": {
+        "value": "UXPin",
+        "name": "radio-group",
+        "children": {
+          "uxpinPresetElementId": "radio-1000088317493493",
+          "uxpinPresetElementId": "radio-1000088317493493",
+          "uxpinPresetElementId": "radio-1000088317493493"
+        }
+      }
+    },
+    "radio-1000088317493493": {
+      "name": "Radio",
+      "props": {
+        "value": "UXPin"
+      }
+    },
+    "radio-1000088317493493": {
+      "name": "Radio",
+      "props": {
+        "value": "Merge"
+      }
+    },
+    "radio-1000088317493493": {
+      "name": "Radio",
+      "props": {
+        "value": "UXPin Merge"
+      }
+    }
+  }
+}

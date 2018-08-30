@@ -1,0 +1,12 @@
+{
+  "rootId": "notification-item1000010719341389",
+  "elements": {
+    "notification-item1000010719341389": {
+      "name": "Notification Item",
+      "props": {
+        "key": 1,
+        "children": "Stuff"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "rootId": "pagination-1000088317493493",
+  "elements": {
+    "pagination-1000088317493493": {
+      "name": "pagination",
+      "props": {
+        "item": 7,
+        "activePage": 1
+      }
+    }
+  }
+}

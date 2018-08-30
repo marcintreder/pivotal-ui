@@ -1,0 +1,13 @@
+{
+  "rootId": "tabs1000076487588835",
+  "elements": {
+    "tabs1000076487588835": {
+      "Name": "Tabs",
+      "props": {
+        "defaultActiveKey": 1,
+        "children": {
+          "uxpinPresetElementId":
+        }
+      }
+    }
+  }

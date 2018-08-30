@@ -1,10 +1,30 @@
 {
-  "rootId": "list-item1000032984160180",
+  "rootId": "modal1000012260172890",
   "elements": {
-    "list-item1000032984160180": {
-      "name": "List Item",
+    "modal1000012260172890": {
+      "name": "Modal",
       "props": {
-        "children": "Item 1"
+        "animationDuration": false,
+        "title": "What a Header!",
+        "size": "30%",
+        "show": false,
+        "footer": {
+          "uxpinPresetElementId": "button1000072440215919"
+        },
+        "children": {
+          "uxpinPresetElementId": "input1000008198848353"
+        }
+      }
+    },
+    "input1000008198848353": {
+      "autoFocus": true,
+      "placeholder": "Tell me your darkest secrets"
+    },
+    "button1000072440215919": {
+      "name": "UI Button",
+      "props": {
+        "kind": "default",
+        "children": "close"
       }
     }
   }

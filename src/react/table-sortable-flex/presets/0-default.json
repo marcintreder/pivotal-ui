@@ -1,0 +1,11 @@
+{
+  "rootId": "table-sortable-1000008201970716",
+  "elements": {
+    "table-sortable-1000008201970716": {
+      "Name": "Table Sortable",
+      "props": {
+        "data": []
+      }
+    }
+  }
+}

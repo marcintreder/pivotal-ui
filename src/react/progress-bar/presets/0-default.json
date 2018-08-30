@@ -1,0 +1,11 @@
+{
+  "rootId": "progress-bar-1000088317493493",
+  "elements": {
+    "progress-bar-1000088317493493": {
+      "name": "Progress Bar",
+      "props": {
+        "value": 10
+      }
+    }
+  }
+}

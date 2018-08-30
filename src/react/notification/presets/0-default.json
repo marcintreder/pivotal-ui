@@ -1,0 +1,26 @@
+{
+  "rootId": "notification1000060976692595",
+  "elements": {
+    "notification1000060976692595": {
+      "name": "Notification",
+      "props": {
+        "children": {
+          "uxpinPresetElementId": "notification-item1000010719341389"
+        },
+        "notification-item1000010719341389": {
+          "name": "Notification Item",
+          "props": {
+            "href": "http://media.giphy.com/media/Qvw9p4uX7IBy0/giphy.gif",
+            "children": {
+              "uxpinPresetElementId": "media1000029339783649"
+            }
+          }
+        },
+        "media1000029339783649": {
+          "name": "media",
+          "vAlign": "middle"
+        }
+      }
+    }
+  }
+}

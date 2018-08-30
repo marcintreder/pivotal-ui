@@ -1,0 +1,13 @@
+{
+  "rootId": "tab-1000052882014381",
+  "elements": {
+    "tab-1000052882014381": {
+      "name": "Tab",
+      "props": {
+        "eventKey": 1,
+        "title": "Tab 1",
+        "children": "Hello"
+      }
+    }
+  }
+}
