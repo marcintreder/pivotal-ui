@@ -1,0 +1,4760 @@
+{
+	categorizedComponents: [
+		{
+			components: [
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<Alerts bsStyle="info" dismissable withIcon show alertIcon="info">\n  Merge is a code based revolution in design!\n</Alerts>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/alerts',
+						documentation: {
+							path: 'src/react/alerts/alerts.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/alerts/alerts.js'
+						},
+						presets: [
+							{
+								path: 'src/react/alerts/presets/0-default.json'
+							}
+						]
+					},
+					name: 'Alerts',
+					presets: [
+						{
+							elements: {
+								alerts1000006825357914: {
+									name: 'Alerts',
+									props: {
+										alertIcon: 'info',
+										bsStyle: 'info',
+										children: 'Merge is a code based revolution in design!',
+										dismissable: true,
+										show: true,
+										withIcon: true
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'alerts1000006825357914'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'alertIcon',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'bsStyle',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'Close alert'
+							},
+							description: '',
+							isRequired: false,
+							name: 'closeLabel',
+							type: {
+								name: 'node',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: false
+							},
+							description: '',
+							isRequired: false,
+							name: 'dismissable',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'onDismiss',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'show',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: false
+							},
+							description: '',
+							isRequired: false,
+							name: 'withIcon',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<BackToTop alwaysVisible scrollableId="root" />'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/back-to-top',
+						documentation: {
+							path: 'src/react/back-to-top/back-to-top.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/back-to-top/back-to-top.js'
+						},
+						presets: [
+							{
+								path: 'src/react/back-to-top/presets/0-default.json'
+							}
+						]
+					},
+					name: 'BackToTop',
+					presets: [
+						{
+							elements: {
+								'back-to-top1000077781097733': {
+									name: 'Back-to-top',
+									props: {
+										alwaysVisible: true,
+										scollableId: 'root'
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'back-to-top1000077781097733'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'alwaysVisible',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'scrollableId',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<Checkbox>Hello</Checkbox>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/checkbox',
+						documentation: {
+							path: 'src/react/checkbox/checkbox.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/checkbox/checkbox.js'
+						},
+						presets: [
+							{
+								path: 'src/react/checkbox/presets/0-default.json'
+							}
+						]
+					},
+					name: 'Checkbox',
+					presets: [
+						{
+							elements: {
+								checkbox1000092148429842: {
+									name: 'Checkbox',
+									props: {
+										children: 'Merge'
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'checkbox1000092148429842'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'checked',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'className',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'disabled',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'defaultChecked',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'id',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'labelClassName',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'name',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'onChange',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'style',
+							type: {
+								name: 'object',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'checkbox'
+							},
+							description: '',
+							isRequired: false,
+							name: 'type',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: false
+							},
+							description: '',
+							isRequired: false,
+							name: 'indeterminate',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<div style={{ width: \'300px\' }}>\n  <CheckboxDropdown labels={[\'DEBUG\', \'WARNING\', \'ERROR\']} />\n</div>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/checkbox-dropdown',
+						documentation: {
+							path: 'src/react/checkbox-dropdown/checkbox-dropdown.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/checkbox-dropdown/checkbox-dropdown.js'
+						},
+						presets: [
+							{
+								path: 'src/react/checkbox-dropdown/presets/0-default.json'
+							}
+						]
+					},
+					name: 'CheckboxDropdown',
+					presets: [
+						{
+							elements: {
+								'checkbox-dropdown1000092148429842': {
+									name: 'Checkbox-dropdown',
+									props: {
+										labels: [
+											'DEBUG',
+											'WARNING',
+											'ERROR'
+										]
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'checkbox-dropdown1000092148429842'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'buttonAriaLabel',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'buttonClassName',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'flat',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'labelAriaLabel',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: function doNothing() {}
+							},
+							description: '',
+							isRequired: false,
+							name: 'onChange',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'normal'
+							},
+							description: '',
+							isRequired: false,
+							name: 'size',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'normal'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'large'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'small'
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'split',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'labels',
+							type: {
+								name: 'array',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<div>\n  <CopyToClipboard text="I got copied by a button">\n    <UIButton\n      kind="default"\n      flat\n      alt\n      iconPosition="left"\n      icon={<Iconography src="copy" />}\n    >\n      {\' \'}\n      Click Me To Copy\n    </UIButton>\n  </CopyToClipboard>\n</div>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/copy-to-clipboard',
+						documentation: {
+							path: 'src/react/copy-to-clipboard/copy-to-clipboard.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/copy-to-clipboard/copy-to-clipboard.js'
+						},
+						presets: [
+							{
+								path: 'src/react/copy-to-clipboard/presets/0-default.json'
+							}
+						]
+					},
+					name: 'CopyToClipboard',
+					presets: [
+						{
+							elements: {
+								'copy-to-clipboard1000047821644702': {
+									button1000072440215919: {
+										name: 'UI Button',
+										props: {
+											alt: true,
+											children: 'Click Me To Copy',
+											flat: true
+										}
+									},
+									name: 'Copy to Clipboard',
+									props: {
+										children: [
+											{
+												uxpinPresetElementId: 'button1000072440215919'
+											}
+										],
+										text: 'I got copied by a button'
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'copy-to-clipboard1000047821644702'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: true,
+							name: 'text',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'onClick',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'tooltip',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<Dialog animationDuration={400} width={300} />'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/dialog',
+						documentation: {
+							path: 'src/react/dialog/dialog.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/dialog/dialog.js'
+						},
+						presets: [
+							{
+								path: 'src/react/dialog/presets/0-default.json'
+							}
+						]
+					},
+					name: 'Dialog',
+					presets: [
+						{
+							elements: {
+								dialog1000053611981350: {
+									name: 'Dialog',
+									props: {
+										animationDuration: 400,
+										width: 300
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'dialog1000053611981350'
+						}
+					],
+					properties: [
+						{
+							defaultValue: {
+								value: 200
+							},
+							description: '',
+							isRequired: false,
+							name: 'animationDuration',
+							type: {
+								name: 'number',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
+							},
+							description: '',
+							isRequired: false,
+							name: 'animationEasing',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'ariaLabelledBy',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'children',
+							type: {
+								name: 'any',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'className',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'dialogClassName',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'hideOnBackdropClick',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'hideOnEscKeyDown',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: true,
+							name: 'onHide',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'show',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'title',
+							type: {
+								name: 'node',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'width',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'updateParentZIndex',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<div>\n  <Divider />\n  Content\n  <Divider size="large" />\n</div>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/divider',
+						documentation: {
+							path: 'src/react/divider/divider.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/divider/divider.js'
+						},
+						presets: [
+							{
+								path: 'src/react/divider/presets/0-default.json'
+							}
+						]
+					},
+					name: 'Divider',
+					presets: [
+						{
+							elements: {
+								divider1000071171651840: {
+									name: 'Divider',
+									props: {
+										size: 'large'
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'divider1000071171651840'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'inverse',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'size',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'large'
+											}
+										}
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<DraggableList className="my-list-class" innerClassName="my-item-class">\n  <DraggableListItem>Item 1</DraggableListItem>\n\n  <DraggableListItem>Item 5</DraggableListItem>\n\n  <DraggableListItem>Item 4</DraggableListItem>\n\n  <DraggableListItem>Item 6</DraggableListItem>\n\n  <DraggableListItem>Item 3</DraggableListItem>\n\n  <DraggableListItem>Item 2</DraggableListItem>\n</DraggableList>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/draggable-list',
+						documentation: {
+							path: 'src/react/draggable-list/draggable-list.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/draggable-list/draggable-list.js'
+						},
+						presets: [
+							{
+								path: 'src/react/draggable-list/presets/0-default.json'
+							}
+						]
+					},
+					name: 'DraggableList',
+					presets: [
+						{
+							elements: {
+								'draggable-list1000036231067872': {
+									'draggable-list-item1000061766069305': {
+										name: 'Draggable List Item',
+										props: {
+											children: 'Merge 3'
+										}
+									},
+									name: 'Draggable List',
+									props: {
+										children: [
+											{
+												uxpinPresetElementId: 'draggable-list-item1000061766069305'
+											}
+										],
+										className: 'my-list-class',
+										innerClassName: 'my-item-class'
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'draggable-list1000036231067872'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'onDragEnd',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'innerClassName',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<DraggableListItem>Merge</DraggableListItem>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/draggable-list-item',
+						documentation: {
+							path: 'src/react/draggable-list-item/draggable-list-item.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/draggable-list-item/draggable-list-item.js'
+						},
+						presets: [
+							{
+								path: 'src/react/draggable-list-item/presets/0-default.json'
+							}
+						]
+					},
+					name: 'DraggableListItem',
+					presets: [
+						{
+							elements: {
+								'draggable-list-item1000061766069305': {
+									name: 'Draggable List Item',
+									props: {
+										children: 'Merge'
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'draggable-list-item1000061766069305'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'draggingId',
+							type: {
+								name: 'number',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'onMouseEnter',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'onMouseLeave',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'onDragStart',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'onDragEnter',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'onDragEnd',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'grabbed',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'className',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<Grid>\n  <FlexCol fixed>\n    <Dropdown title="Float Dropdown Menu" floatMenu>\n      <a href="#">UXPin</a>\n      <a href="#">UXPin Design Systems</a>\n      <a href="#">UXPin Merge</a>\n    </Dropdown>\n  </FlexCol>\n\n  <FlexCol fixed>\n    <Dropdown title="Pinned Left" floatMenu menuAlign="left">\n      <a href="#">UXPin</a>\n      <a href="#">UXPin Design Systems</a>\n      <a href="#">UXPin Merge</a>\n    </Dropdown>\n  </FlexCol>\n\n  <FlexCol fixed>\n    <Dropdown title="Pinned Right" floatMenu menuAlign="right">\n      <a href="#">UXPin</a>\n      <a href="#">UXPin Design Systems</a>\n      <a href="#">UXPin Merge</a>\n    </Dropdown>\n  </FlexCol>\n</Grid>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/dropdown',
+						documentation: {
+							path: 'src/react/dropdown/dropdown.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/dropdown/dropdown.js'
+						},
+						presets: [
+							{
+								path: 'src/react/dropdown/presets/0-default.json'
+							}
+						]
+					},
+					name: 'Dropdown',
+					presets: [
+						{
+							elements: {
+								dropdown1000091231981883: {
+									name: 'Dropdown',
+									props: {
+										floatMenu: true,
+										menuAlign: 'left',
+										title: 'Float Dropdown Menu'
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'dropdown1000091231981883'
+						}
+					],
+					properties: [
+						{
+							defaultValue: {
+								value: false
+							},
+							description: '',
+							isRequired: false,
+							name: 'blockingScrim',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'border',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'buttonAriaLabel',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'buttonClassName',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: true
+							},
+							description: '',
+							isRequired: false,
+							name: 'closeOnMenuClick',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: false
+							},
+							description: '',
+							isRequired: false,
+							name: 'disableScrim',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'flat',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'floatMenu',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'chevron_down'
+							},
+							description: '',
+							isRequired: false,
+							name: 'icon',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'itemClassName',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'link',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'none'
+							},
+							description: '',
+							isRequired: false,
+							name: 'menuAlign',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'none'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'left'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'right'
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'onClick',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'onEntered',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'onExited',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'title',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'node',
+											structure: {}
+										},
+										{
+											name: 'object',
+											structure: {}
+										}
+									]
+								}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'toggle',
+							type: {
+								name: 'node',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: false
+							},
+							description: '',
+							isRequired: false,
+							name: 'scroll',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: true
+							},
+							description: '',
+							isRequired: false,
+							name: 'showIcon',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'normal'
+							},
+							description: '',
+							isRequired: false,
+							name: 'size',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'normal'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'large'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'small'
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'split',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<FlexCol col={1} alignment="middle" contentAlignment="middle" breakpoint="md">\n  <UIButton kind="brand" alt>\n    Grid Example 1\n  </UIButton>\n  <UIButton kind="brand" alt>\n    Grid Example 2\n  </UIButton>\n  <UIButton kind="brand" alt>\n    Grid Example 3\n  </UIButton>\n</FlexCol>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/flex-col',
+						documentation: {
+							path: 'src/react/flex-col/flex-col.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/flex-col/flex-col.js'
+						},
+						presets: [
+							{
+								path: 'src/react/flex-col/presets/0-default.json'
+							}
+						]
+					},
+					name: 'FlexCol',
+					presets: [
+						{
+							elements: {
+								button1000072440215919: {
+									name: 'UI Button',
+									props: {
+										alt: true,
+										children: 'Grid Example 1',
+										kind: 'brand'
+									}
+								},
+								'flex-col1000052797549979': {
+									name: 'Flex Col',
+									props: {
+										alignmenet: 'middle',
+										breakpoint: 'md',
+										children: {
+											uxpinPresetElementId: 'button1000072440215919'
+										},
+										col: 1,
+										contentAlignment: 'middle'
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'flex-col1000052797549979'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'col',
+							type: {
+								name: 'number',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'fixed',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'grow',
+							type: {
+								name: 'number',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'alignment',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'top'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'middle'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'bottom'
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'contentAlignment',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'top'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'middle'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'bottom'
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'breakpoint',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'sm'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'md'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'lg'
+											}
+										}
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<Flyout\n  animationDuration={300}\n  header={<h3>Flyout header</h3>}\n  headerClassName="header-class"\n  bodyClassName="body-class"\n  onHide={() => console.log(\'hidden\')}\n>\n  <h1>Flyout content</h1>\n</Flyout>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/flyout',
+						documentation: {
+							path: 'src/react/flyout/flyout.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/flyout/flyout.js'
+						},
+						presets: [
+							{
+								path: 'src/react/flyout/presets/0-default.json'
+							}
+						]
+					},
+					name: 'Flyout',
+					presets: [
+						{
+							elements: {
+								'flyout-content1000052287709151': {
+									name: 'Flyout',
+									props: {
+										animationDuration: 300,
+										bodyClassName: 'body-class',
+										children: 'Flyout Content',
+										header: 'Hello',
+										headerClassName: 'header-class'
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'flyout-content1000052287709151'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'animationDuration',
+							type: {
+								name: 'number',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'animationEasing',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'bodyClassName',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'children',
+							type: {
+								name: 'any',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'dialogClassName',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'Close'
+							},
+							description: '',
+							isRequired: false,
+							name: 'buttonAriaLabel',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'header',
+							type: {
+								name: 'any',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'headerClassName',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'close'
+							},
+							description: '',
+							isRequired: false,
+							name: 'iconSrc',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: true,
+							name: 'onHide',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'show',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'width',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<FlyoutContainer />'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/flyout-container',
+						documentation: {
+							path: 'src/react/flyout-container/flyout-container.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/flyout-container/flyout-container.js'
+						},
+						presets: [
+							{
+								path: 'src/react/flyout-container/presets/0-default.json'
+							}
+						]
+					},
+					name: 'FlyoutContainer',
+					presets: [
+						{
+							elements: {
+								'flyout-container1000031751800064': {
+									name: 'Flyout Container'
+								}
+							},
+							name: 'default',
+							rootId: 'flyout-container1000031751800064'
+						}
+					],
+					properties: []
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<Form\n  {...{\n    fields: {\n      email: {\n        label: \'Email\',\n        initialValue: \'my@me.com\'\n      }\n    }\n  }}\n>\n  {({ fields, canSubmit, reset }) => {\n    return (\n      <div>\n        {fields.email}\n        <Grid>\n          <FlexCol />\n          <FlexCol fixed>\n            <div>\n              <UIButton kind="primary" alt onClick={reset}>\n                Reset\n              </UIButton>\n              <UIButton kind="primary" disabled={!canSubmit()} type="submit">\n                Subscribe\n              </UIButton>\n            </div>\n          </FlexCol>\n        </Grid>\n      </div>\n    );\n  }}\n</Form>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/form',
+						documentation: {
+							path: 'src/react/form/form.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/form/form.js'
+						},
+						presets: []
+					},
+					name: 'Form',
+					presets: [],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'afterSubmit',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'fields',
+							type: {
+								name: 'object',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'onModified',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'onSubmit',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'onSubmitError',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'resetOnSubmit',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<Grid gutter justifyContent="center">\n  <UIButton kind="danger" alt>\n    Grid Example 1\n  </UIButton>\n  <UIButton kind="danger">Grid Example 2</UIButton>\n</Grid>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/grid',
+						documentation: {
+							path: 'src/react/grid/grid.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/grid/grid.js'
+						},
+						presets: [
+							{
+								path: 'src/react/grid/presets/0-default.json'
+							}
+						]
+					},
+					name: 'Grid',
+					presets: [
+						{
+							elements: {
+								button1000072440215919: {
+									button1000072440215919: {
+										name: 'UI Button',
+										props: {
+											alt: true,
+											children: 'Grid Example 2',
+											kind: 'danger'
+										}
+									},
+									name: 'UI Button',
+									props: {
+										alt: true,
+										children: 'Grid Example 1',
+										kind: 'danger'
+									}
+								},
+								grid1000052590512276: {
+									name: 'Grid',
+									props: {
+										children: {
+											uxpinPresetElementId: 'button1000072440215919'
+										},
+										gutter: true,
+										justifyContent: 'center'
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'grid1000052590512276'
+						}
+					],
+					properties: [
+						{
+							defaultValue: {
+								value: true
+							},
+							description: '',
+							isRequired: false,
+							name: 'gutter',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'justifyContent',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'flex-start'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'flex-end'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'center'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'space-between'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'space-around'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'space-evenly'
+											}
+										}
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<Iconography src="add" />'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/iconography',
+						documentation: {
+							path: 'src/react/iconography/iconography.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/iconography/iconography.js'
+						},
+						presets: [
+							{
+								path: 'src/react/iconography/presets/0-default.json'
+							}
+						]
+					},
+					name: 'Iconography',
+					presets: [
+						{
+							elements: {
+								iconography1000095649168661: {
+									name: 'Iconography',
+									props: {
+										src: 'add'
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'iconography1000095649168661'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: true,
+							name: 'src',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: {}
+							},
+							description: '',
+							isRequired: false,
+							name: 'style',
+							type: {
+								name: 'object',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'middle'
+							},
+							description: '',
+							isRequired: false,
+							name: 'verticalAlign',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'middle'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'baseline'
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'inherit'
+							},
+							description: '',
+							isRequired: false,
+							name: 'size',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<Image\n  src="http://placehold.it/1000x100"\n  responsive={true}\n  href="http://google.com"\n  alt="A beautiful placeholder"\n/>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/image',
+						documentation: {
+							path: 'src/react/image/image.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/image/image.js'
+						},
+						presets: [
+							{
+								path: 'src/react/image/presets/0-default.json'
+							}
+						]
+					},
+					name: 'Image',
+					presets: [
+						{
+							elements: {
+								image1000061951166990: {
+									name: 'Image',
+									props: {
+										alt: 'A beautiful placeholder',
+										href: 'http://google.com',
+										responsive: true,
+										src: 'http://placehold.it/1000x100'
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'image1000061951166990'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'responsive',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'href',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'alt',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: true,
+							name: 'src',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<Input size="md" icon="person" style={{ width: \'300px\' }} />'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/input',
+						documentation: {
+							path: 'src/react/input/input.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/input/input.js'
+						},
+						presets: [
+							{
+								path: 'src/react/input/presets/0-default.json'
+							}
+						]
+					},
+					name: 'Input',
+					presets: [
+						{
+							elements: {
+								input1000008198848353: {
+									name: 'Input',
+									props: {
+										icon: 'person',
+										size: 'md',
+										style: {
+											width: '300px'
+										}
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'input1000008198848353'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'size',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'icon',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<List kind="list-breadcrumb">\n  <ListItem>\n    <a href="#">Home</a>\n  </ListItem>\n  <ListItem>\n    <a href="#react">React</a>\n  </ListItem>\n  <ListItem className="current">\n    <span>Lists</span>\n  </ListItem>\n</List>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/list',
+						documentation: {
+							path: 'src/react/list/list.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/list/list.js'
+						},
+						presets: [
+							{
+								path: 'src/react/list/presets/0-default.json'
+							}
+						]
+					},
+					name: 'List',
+					presets: [
+						{
+							elements: {
+								'list-item1000032984160180': {
+									name: 'List Item',
+									props: {
+										children: 'Merge',
+										className: 'current'
+									}
+								},
+								list1000095673228112: {
+									name: 'List',
+									props: {
+										children: {
+											uxpinPresetElementId: 'list-item1000032984160180'
+										},
+										kind: 'list-breadcrumb'
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'list1000095673228112'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'kind',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'list-unstyled-ordered'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'list-unstyled-unordered'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'list-inline'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'list-breadcrumb'
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'className',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'unstyled',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'divider',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<ListItem>Item 1</ListItem>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/list-item',
+						documentation: {
+							path: 'src/react/list-item/list-item.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/list-item/list-item.js'
+						},
+						presets: [
+							{
+								path: 'src/react/list-item/presets/0-default.json'
+							}
+						]
+					},
+					name: 'ListItem',
+					presets: [
+						{
+							elements: {
+								'list-item1000032984160180': {
+									name: 'List Item',
+									props: {
+										children: 'Item 1'
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'list-item1000032984160180'
+						}
+					],
+					properties: []
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<ModalContainer />'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/modal-container',
+						documentation: {
+							path: 'src/react/modal-container/modal-container.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/modal-container/modal-container.js'
+						},
+						presets: [
+							{
+								path: 'src/react/modal-container/presets/0-default.json'
+							}
+						]
+					},
+					name: 'ModalContainer',
+					presets: [
+						{
+							elements: {
+								'modal-container1000049967489626': {
+									name: 'Modal Container',
+									props: {}
+								}
+							},
+							name: 'default',
+							rootId: 'modal-container1000049967489626'
+						}
+					],
+					properties: []
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<Notification>\n  <NotificationItem href="http://media.giphy.com/media/Qvw9p4uX7IBy0/giphy.gif">\n    <Media\n      vAlign="middle"\n      image={<h3 className="mvn btn btn-brand btn-sm phl">New</h3>}\n    >\n      <h5 className="media-heading mbn type-dark-2">Notification</h5>\n      <p className="type-sm type-neutral-5 mvn">Click for Gif</p>\n    </Media>\n  </NotificationItem>\n</Notification>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/notification',
+						documentation: {
+							path: 'src/react/notification/notification.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/notification/notification.js'
+						},
+						presets: [
+							{
+								path: 'src/react/notification/presets/0-default.json'
+							}
+						]
+					},
+					name: 'Notification',
+					presets: [
+						{
+							elements: {
+								notification1000060976692595: {
+									name: 'Notification',
+									props: {
+										children: {
+											uxpinPresetElementId: 'notification-item1000010719341389'
+										},
+										media1000029339783649: {
+											name: 'media',
+											vAlign: 'middle'
+										},
+										'notification-item1000010719341389': {
+											name: 'Notification Item',
+											props: {
+												children: {
+													uxpinPresetElementId: 'media1000029339783649'
+												},
+												href: 'http://media.giphy.com/media/Qvw9p4uX7IBy0/giphy.gif'
+											}
+										}
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'notification1000060976692595'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'size',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'h1'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'h2'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'h3'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'h4'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'h5'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'h6'
+											}
+										}
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<NotificationAlert>\n  <NotificationItem href="http://media.giphy.com/media/Qvw9p4uX7IBy0/giphy.gif">\n    <Media\n      vAlign="middle"\n      image={\n        <Iconography\n          src="warning"\n          className="h4 mrm"\n          style={{ fill: \'#B38F1B\' }}\n        />\n      }\n    >\n      <h5 className="media-heading mbn type-dark-2">WARNING</h5>\n      <p className="type-sm type-neutral-5 mvn">Click for Cute Gif</p>\n    </Media>\n  </NotificationItem>\n</NotificationAlert>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/notification-alert',
+						documentation: {
+							path: 'src/react/notification-alert/notification-alert.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/notification-alert/notification-alert.js'
+						},
+						presets: [
+							{
+								path: 'src/react/notification-alert/presets/0-default.json'
+							}
+						]
+					},
+					name: 'NotificationAlert',
+					presets: [
+						{
+							elements: {
+								'notification-alert1000060976692595': {
+									name: 'Notification',
+									props: {
+										children: {
+											uxpinPresetElementId: 'notification-item1000010719341389'
+										},
+										iconography1000095649168661: {
+											className: 'h4 mrm',
+											name: 'Iconography',
+											src: 'warning',
+											style: {
+												fill: '#B38F1B'
+											}
+										},
+										media1000029339783649: {
+											image: {
+												uxpinPresetElementId: 'iconography1000095649168661'
+											},
+											name: 'media',
+											vAlign: 'middle'
+										},
+										'notification-item1000010719341389': {
+											name: 'Notification Item',
+											props: {
+												children: {
+													uxpinPresetElementId: 'media1000029339783649'
+												},
+												href: 'http://media.giphy.com/media/Qvw9p4uX7IBy0/giphy.gif'
+											}
+										}
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'notification-alert1000060976692595'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'size',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'h1'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'h2'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'h3'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'h4'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'h5'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'h6'
+											}
+										}
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<NotificationItem key={1}>Stuff</NotificationItem>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/notification-item',
+						documentation: {
+							path: 'src/react/notification-item/notification-item.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/notification-item/notification-item.js'
+						},
+						presets: [
+							{
+								path: 'src/react/notification-item/presets/0-default.json'
+							}
+						]
+					},
+					name: 'NotificationItem',
+					presets: [
+						{
+							elements: {
+								'notification-item1000010719341389': {
+									name: 'Notification Item',
+									props: {
+										children: 'Stuff',
+										key: 1
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'notification-item1000010719341389'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'href',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<p>\n  Check out this\n  <OverlayTrigger\n    placement="left"\n    overlay={<Tooltip>I should be on the left</Tooltip>}\n  >\n    <span className="overlay-trigger" tabIndex="0">\n      {\' \'}\n      tooltip on the left.\n    </span>\n  </OverlayTrigger>\n</p>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/overlay-trigger',
+						documentation: {
+							path: 'src/react/overlay-trigger/overlay-trigger.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/overlay-trigger/overlay-trigger.js'
+						},
+						presets: []
+					},
+					name: 'OverlayTrigger',
+					presets: [],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'delay',
+							type: {
+								name: 'number',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'delayHide',
+							type: {
+								name: 'number',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'delayShow',
+							type: {
+								name: 'number',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'disableScrim',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: false
+							},
+							description: '',
+							isRequired: false,
+							name: 'display',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: false
+							},
+							description: '',
+							isRequired: false,
+							name: 'isSticky',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'onEntered',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'onExited',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'overlay',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'node',
+											structure: {}
+										},
+										{
+											name: 'object',
+											structure: {}
+										}
+									]
+								}
+							}
+						},
+						{
+							defaultValue: {
+								value: true
+							},
+							description: '',
+							isRequired: false,
+							name: 'pin',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'right'
+							},
+							description: '',
+							isRequired: false,
+							name: 'placement',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'top'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'bottom'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'left'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'right'
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'dark'
+							},
+							description: '',
+							isRequired: false,
+							name: 'theme',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'light'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'dark'
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'hover'
+							},
+							description: '',
+							isRequired: false,
+							name: 'trigger',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'hover'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'click'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'focus'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'manual'
+											}
+										}
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<div className="bg-neutral-8 pal">\n  <Panel\n    {...{ header: \'Domains\', footer: <a href="#">Click here for more info</a> }}\n  >\n    These are the domains.\n  </Panel>\n</div>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/panel',
+						documentation: {
+							path: 'src/react/panel/panel.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/panel/panel.js'
+						},
+						presets: []
+					},
+					name: 'Panel',
+					presets: [],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'title',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: []
+							},
+							description: '',
+							isRequired: false,
+							name: 'titleCols',
+							type: {
+								name: 'array',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'titleClassName',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'panelClassName',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'header',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: []
+							},
+							description: '',
+							isRequired: false,
+							name: 'headerCols',
+							type: {
+								name: 'array',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'headerClassName',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'loading',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'bodyClassName',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'footer',
+							type: {
+								name: 'node',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'footerClassName',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<div style={{ width: \'300px\' }}>\n  <ProgressBar value={10} />\n</div>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/progress-bar',
+						documentation: {
+							path: 'src/react/progress-bar/progress-bar.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/progress-bar/progress-bar.js'
+						},
+						presets: [
+							{
+								path: 'src/react/progress-bar/presets/0-default.json'
+							}
+						]
+					},
+					name: 'ProgressBar',
+					presets: [
+						{
+							elements: {
+								'progress-bar-1000088317493493': {
+									name: 'Progress Bar',
+									props: {
+										value: 10
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'progress-bar-1000088317493493'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'barClassName',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: 0
+							},
+							description: '',
+							isRequired: false,
+							name: 'value',
+							type: {
+								name: 'number',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<Radio value="others">Others</Radio>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/radio',
+						documentation: {
+							path: 'src/react/radio/radio.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/radio/radio.js'
+						},
+						presets: [
+							{
+								path: 'src/react/radio/presets/0-default.json'
+							}
+						]
+					},
+					name: 'Radio',
+					presets: [
+						{
+							elements: {
+								'radio-1000088317493493': {
+									name: 'Radio',
+									props: {
+										children: 'Others',
+										value: 'others'
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'radio-1000088317493493'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'checked',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'className',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'disabled',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'defaultChecked',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'id',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'labelClassName',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'name',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'onChange',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'style',
+							type: {
+								name: 'object',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: true,
+							name: 'value',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<RadioGroup\n  value="UXPin"\n  name="radio-group"\n  onChange={event => console.log(event.target.value)}\n>\n  <Radio value="UXPin">UXPin</Radio>\n  <Radio value="Merge">Merge</Radio>\n  <Radio value="UXPin Merge">UXPin Merge</Radio>\n</RadioGroup>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/radio-group',
+						documentation: {
+							path: 'src/react/radio-group/radio-group.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/radio-group/radio-group.js'
+						},
+						presets: [
+							{
+								path: 'src/react/radio-group/presets/0-default.json'
+							}
+						]
+					},
+					name: 'RadioGroup',
+					presets: [
+						{
+							elements: {
+								'radio-1000088317493493': {
+									name: 'Radio',
+									props: {
+										value: 'UXPin Merge'
+									}
+								},
+								'radio-group-1000098659777573': {
+									name: 'Radio Group',
+									props: {
+										children: {
+											uxpinPresetElementId: 'radio-1000088317493493'
+										},
+										name: 'radio-group',
+										value: 'UXPin'
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'radio-group-1000098659777573'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'id',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'name',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'onChange',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'value',
+							type: {
+								name: 'any',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<select className="input-lg" style={{ width: \'300px\' }}>\n  <option>Option 1</option>\n  <option>Option 2</option>\n</select>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/select',
+						documentation: {
+							path: 'src/react/select/select.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/select/select.js'
+						},
+						presets: []
+					},
+					name: 'Select',
+					presets: [],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'defaultValue',
+							type: {
+								name: 'any',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'name',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'onChange',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'onEntered',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'onExited',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: true,
+							name: 'options',
+							type: {
+								name: 'array',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'value',
+							type: {
+								name: 'any',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<Tab eventKey={1} title="Tab 1">\n  Hello\n</Tab>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/tab',
+						documentation: {
+							path: 'src/react/tab/tab.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/tab/tab.js'
+						},
+						presets: [
+							{
+								path: 'src/react/tab/presets/0-default.json'
+							}
+						]
+					},
+					name: 'Tab',
+					presets: [
+						{
+							elements: {
+								'tab-1000052882014381': {
+									name: 'Tab',
+									props: {
+										children: 'Hello',
+										eventKey: 1,
+										title: 'Tab 1'
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'tab-1000052882014381'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'aria-labelledby',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'className',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'disabled',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'eventKey',
+							type: {
+								name: 'any',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: function () {}
+							},
+							description: '',
+							isRequired: false,
+							name: 'onEntered',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: function () {}
+							},
+							description: '',
+							isRequired: false,
+							name: 'onExited',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'tabClassName',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: true,
+							name: 'title',
+							type: {
+								name: 'node',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: 'const data = [\n  {\n    instances: \'1\',\n    bar: 11,\n    title: \'foo\'\n  },\n  {\n    instances: \'3\',\n    bar: 7,\n    title: \'sup\'\n  },\n  {\n    title: \'yee\',\n    instances: \'2\',\n    bar: 8\n  }\n];\n<TableBasic data={data} />;'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/table-basic',
+						documentation: {
+							path: 'src/react/table-basic/table-basic.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/table-basic/table-basic.js'
+						},
+						presets: [
+							{
+								path: 'src/react/table-basic/presets/0-default.json'
+							}
+						]
+					},
+					name: 'TableBasic',
+					presets: [
+						{
+							elements: {
+								'table-basic-1000093495797087': {
+									name: 'Table Basic',
+									props: {
+										data: []
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'table-basic-1000093495797087'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'columns',
+							type: {
+								name: 'array',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: true,
+							name: 'data',
+							type: {
+								name: 'array',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: 'const columns = [\n  {\n    attribute: \'title\',\n    displayName: \'Title\',\n    sortable: false\n  },\n  {\n    attribute: \'instances\',\n    sortable: true\n  },\n  {\n    attribute: \'bar\',\n    displayName: \'Bar\',\n    sortable: true,\n    sortBy: function(value) {\n      return -value;\n    }\n  },\n  {\n    attribute: \'unsortable\',\n    sortable: false\n  }\n];\nconst data = [\n  {\n    instances: \'1\',\n    bar: 11,\n    title: \'foo\',\n    unsortable: \'14\'\n  },\n  {\n    instances: \'3\',\n    bar: 7,\n    title: \'sup\',\n    unsortable: \'22\'\n  },\n  {\n    title: \'yee\',\n    instances: \'2\',\n    bar: 8,\n    unsortable: \'1\'\n  }\n];\n\n<TableFlex columns={columns} data={data} defaultSort="instances" />;'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/table-flex',
+						documentation: {
+							path: 'src/react/table-flex/table-flex.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/table-flex/table-flex.js'
+						},
+						presets: [
+							{
+								path: 'src/react/table-flex/presets/0-default.json'
+							}
+						]
+					},
+					name: 'TableFlex',
+					presets: [
+						{
+							elements: {
+								'table-basic-1000093495797087': {
+									data: []
+								}
+							},
+							name: 'default',
+							rootId: 'table-basic-1000093495797087'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'columns',
+							type: {
+								name: 'array',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: true,
+							name: 'data',
+							type: {
+								name: 'array',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: 'const columns = [\n  {\n    attribute: \'title\',\n    displayName: \'Title\',\n    sortable: false\n  },\n  {\n    attribute: \'instances\',\n    sortable: true\n  },\n  {\n    attribute: \'bar\',\n    displayName: \'Bar\',\n    sortable: true,\n    sortBy: function(value) {\n      return -value;\n    }\n  },\n  {\n    attribute: \'unsortable\',\n    sortable: false\n  }\n];\nconst data = [\n  {\n    instances: \'1\',\n    bar: 11,\n    title: \'foo\',\n    unsortable: \'14\'\n  },\n  {\n    instances: \'3\',\n    bar: 7,\n    title: \'sup\',\n    unsortable: \'22\'\n  },\n  {\n    title: \'yee\',\n    instances: \'2\',\n    bar: 8,\n    unsortable: \'1\'\n  }\n];\n\n<TableSortable columns={columns} data={data} defaultSort="instances" />;'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/table-sortable',
+						documentation: {
+							path: 'src/react/table-sortable/table-sortable.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/table-sortable/table-sortable.js'
+						},
+						presets: [
+							{
+								path: 'src/react/table-sortable/presets/0-default.json'
+							}
+						]
+					},
+					name: 'TableSortable',
+					presets: [
+						{
+							elements: {
+								'table-basic-1000093495797087': {
+									data: []
+								}
+							},
+							name: 'default',
+							rootId: 'table-basic-1000093495797087'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'columns',
+							type: {
+								name: 'array',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: true,
+							name: 'data',
+							type: {
+								name: 'array',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'defaultSort',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: 'const columns = [\n  {\n    attribute: \'title\',\n    displayName: \'Title\',\n    sortable: true,\n    sortBy: function(value) {\n      return -value;\n    }\n  },\n  {\n    attribute: \'instances\',\n    sortable: true\n  },\n  {\n    attribute: \'bar\',\n    displayName: \'Bar\',\n    sortable: true,\n    sortBy: function(value) {\n      return -value;\n    }\n  },\n  {\n    attribute: \'unsortable\',\n    sortable: false\n  }\n];\nconst data = [\n  {\n    instances: \'1\',\n    bar: 11,\n    title: \'foo\',\n    unsortable: \'14\'\n  },\n  {\n    instances: \'3\',\n    bar: 7,\n    title: \'sup\',\n    unsortable: \'22\'\n  },\n  {\n    title: \'yee\',\n    instances: \'2\',\n    bar: 8,\n    unsortable: \'1\'\n  }\n];\n\n<TableSortableFlex columns={columns} data={data} defaultSort="instances" />;'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/table-sortable-flex',
+						documentation: {
+							path: 'src/react/table-sortable-flex/table-sortable-flex.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/table-sortable-flex/table-sortable-flex.js'
+						},
+						presets: [
+							{
+								path: 'src/react/table-sortable-flex/presets/0-default.json'
+							}
+						]
+					},
+					name: 'TableSortableFlex',
+					presets: [
+						{
+							elements: {
+								'table-sortable-1000008201970716': {
+									Name: 'Table Sortable',
+									props: {
+										data: []
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'table-sortable-1000008201970716'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'columns',
+							type: {
+								name: 'array',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: true,
+							name: 'data',
+							type: {
+								name: 'array',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'defaultSort',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<TabsUxpin defaultActiveKey={1} tabType="left" position="left" tabWidth={3}>\n  <Tab eventKey={1} title="Tab 1">\n    Wow!\n  </Tab>\n  <Tab eventKey={2} title="Tab 2">\n    <h2>Neat!</h2>\n    <span>So much content.</span>\n  </Tab>\n  <Tab eventKey={3} title="Tab 3">\n    <h2>Boom!</h2>\n    <span>So much content.</span>\n  </Tab>\n</TabsUxpin>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/tabs-uxpin',
+						documentation: {
+							path: 'src/react/tabs-uxpin/tabs-uxpin.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/tabs-uxpin/tabs-uxpin.js'
+						},
+						presets: []
+					},
+					name: 'TabsUxpin',
+					presets: [],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'actions',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'node',
+											structure: {}
+										},
+										{
+											name: 'object',
+											structure: {}
+										}
+									]
+								}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'activeKey',
+							type: {
+								name: 'number',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'animation',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'defaultActiveKey',
+							type: {
+								name: 'any',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'id',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'largeScreenClassName',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'onSelect',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'paneWidth',
+							type: {
+								name: 'number',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'position',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'top'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'left'
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'responsiveBreakpoint',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'xs'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'sm'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'md'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'lg'
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'smallScreenClassName',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'tabType',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'simple'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'simple-alt'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'left'
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'tabWidth',
+							type: {
+								name: 'number',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: 'const isOdd = (data, userInput) => {\n  return data.filter(dataNum => {\n    const dataStr = dataNum.toString();\n    return dataStr.indexOf(userInput) != -1;\n  });\n};\nconst renderData = dataItem =>\n  dataItem.map((item, i) => <li key={i}>{item}</li>);\n\n<TextFilter\n  {...{\n    data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 5, 15, 124, 215, 345, 4565, 12],\n    filter: isOdd,\n    renderFilteredData: renderData\n  }}\n/>;'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/text-filter',
+						documentation: {
+							path: 'src/react/text-filter/text-filter.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/text-filter/text-filter.js'
+						},
+						presets: []
+					},
+					name: 'TextFilter',
+					presets: [],
+					properties: [
+						{
+							defaultValue: {
+								value: []
+							},
+							description: '',
+							isRequired: false,
+							name: 'data',
+							type: {
+								name: 'array',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'emptyState',
+							type: {
+								name: 'node',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: data => data
+							},
+							description: '',
+							isRequired: false,
+							name: 'filter',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'Filter...'
+							},
+							description: '',
+							isRequired: false,
+							name: 'filterPlaceholderText',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: () => null
+							},
+							description: '',
+							isRequired: false,
+							name: 'renderFilteredData',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<Toggle />'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/toggle',
+						documentation: {
+							path: 'src/react/toggle/toggle.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/toggle/toggle.js'
+						},
+						presets: [
+							{
+								path: 'src/react/toggle/presets/0-default.json'
+							}
+						]
+					},
+					name: 'Toggle',
+					presets: [
+						{
+							elements: {
+								'toggle-1000078583040530': {
+									Name: 'Toggle',
+									props: {}
+								}
+							},
+							name: 'default',
+							rootId: 'toggle-1000078583040530'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'id',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'medium'
+							},
+							description: '',
+							isRequired: false,
+							name: 'size',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'small'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'medium'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'large'
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'checkbox'
+							},
+							description: '',
+							isRequired: false,
+							name: 'type',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'checkbox'
+											}
+										}
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<Tooltip size="md" visible={true}>\n  Merge!\n</Tooltip>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/tooltip',
+						documentation: {
+							path: 'src/react/tooltip/tooltip.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/tooltip/tooltip.js'
+						},
+						presets: [
+							{
+								path: 'src/react/tooltip/presets/0-default.json'
+							}
+						]
+					},
+					name: 'Tooltip',
+					presets: [
+						{
+							elements: {
+								'tooltip-1000067066459040': {
+									Name: 'Tooltip',
+									props: {
+										size: 'md',
+										visible: true
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'tooltip-1000067066459040'
+						}
+					],
+					properties: [
+						{
+							defaultValue: {
+								value: true
+							},
+							description: '',
+							isRequired: false,
+							name: 'visible',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'auto'
+							},
+							description: '',
+							isRequired: false,
+							name: 'size',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'auto'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'sm'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'md'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'lg'
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							defaultValue: {
+								value: false
+							},
+							description: '',
+							isRequired: false,
+							name: 'isSticky',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<Grid>\n  <FlexCol fixed>\n    <TooltipTrigger tooltip="Merge is awesome!">\n      <button className="btn btn-default">Hover over me</button>\n    </TooltipTrigger>\n  </FlexCol>\n  <FlexCol fixed>\n    <TooltipTrigger tooltip="Merge is awesome!" trigger="click">\n      <button className="btn btn-default">Click me</button>\n    </TooltipTrigger>\n  </FlexCol>\n  <FlexCol fixed>\n    <TooltipTrigger\n      tooltip="Merge is awesome!"\n      isSticky={true}\n      placement="right"\n    >\n      <button className="btn btn-default">Hover over me too!</button>\n    </TooltipTrigger>\n  </FlexCol>\n</Grid>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/tooltip-trigger',
+						documentation: {
+							path: 'src/react/tooltip-trigger/tooltip-trigger.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/tooltip-trigger/tooltip-trigger.js'
+						},
+						presets: []
+					},
+					name: 'TooltipTrigger',
+					presets: [],
+					properties: [
+						{
+							defaultValue: {
+								value: false
+							},
+							description: '',
+							isRequired: false,
+							name: 'display',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: true,
+							name: 'tooltip',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'node',
+											structure: {}
+										},
+										{
+											name: 'object',
+											structure: {}
+										}
+									]
+								}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'top'
+							},
+							description: '',
+							isRequired: false,
+							name: 'placement',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'left'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'right'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'bottom'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'top'
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'hover'
+							},
+							description: '',
+							isRequired: false,
+							name: 'trigger',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'manual'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'hover'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'click'
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							defaultValue: {
+								value: 1000
+							},
+							description: '',
+							isRequired: false,
+							name: 'clickHideDelay',
+							type: {
+								name: 'number',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: () => {}
+							},
+							description: '',
+							isRequired: false,
+							name: 'onClick',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: () => {}
+							},
+							description: '',
+							isRequired: false,
+							name: 'onEntered',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: () => {}
+							},
+							description: '',
+							isRequired: false,
+							name: 'onExited',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'dark'
+							},
+							description: '',
+							isRequired: false,
+							name: 'theme',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'dark'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'light'
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'auto'
+							},
+							description: '',
+							isRequired: false,
+							name: 'size',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'auto'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'sm'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'md'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'lg'
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							defaultValue: {
+								value: false
+							},
+							description: '',
+							isRequired: false,
+							name: 'isSticky',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: '<UIButton kind="primary" large icon={<Iconography src="add" />}>\n  Merge!\n</UIButton>'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/UIButton',
+						documentation: {
+							path: 'src/react/UIButton/UIButton.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/UIButton/UIButton.js'
+						},
+						presets: [
+							{
+								path: 'src/react/UIButton/presets/0-default.json'
+							}
+						]
+					},
+					name: 'UIButton',
+					presets: [
+						{
+							elements: {
+								button1000072440215919: {
+									name: 'UI Button',
+									props: {
+										children: 'Merge!',
+										kind: 'primary',
+										large: true
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'button1000072440215919'
+						}
+					],
+					properties: [
+						{
+							description: '',
+							isRequired: false,
+							name: 'alt',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'flat',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'href',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'icon',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'node',
+											structure: {}
+										},
+										{
+											name: 'object',
+											structure: {}
+										}
+									]
+								}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'iconOnly',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'default'
+							},
+							description: '',
+							isRequired: false,
+							name: 'kind',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'default'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'danger'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'primary'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'brand'
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'large',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'small',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'fullWidth',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'left'
+							},
+							description: '',
+							isRequired: false,
+							name: 'iconPosition',
+							type: {
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'literal',
+											structure: {
+												value: 'left'
+											}
+										},
+										{
+											name: 'literal',
+											structure: {
+												value: 'right'
+											}
+										}
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					documentation: {
+						examples: [
+							{
+								code: 'const pages = [\n  {\n    render() {\n      return (\n        <span>\n          This is the first page of the wizard. By default, the wizard cannot be\n          cancelled. The user cannot go back from the first page. Click the Next\n          button to proceed.\n        </span>\n      );\n    }\n  },\n  {\n    render() {\n      return (\n        <span>\n          This is the second page of the wizard. The user can click Back or\n          Next.\n        </span>\n      );\n    }\n  },\n  {\n    render() {\n      return (\n        <span>\n          This is the third and final page of the wizard. The user can click\n          Back or Finish\n        </span>\n      );\n    }\n  }\n];\n\n<Wizard pages={pages} style={{ border: \'1px solid #ccc\', padding: \'8px\' }} />;'
+							}
+						]
+					},
+					info: {
+						dirPath: 'src/react/wizard',
+						documentation: {
+							path: 'src/react/wizard/wizard.md'
+						},
+						implementation: {
+							framework: 'reactjs',
+							lang: 'javascript',
+							path: 'src/react/wizard/wizard.js'
+						},
+						presets: []
+					},
+					name: 'Wizard',
+					presets: [],
+					properties: [
+						{
+							defaultValue: {
+								value: []
+							},
+							description: '',
+							isRequired: false,
+							name: 'pages',
+							type: {
+								name: 'array',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'cancel',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'Cancel'
+							},
+							description: '',
+							isRequired: false,
+							name: 'cancelText',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: function noop() {}
+							},
+							description: '',
+							isRequired: false,
+							name: 'finish',
+							type: {
+								name: 'func',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'Finish'
+							},
+							description: '',
+							isRequired: false,
+							name: 'finishText',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: false
+							},
+							description: '',
+							isRequired: false,
+							name: 'saving',
+							type: {
+								name: 'boolean',
+								structure: {}
+							}
+						},
+						{
+							defaultValue: {
+								value: 'Saving'
+							},
+							description: '',
+							isRequired: false,
+							name: 'savingText',
+							type: {
+								name: 'string',
+								structure: {}
+							}
+						}
+					]
+				}
+			],
+			name: 'General'
+		}
+	],
+	name: ''
+}
+
