@@ -1,0 +1,15 @@
+{
+  "rootId": "flyout-content1000052287709151",
+  "elements": {
+    "flyout-content1000052287709151": {
+      "name": "Flyout",
+      "props": {
+        "animationDuration": 300,
+        "header": "Hello",
+        "headerClassName": "header-class",
+        "bodyClassName": "body-class",
+        "children": "Flyout Content"
+      }
+    }
+  }
+}

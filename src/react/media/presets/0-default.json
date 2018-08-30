@@ -1,0 +1,23 @@
+{
+  "rootId": "media1000029339783649",
+  "elements": {
+    "media1000029339783649": {
+      "name": "Media",
+      "props": {
+        "image": {
+          "uxpinPresetElementId": "image1000061951166990"
+        },
+        "children": "Science has not yet mastered prophecy."
+      }
+    },
+    "image1000061951166990": {
+      "name": "Image",
+      "props": {
+        "src": "http://placehold.it/1000x100",
+        "responsive": true,
+        "href": "http://google.com",
+        "alt": "A beautiful placeholder"
+      }
+    }
+  }
+}

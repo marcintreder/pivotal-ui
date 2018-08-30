@@ -1,0 +1,35 @@
+{
+  "rootId": "list1000095673228112",
+  "elements": {
+    "list1000095673228112": {
+      "name": "List",
+      "props": {
+        "kind": "list-breadcrumb",
+        "children": {
+          "uxpinPresetElementId": "list-item1000032984160180",
+          "uxpinPresetElementId": "list-item1000032984160180",
+          "uxpinPresetElementId": "list-item1000032984160180"
+        }
+      }
+    },
+    "list-item1000032984160180": {
+      "name": "List Item",
+      "props": {
+        "children": "Design"
+      }
+    },
+    "list-item1000032984160180": {
+      "name": "List Item",
+      "props": {
+        "children": "React"
+      }
+    },
+    "list-item1000032984160180": {
+      "name": "List Item",
+      "props": {
+        "className": "current",
+        "children": "Merge"
+      }
+    }
+  }
+}

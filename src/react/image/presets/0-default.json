@@ -1,0 +1,14 @@
+{
+  "rootId": "image1000061951166990",
+  "elements": {
+    "image1000061951166990": {
+      "name": "Image",
+      "props": {
+        "src": "http://placehold.it/1000x100",
+        "responsive": true,
+        "href": "http://google.com",
+        "alt": "A beautiful placeholder"
+      }
+    }
+  }
+}

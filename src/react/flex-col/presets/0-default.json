@@ -1,0 +1,25 @@
+{
+  "rootId": "flex-col1000052797549979",
+  "elements": {
+    "flex-col1000052797549979": {
+      "name": "Flex Col",
+      "props": {
+        "col": 1,
+        "alignmenet": "middle",
+        "contentAlignment": "middle",
+        "breakpoint": "md",
+        "children": {
+          "uxpinPresetElementId": "button1000072440215919"
+        }
+      }
+    },
+    "button1000072440215919": {
+      "name": "UI Button",
+      "props": {
+        "kind": "brand",
+        "alt": true,
+        "children": "Grid Example 1"
+      }
+    }
+  }
+}

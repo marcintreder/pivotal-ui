@@ -1,0 +1,32 @@
+{
+  "rootId": "grid1000052590512276",
+  "elements": {
+    "grid1000052590512276": {
+      "name": "Grid",
+      "props": {
+        "gutter": true,
+        "justifyContent": "center",
+        "children": {
+          "uxpinPresetElementId": "button1000072440215919",
+          "uxpinPresetElementId": "button1000072440215919"
+        }
+      }
+    },
+    "button1000072440215919": {
+      "name": "UI Button",
+      "props": {
+        "kind": "danger",
+        "alt": true,
+        "children": "Grid Example 1"
+      },
+      "button1000072440215919": {
+        "name": "UI Button",
+        "props": {
+          "kind": "danger",
+          "alt": true,
+          "children": "Grid Example 2"
+        }
+      }
+    }
+  }
+}

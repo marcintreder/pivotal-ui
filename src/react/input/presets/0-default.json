@@ -1,0 +1,13 @@
+{
+  "rootId": "input1000008198848353",
+  "elements": {
+    "input1000008198848353": {
+      "name": "Input",
+      "props": {
+        "size": "md",
+        "icon": "person",
+        "style": { "width": "300px" }
+      }
+    }
+  }
+}
