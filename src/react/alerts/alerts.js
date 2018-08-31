@@ -13,7 +13,8 @@ export default class Alerts extends React.PureComponent {
     dismissable: PropTypes.bool,
     onDismiss: PropTypes.func,
     show: PropTypes.bool,
-    withIcon: PropTypes.bool
+    withIcon: PropTypes.bool,
+    children: PropTypes.string
   };
 
   static defaultProps = {

@@ -2,22 +2,31 @@
   "rootId": "copy-to-clipboard1000047821644702",
   "elements": {
     "copy-to-clipboard1000047821644702": {
-      "name": "Copy to Clipboard",
+      "name": "CopyToClipboard",
       "props": {
         "text": "I got copied by a button",
         "children": [
           {
-            "uxpinPresetElementId": "button1000072440215919"
+            "uxpinPresetElementId": "button1000072440215918"
           }
         ]
-      },
-      "button1000072440215919": {
-        "name": "UI Button",
-        "props": {
-          "children": "Click Me To Copy",
-          "flat": true,
-          "alt": true
+      }
+    },
+    "button1000072440215918": {
+      "name": "UIButton",
+      "props": {
+        "children": "Click Me To Copy",
+        "flat": true,
+        "alt": true,
+        "icon": {
+          "uxpinPresetElementId": "iconography1000095649168660"
         }
+      }
+    },
+    "iconography1000095649168660": {
+      "name": "Iconography",
+      "props": {
+        "src": "copy"
       }
     }
   }

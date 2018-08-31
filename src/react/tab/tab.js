@@ -11,7 +11,8 @@ export default class Tab extends React.PureComponent {
     onEntered: PropTypes.func,
     onExited: PropTypes.func,
     tabClassName: PropTypes.string,
-    title: PropTypes.node.isRequired
+    title: PropTypes.node.isRequired,
+    children: PropTypes.any
   };
 
   static defaultProps = {

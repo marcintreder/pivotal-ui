@@ -12,3 +12,13 @@ export default class TileLayoutItem extends React.Component {
     return <div {...mergeProps({ className: 'tile-item' }, this.props)} />;
   }
 }
+
+TileLayoutItem.propTypes = {
+  className: PropTypes.string.isRequired,
+  style: PropTypes.object,
+  children: PropTypes.string
+};
+
+TileLayoutItem.defaultProps = {
+  className: 'tile-item'
+};

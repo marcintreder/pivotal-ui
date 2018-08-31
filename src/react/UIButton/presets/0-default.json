@@ -2,7 +2,7 @@
   "rootId": "button1000072440215919",
   "elements": {
     "button1000072440215919": {
-      "name": "UI Button",
+      "name": "UIButton",
       "props": {
         "kind": "primary",
         "large": true,

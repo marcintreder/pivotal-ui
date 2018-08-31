@@ -51,7 +51,8 @@ export default class Tabs extends mixin(React.Component).with(Animation) {
     responsiveBreakpoint: PropTypes.oneOf(['xs', 'sm', 'md', 'lg']),
     smallScreenClassName: PropTypes.string,
     tabType: PropTypes.oneOf(['simple', 'simple-alt', 'left']),
-    tabWidth: PropTypes.number
+    tabWidth: PropTypes.number,
+    children: PropTypes.any
   };
 
   static defaultProps = {

@@ -13,7 +13,8 @@ export default class Grid extends React.PureComponent {
       'space-between',
       'space-around',
       'space-evenly'
-    ])
+    ]),
+    children: PropTypes.node
   };
 
   static defaultProps = {

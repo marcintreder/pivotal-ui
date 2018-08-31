@@ -67,7 +67,8 @@ export default class Dropdown extends mixin(React.Component).with(
     scroll: PropTypes.bool,
     showIcon: PropTypes.bool,
     size: PropTypes.oneOf(['normal', 'large', 'small']),
-    split: PropTypes.bool
+    split: PropTypes.bool,
+    children: PropTypes.node
   };
 
   static defaultProps = {

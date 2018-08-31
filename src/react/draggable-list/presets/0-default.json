@@ -2,35 +2,35 @@
   "rootId": "draggable-list1000036231067872",
   "elements": {
     "draggable-list1000036231067872": {
-      "name": "Draggable List",
+      "name": "DraggableList",
       "props": {
         "className": "my-list-class",
         "innerClassName": "my-item-class",
         "children": [
           {
-            "uxpinPresetElementId": "draggable-list-item1000061766069305",
-            "uxpinPresetElementId": "draggable-list-item1000061766069305",
-            "uxpinPresetElementId": "draggable-list-item1000061766069305"
+            "uxpinPresetElementId": "draggable-list-item1000061766069306",
+            "uxpinPresetElementId": "draggable-list-item1000061766069307",
+            "uxpinPresetElementId": "draggable-list-item1000061766069308"
           }
         ]
-      },
-      "draggable-list-item1000061766069305": {
-        "name": "Draggable List Item",
-        "props": {
-          "children": "Merge 1"
-        }
-      },
-      "draggable-list-item1000061766069305": {
-        "name": "Draggable List Item",
-        "props": {
-          "children": "Merge 2"
-        }
-      },
-      "draggable-list-item1000061766069305": {
-        "name": "Draggable List Item",
-        "props": {
-          "children": "Merge 3"
-        }
+      }
+    },
+    "draggable-list-item1000061766069306": {
+      "name": "DraggableListItem",
+      "props": {
+        "children": "Merge 1"
+      }
+    },
+    "draggable-list-item1000061766069307": {
+      "name": "DraggableListItem",
+      "props": {
+        "children": "Merge 2"
+      }
+    },
+    "draggable-list-item1000061766069308": {
+      "name": "DraggableListItem",
+      "props": {
+        "children": "Merge 3"
       }
     }
   }

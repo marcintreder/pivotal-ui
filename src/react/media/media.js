@@ -14,7 +14,8 @@ export default class Media extends React.Component {
     stackSize: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large']),
     vAlign: PropTypes.oneOf(['middle', 'bottom']),
     placement: PropTypes.oneOf(['left', 'right']),
-    className: PropTypes.string
+    className: PropTypes.string,
+    children: PropTypes.any
   };
 
   static defaultProps = {
@@ -70,7 +71,7 @@ export default class Media extends React.Component {
 
 export class Flag extends React.Component {
   componentDidMount() {
-    require('../../css/media/media.scss');
+    //require('../../css/media/media.scss');
   }
 
   render() {

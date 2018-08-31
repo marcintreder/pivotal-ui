@@ -7,25 +7,25 @@
         "gutter": true,
         "justifyContent": "center",
         "children": {
-          "uxpinPresetElementId": "button1000072440215919",
-          "uxpinPresetElementId": "button1000072440215919"
+          "uxpinPresetElementId": "button1000072440215931",
+          "uxpinPresetElementId": "button1000072440215932"
         }
       }
     },
-    "button1000072440215919": {
-      "name": "UI Button",
+    "button1000072440215931": {
+      "name": "UIButton",
       "props": {
         "kind": "danger",
         "alt": true,
         "children": "Grid Example 1"
-      },
-      "button1000072440215919": {
-        "name": "UI Button",
-        "props": {
-          "kind": "danger",
-          "alt": true,
-          "children": "Grid Example 2"
-        }
+      }
+    },
+    "button1000072440215932": {
+      "name": "UIButton",
+      "props": {
+        "kind": "danger",
+        "alt": true,
+        "children": "Grid Example 2"
       }
     }
   }

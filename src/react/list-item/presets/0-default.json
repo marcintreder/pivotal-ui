@@ -2,7 +2,7 @@
   "rootId": "list-item1000032984160180",
   "elements": {
     "list-item1000032984160180": {
-      "name": "List Item",
+      "name": "ListItem",
       "props": {
         "children": "Item 1"
       }

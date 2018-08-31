@@ -8,7 +8,8 @@ export default class CopyToClipboard extends React.PureComponent {
   static propTypes = {
     text: PropTypes.string.isRequired,
     onClick: PropTypes.func,
-    tooltip: PropTypes.string
+    tooltip: PropTypes.string,
+    children: PropTypes.element
   };
 
   componentDidMount() {

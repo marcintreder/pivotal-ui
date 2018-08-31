@@ -7,7 +7,8 @@ export default class RadioGroup extends React.Component {
     id: PropTypes.string,
     name: PropTypes.string,
     onChange: PropTypes.func,
-    value: PropTypes.any
+    value: PropTypes.any,
+    children: PropTypes.element
   };
 
   componentDidMount() {

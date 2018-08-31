@@ -5,8 +5,7 @@
       "name": "Input",
       "props": {
         "size": "md",
-        "icon": "person",
-        "style": { "width": "300px" }
+        "icon": "person"
       }
     }
   }

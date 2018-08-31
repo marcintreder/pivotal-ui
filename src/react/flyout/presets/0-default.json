@@ -5,10 +5,26 @@
       "name": "Flyout",
       "props": {
         "animationDuration": 300,
-        "header": "Hello",
+        "header": {
+          "uxpinPresetElementId": "h31000041936953108"
+        },
         "headerClassName": "header-class",
         "bodyClassName": "body-class",
-        "children": "Flyout Content"
+        "children": {
+          "uxpinPresetElementId": "h11000091360320777"
+        }
+      }
+    },
+    "h31000041936953108": {
+      "name": "h3",
+      "props": {
+        "children": "Flyout header"
+      }
+    },
+    "h11000091360320777": {
+      "name": "h1",
+      "props": {
+        "children": "Flyout content"
       }
     }
   }

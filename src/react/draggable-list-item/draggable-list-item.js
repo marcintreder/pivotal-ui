@@ -14,7 +14,8 @@ export default class DraggableListItem extends React.Component {
     onDragEnter: PropTypes.func,
     onDragEnd: PropTypes.func,
     grabbed: PropTypes.bool,
-    className: PropTypes.string
+    className: PropTypes.string,
+    children: PropTypes.string
   };
 
   constructor(props, context) {

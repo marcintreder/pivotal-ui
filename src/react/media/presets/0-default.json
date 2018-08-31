@@ -5,12 +5,12 @@
       "name": "Media",
       "props": {
         "image": {
-          "uxpinPresetElementId": "image1000061951166990"
+          "uxpinPresetElementId": "image1000061951166991"
         },
         "children": "Science has not yet mastered prophecy."
       }
     },
-    "image1000061951166990": {
+    "image1000061951166991": {
       "name": "Image",
       "props": {
         "src": "http://placehold.it/1000x100",

@@ -27,12 +27,7 @@ module.exports = {
           'src/react/toggle/toggle.js',
           'src/react/form/form.js',
           'src/react/image/image.js',
-          'src/react/list-item/list-item.js',
-          'src/react/list/list.js',
           'src/react/modal-container/modal-container.js',
-          'src/react/notification/notification.js',
-          'src/react/notification-alert/notification-alert.js',
-          'src/react/notification-item/notification-item.js',
           'src/react/overlay-trigger/overlay-trigger.js',
           'src/react/panel/panel.js',
           'src/react/radio/radio.js',
@@ -43,9 +38,7 @@ module.exports = {
           'src/react/table-basic/table-basic.js',
           'src/react/table-flex/table-flex.js',
           'src/react/tab/tab.js',
-          'src/react/tabs-uxpin/tabs-uxpin.js',
-          'src/react/text-filter/text-filter.js',
-          'src/react/wizard/wizard.js'
+          'src/react/tabs-uxpin/tabs-uxpin.js'
         ]
       }
     ]

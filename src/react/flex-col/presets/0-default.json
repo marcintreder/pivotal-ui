@@ -2,19 +2,19 @@
   "rootId": "flex-col1000052797549979",
   "elements": {
     "flex-col1000052797549979": {
-      "name": "Flex Col",
+      "name": "FlexCol",
       "props": {
         "col": 1,
         "alignmenet": "middle",
         "contentAlignment": "middle",
         "breakpoint": "md",
         "children": {
-          "uxpinPresetElementId": "button1000072440215919"
+          "uxpinPresetElementId": "button1000072440215928"
         }
       }
     },
-    "button1000072440215919": {
-      "name": "UI Button",
+    "button1000072440215928": {
+      "name": "UIButton",
       "props": {
         "kind": "brand",
         "alt": true,

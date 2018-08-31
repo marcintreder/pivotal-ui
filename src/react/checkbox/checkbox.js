@@ -16,7 +16,8 @@ export default class Checkbox extends React.Component {
     onChange: PropTypes.func,
     style: PropTypes.object,
     type: PropTypes.string,
-    indeterminate: PropTypes.bool
+    indeterminate: PropTypes.bool,
+    children: PropTypes.string
   };
 
   static defaultProps = {

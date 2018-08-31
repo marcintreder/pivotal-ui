@@ -20,7 +20,8 @@ export default class Flyout extends React.PureComponent {
     iconSrc: PropTypes.string,
     onHide: PropTypes.func.isRequired,
     show: PropTypes.bool,
-    width: PropTypes.string
+    width: PropTypes.string,
+    children: PropTypes.oneOfType([PropTypes.element, PropTypes.node])
   };
 
   static defaultProps = {

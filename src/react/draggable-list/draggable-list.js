@@ -10,7 +10,8 @@ const childrenIndices = children => children.map((child, i) => i);
 export default class DraggableList extends React.Component {
   static propTypes = {
     onDragEnd: PropTypes.func,
-    innerClassName: PropTypes.string
+    innerClassName: PropTypes.string,
+    children: PropTypes.element
   };
 
   constructor(props, context) {

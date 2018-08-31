@@ -14,7 +14,8 @@ export default class Radio extends React.Component {
     name: PropTypes.string,
     onChange: PropTypes.func,
     style: PropTypes.object,
-    value: PropTypes.string.isRequired
+    value: PropTypes.string.isRequired,
+    children: PropTypes.string
   };
 
   componentDidMount() {

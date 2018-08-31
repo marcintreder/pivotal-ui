@@ -10,7 +10,8 @@ export default class FlexCol extends React.Component {
     grow: PropTypes.number,
     alignment: PropTypes.oneOf(['top', 'middle', 'bottom']),
     contentAlignment: PropTypes.oneOf(['top', 'middle', 'bottom']),
-    breakpoint: PropTypes.oneOf(['sm', 'md', 'lg'])
+    breakpoint: PropTypes.oneOf(['sm', 'md', 'lg']),
+    children: PropTypes.any
   };
 
   componentDidMount() {

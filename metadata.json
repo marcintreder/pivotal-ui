@@ -118,6 +118,15 @@
 								name: 'boolean',
 								structure: {}
 							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'children',
+							type: {
+								name: 'string',
+								structure: {}
+							}
 						}
 					]
 				},
@@ -150,7 +159,7 @@
 						{
 							elements: {
 								'back-to-top1000077781097733': {
-									name: 'Back-to-top',
+									name: 'BackToTop',
 									props: {
 										alwaysVisible: true,
 										scollableId: 'root'
@@ -326,6 +335,15 @@
 								name: 'boolean',
 								structure: {}
 							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'children',
+							type: {
+								name: 'string',
+								structure: {}
+							}
 						}
 					]
 				},
@@ -358,7 +376,7 @@
 						{
 							elements: {
 								'checkbox-dropdown1000092148429842': {
-									name: 'Checkbox-dropdown',
+									name: 'CheckboxDropdown',
 									props: {
 										labels: [
 											'DEBUG',
@@ -502,23 +520,32 @@
 					presets: [
 						{
 							elements: {
-								'copy-to-clipboard1000047821644702': {
-									button1000072440215919: {
-										name: 'UI Button',
-										props: {
-											alt: true,
-											children: 'Click Me To Copy',
-											flat: true
+								button1000072440215918: {
+									name: 'UIButton',
+									props: {
+										alt: true,
+										children: 'Click Me To Copy',
+										flat: true,
+										icon: {
+											uxpinPresetElementId: 'iconography1000095649168660'
 										}
-									},
-									name: 'Copy to Clipboard',
+									}
+								},
+								'copy-to-clipboard1000047821644702': {
+									name: 'CopyToClipboard',
 									props: {
 										children: [
 											{
-												uxpinPresetElementId: 'button1000072440215919'
+												uxpinPresetElementId: 'button1000072440215918'
 											}
 										],
 										text: 'I got copied by a button'
+									}
+								},
+								iconography1000095649168660: {
+									name: 'Iconography',
+									props: {
+										src: 'copy'
 									}
 								}
 							},
@@ -551,6 +578,15 @@
 							name: 'tooltip',
 							type: {
 								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'children',
+							type: {
+								name: 'element',
 								structure: {}
 							}
 						}
@@ -819,18 +855,30 @@
 					presets: [
 						{
 							elements: {
+								'draggable-list-item1000061766069306': {
+									name: 'DraggableListItem',
+									props: {
+										children: 'Merge 1'
+									}
+								},
+								'draggable-list-item1000061766069307': {
+									name: 'DraggableListItem',
+									props: {
+										children: 'Merge 2'
+									}
+								},
+								'draggable-list-item1000061766069308': {
+									name: 'DraggableListItem',
+									props: {
+										children: 'Merge 3'
+									}
+								},
 								'draggable-list1000036231067872': {
-									'draggable-list-item1000061766069305': {
-										name: 'Draggable List Item',
-										props: {
-											children: 'Merge 3'
-										}
-									},
-									name: 'Draggable List',
+									name: 'DraggableList',
 									props: {
 										children: [
 											{
-												uxpinPresetElementId: 'draggable-list-item1000061766069305'
+												uxpinPresetElementId: 'draggable-list-item1000061766069308'
 											}
 										],
 										className: 'my-list-class',
@@ -858,6 +906,15 @@
 							name: 'innerClassName',
 							type: {
 								name: 'string',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'children',
+							type: {
+								name: 'element',
 								structure: {}
 							}
 						}
@@ -892,7 +949,7 @@
 						{
 							elements: {
 								'draggable-list-item1000061766069305': {
-									name: 'Draggable List Item',
+									name: 'DraggableListItem',
 									props: {
 										children: 'Merge'
 									}
@@ -974,6 +1031,15 @@
 								name: 'string',
 								structure: {}
 							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'children',
+							type: {
+								name: 'string',
+								structure: {}
+							}
 						}
 					]
 				},
@@ -1005,9 +1071,30 @@
 					presets: [
 						{
 							elements: {
+								a1000074168146720: {
+									name: 'a',
+									props: {
+										children: 'UXPin'
+									}
+								},
+								a1000074168146721: {
+									name: 'a',
+									props: {
+										children: 'UXPin Design System'
+									}
+								},
+								a1000074168146722: {
+									name: 'a',
+									props: {
+										children: 'UXPin Merge'
+									}
+								},
 								dropdown1000091231981883: {
 									name: 'Dropdown',
 									props: {
+										children: {
+											uxpinPresetElementId: 'a1000074168146722'
+										},
 										floatMenu: true,
 										menuAlign: 'left',
 										title: 'Float Dropdown Menu'
@@ -1284,6 +1371,15 @@
 								name: 'boolean',
 								structure: {}
 							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'children',
+							type: {
+								name: 'node',
+								structure: {}
+							}
 						}
 					]
 				},
@@ -1315,8 +1411,8 @@
 					presets: [
 						{
 							elements: {
-								button1000072440215919: {
-									name: 'UI Button',
+								button1000072440215928: {
+									name: 'UIButton',
 									props: {
 										alt: true,
 										children: 'Grid Example 1',
@@ -1324,12 +1420,12 @@
 									}
 								},
 								'flex-col1000052797549979': {
-									name: 'Flex Col',
+									name: 'FlexCol',
 									props: {
 										alignmenet: 'middle',
 										breakpoint: 'md',
 										children: {
-											uxpinPresetElementId: 'button1000072440215919'
+											uxpinPresetElementId: 'button1000072440215928'
 										},
 										col: 1,
 										contentAlignment: 'middle'
@@ -1457,6 +1553,15 @@
 									]
 								}
 							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'children',
+							type: {
+								name: 'any',
+								structure: {}
+							}
 						}
 					]
 				},
@@ -1493,9 +1598,25 @@
 									props: {
 										animationDuration: 300,
 										bodyClassName: 'body-class',
-										children: 'Flyout Content',
-										header: 'Hello',
+										children: {
+											uxpinPresetElementId: 'h11000091360320777'
+										},
+										header: {
+											uxpinPresetElementId: 'h31000041936953108'
+										},
 										headerClassName: 'header-class'
+									}
+								},
+								h11000091360320777: {
+									name: 'h1',
+									props: {
+										children: 'Flyout content'
+									}
+								},
+								h31000041936953108: {
+									name: 'h3',
+									props: {
+										children: 'Flyout header'
 									}
 								}
 							},
@@ -1536,8 +1657,19 @@
 							isRequired: false,
 							name: 'children',
 							type: {
-								name: 'any',
-								structure: {}
+								name: 'union',
+								structure: {
+									elements: [
+										{
+											name: 'element',
+											structure: {}
+										},
+										{
+											name: 'node',
+											structure: {}
+										}
+									]
+								}
 							}
 						},
 						{
@@ -1765,19 +1897,19 @@
 					presets: [
 						{
 							elements: {
-								button1000072440215919: {
-									button1000072440215919: {
-										name: 'UI Button',
-										props: {
-											alt: true,
-											children: 'Grid Example 2',
-											kind: 'danger'
-										}
-									},
-									name: 'UI Button',
+								button1000072440215931: {
+									name: 'UIButton',
 									props: {
 										alt: true,
 										children: 'Grid Example 1',
+										kind: 'danger'
+									}
+								},
+								button1000072440215932: {
+									name: 'UIButton',
+									props: {
+										alt: true,
+										children: 'Grid Example 2',
 										kind: 'danger'
 									}
 								},
@@ -1785,7 +1917,7 @@
 									name: 'Grid',
 									props: {
 										children: {
-											uxpinPresetElementId: 'button1000072440215919'
+											uxpinPresetElementId: 'button1000072440215932'
 										},
 										gutter: true,
 										justifyContent: 'center'
@@ -1855,6 +1987,15 @@
 										}
 									]
 								}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'children',
+							type: {
+								name: 'node',
+								structure: {}
 							}
 						}
 					]
@@ -2074,10 +2215,7 @@
 									name: 'Input',
 									props: {
 										icon: 'person',
-										size: 'md',
-										style: {
-											width: '300px'
-										}
+										size: 'md'
 									}
 								}
 							},
@@ -2110,162 +2248,6 @@
 					documentation: {
 						examples: [
 							{
-								code: '<List kind="list-breadcrumb">\n  <ListItem>\n    <a href="#">Home</a>\n  </ListItem>\n  <ListItem>\n    <a href="#react">React</a>\n  </ListItem>\n  <ListItem className="current">\n    <span>Lists</span>\n  </ListItem>\n</List>'
-							}
-						]
-					},
-					info: {
-						dirPath: 'src/react/list',
-						documentation: {
-							path: 'src/react/list/list.md'
-						},
-						implementation: {
-							framework: 'reactjs',
-							lang: 'javascript',
-							path: 'src/react/list/list.js'
-						},
-						presets: [
-							{
-								path: 'src/react/list/presets/0-default.json'
-							}
-						]
-					},
-					name: 'List',
-					presets: [
-						{
-							elements: {
-								'list-item1000032984160180': {
-									name: 'List Item',
-									props: {
-										children: 'Merge',
-										className: 'current'
-									}
-								},
-								list1000095673228112: {
-									name: 'List',
-									props: {
-										children: {
-											uxpinPresetElementId: 'list-item1000032984160180'
-										},
-										kind: 'list-breadcrumb'
-									}
-								}
-							},
-							name: 'default',
-							rootId: 'list1000095673228112'
-						}
-					],
-					properties: [
-						{
-							description: '',
-							isRequired: false,
-							name: 'kind',
-							type: {
-								name: 'union',
-								structure: {
-									elements: [
-										{
-											name: 'literal',
-											structure: {
-												value: 'list-unstyled-ordered'
-											}
-										},
-										{
-											name: 'literal',
-											structure: {
-												value: 'list-unstyled-unordered'
-											}
-										},
-										{
-											name: 'literal',
-											structure: {
-												value: 'list-inline'
-											}
-										},
-										{
-											name: 'literal',
-											structure: {
-												value: 'list-breadcrumb'
-											}
-										}
-									]
-								}
-							}
-						},
-						{
-							description: '',
-							isRequired: false,
-							name: 'className',
-							type: {
-								name: 'string',
-								structure: {}
-							}
-						},
-						{
-							description: '',
-							isRequired: false,
-							name: 'unstyled',
-							type: {
-								name: 'boolean',
-								structure: {}
-							}
-						},
-						{
-							description: '',
-							isRequired: false,
-							name: 'divider',
-							type: {
-								name: 'boolean',
-								structure: {}
-							}
-						}
-					]
-				},
-				{
-					documentation: {
-						examples: [
-							{
-								code: '<ListItem>Item 1</ListItem>'
-							}
-						]
-					},
-					info: {
-						dirPath: 'src/react/list-item',
-						documentation: {
-							path: 'src/react/list-item/list-item.md'
-						},
-						implementation: {
-							framework: 'reactjs',
-							lang: 'javascript',
-							path: 'src/react/list-item/list-item.js'
-						},
-						presets: [
-							{
-								path: 'src/react/list-item/presets/0-default.json'
-							}
-						]
-					},
-					name: 'ListItem',
-					presets: [
-						{
-							elements: {
-								'list-item1000032984160180': {
-									name: 'List Item',
-									props: {
-										children: 'Item 1'
-									}
-								}
-							},
-							name: 'default',
-							rootId: 'list-item1000032984160180'
-						}
-					],
-					properties: []
-				},
-				{
-					documentation: {
-						examples: [
-							{
 								code: '<ModalContainer />'
 							}
 						]
@@ -2291,8 +2273,7 @@
 						{
 							elements: {
 								'modal-container1000049967489626': {
-									name: 'Modal Container',
-									props: {}
+									name: 'ModalContainer'
 								}
 							},
 							name: 'default',
@@ -2300,279 +2281,6 @@
 						}
 					],
 					properties: []
-				},
-				{
-					documentation: {
-						examples: [
-							{
-								code: '<Notification>\n  <NotificationItem href="http://media.giphy.com/media/Qvw9p4uX7IBy0/giphy.gif">\n    <Media\n      vAlign="middle"\n      image={<h3 className="mvn btn btn-brand btn-sm phl">New</h3>}\n    >\n      <h5 className="media-heading mbn type-dark-2">Notification</h5>\n      <p className="type-sm type-neutral-5 mvn">Click for Gif</p>\n    </Media>\n  </NotificationItem>\n</Notification>'
-							}
-						]
-					},
-					info: {
-						dirPath: 'src/react/notification',
-						documentation: {
-							path: 'src/react/notification/notification.md'
-						},
-						implementation: {
-							framework: 'reactjs',
-							lang: 'javascript',
-							path: 'src/react/notification/notification.js'
-						},
-						presets: [
-							{
-								path: 'src/react/notification/presets/0-default.json'
-							}
-						]
-					},
-					name: 'Notification',
-					presets: [
-						{
-							elements: {
-								notification1000060976692595: {
-									name: 'Notification',
-									props: {
-										children: {
-											uxpinPresetElementId: 'notification-item1000010719341389'
-										},
-										media1000029339783649: {
-											name: 'media',
-											vAlign: 'middle'
-										},
-										'notification-item1000010719341389': {
-											name: 'Notification Item',
-											props: {
-												children: {
-													uxpinPresetElementId: 'media1000029339783649'
-												},
-												href: 'http://media.giphy.com/media/Qvw9p4uX7IBy0/giphy.gif'
-											}
-										}
-									}
-								}
-							},
-							name: 'default',
-							rootId: 'notification1000060976692595'
-						}
-					],
-					properties: [
-						{
-							description: '',
-							isRequired: false,
-							name: 'size',
-							type: {
-								name: 'union',
-								structure: {
-									elements: [
-										{
-											name: 'literal',
-											structure: {
-												value: 'h1'
-											}
-										},
-										{
-											name: 'literal',
-											structure: {
-												value: 'h2'
-											}
-										},
-										{
-											name: 'literal',
-											structure: {
-												value: 'h3'
-											}
-										},
-										{
-											name: 'literal',
-											structure: {
-												value: 'h4'
-											}
-										},
-										{
-											name: 'literal',
-											structure: {
-												value: 'h5'
-											}
-										},
-										{
-											name: 'literal',
-											structure: {
-												value: 'h6'
-											}
-										}
-									]
-								}
-							}
-						}
-					]
-				},
-				{
-					documentation: {
-						examples: [
-							{
-								code: '<NotificationAlert>\n  <NotificationItem href="http://media.giphy.com/media/Qvw9p4uX7IBy0/giphy.gif">\n    <Media\n      vAlign="middle"\n      image={\n        <Iconography\n          src="warning"\n          className="h4 mrm"\n          style={{ fill: \'#B38F1B\' }}\n        />\n      }\n    >\n      <h5 className="media-heading mbn type-dark-2">WARNING</h5>\n      <p className="type-sm type-neutral-5 mvn">Click for Cute Gif</p>\n    </Media>\n  </NotificationItem>\n</NotificationAlert>'
-							}
-						]
-					},
-					info: {
-						dirPath: 'src/react/notification-alert',
-						documentation: {
-							path: 'src/react/notification-alert/notification-alert.md'
-						},
-						implementation: {
-							framework: 'reactjs',
-							lang: 'javascript',
-							path: 'src/react/notification-alert/notification-alert.js'
-						},
-						presets: [
-							{
-								path: 'src/react/notification-alert/presets/0-default.json'
-							}
-						]
-					},
-					name: 'NotificationAlert',
-					presets: [
-						{
-							elements: {
-								'notification-alert1000060976692595': {
-									name: 'Notification',
-									props: {
-										children: {
-											uxpinPresetElementId: 'notification-item1000010719341389'
-										},
-										iconography1000095649168661: {
-											className: 'h4 mrm',
-											name: 'Iconography',
-											src: 'warning',
-											style: {
-												fill: '#B38F1B'
-											}
-										},
-										media1000029339783649: {
-											image: {
-												uxpinPresetElementId: 'iconography1000095649168661'
-											},
-											name: 'media',
-											vAlign: 'middle'
-										},
-										'notification-item1000010719341389': {
-											name: 'Notification Item',
-											props: {
-												children: {
-													uxpinPresetElementId: 'media1000029339783649'
-												},
-												href: 'http://media.giphy.com/media/Qvw9p4uX7IBy0/giphy.gif'
-											}
-										}
-									}
-								}
-							},
-							name: 'default',
-							rootId: 'notification-alert1000060976692595'
-						}
-					],
-					properties: [
-						{
-							description: '',
-							isRequired: false,
-							name: 'size',
-							type: {
-								name: 'union',
-								structure: {
-									elements: [
-										{
-											name: 'literal',
-											structure: {
-												value: 'h1'
-											}
-										},
-										{
-											name: 'literal',
-											structure: {
-												value: 'h2'
-											}
-										},
-										{
-											name: 'literal',
-											structure: {
-												value: 'h3'
-											}
-										},
-										{
-											name: 'literal',
-											structure: {
-												value: 'h4'
-											}
-										},
-										{
-											name: 'literal',
-											structure: {
-												value: 'h5'
-											}
-										},
-										{
-											name: 'literal',
-											structure: {
-												value: 'h6'
-											}
-										}
-									]
-								}
-							}
-						}
-					]
-				},
-				{
-					documentation: {
-						examples: [
-							{
-								code: '<NotificationItem key={1}>Stuff</NotificationItem>'
-							}
-						]
-					},
-					info: {
-						dirPath: 'src/react/notification-item',
-						documentation: {
-							path: 'src/react/notification-item/notification-item.md'
-						},
-						implementation: {
-							framework: 'reactjs',
-							lang: 'javascript',
-							path: 'src/react/notification-item/notification-item.js'
-						},
-						presets: [
-							{
-								path: 'src/react/notification-item/presets/0-default.json'
-							}
-						]
-					},
-					name: 'NotificationItem',
-					presets: [
-						{
-							elements: {
-								'notification-item1000010719341389': {
-									name: 'Notification Item',
-									props: {
-										children: 'Stuff',
-										key: 1
-									}
-								}
-							},
-							name: 'default',
-							rootId: 'notification-item1000010719341389'
-						}
-					],
-					properties: [
-						{
-							description: '',
-							isRequired: false,
-							name: 'href',
-							type: {
-								name: 'string',
-								structure: {}
-							}
-						}
-					]
 				},
 				{
 					documentation: {
@@ -2973,7 +2681,7 @@
 						{
 							elements: {
 								'progress-bar-1000088317493493': {
-									name: 'Progress Bar',
+									name: 'ProgressBar',
 									props: {
 										value: 10
 									}
@@ -3137,6 +2845,15 @@
 								name: 'string',
 								structure: {}
 							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'children',
+							type: {
+								name: 'string',
+								structure: {}
+							}
 						}
 					]
 				},
@@ -3168,17 +2885,29 @@
 					presets: [
 						{
 							elements: {
-								'radio-1000088317493493': {
+								'radio-1000088317493495': {
+									name: 'Radio',
+									props: {
+										value: 'UXPin'
+									}
+								},
+								'radio-1000088317493496': {
+									name: 'Radio',
+									props: {
+										value: 'Merge'
+									}
+								},
+								'radio-1000088317493497': {
 									name: 'Radio',
 									props: {
 										value: 'UXPin Merge'
 									}
 								},
 								'radio-group-1000098659777573': {
-									name: 'Radio Group',
+									name: 'RadioGroup',
 									props: {
 										children: {
-											uxpinPresetElementId: 'radio-1000088317493493'
+											uxpinPresetElementId: 'radio-1000088317493497'
 										},
 										name: 'radio-group',
 										value: 'UXPin'
@@ -3223,6 +2952,15 @@
 							name: 'value',
 							type: {
 								name: 'any',
+								structure: {}
+							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'children',
+							type: {
+								name: 'element',
 								structure: {}
 							}
 						}
@@ -3435,6 +3173,15 @@
 								name: 'node',
 								structure: {}
 							}
+						},
+						{
+							description: '',
+							isRequired: false,
+							name: 'children',
+							type: {
+								name: 'any',
+								structure: {}
+							}
 						}
 					]
 				},
@@ -3467,9 +3214,25 @@
 						{
 							elements: {
 								'table-basic-1000093495797087': {
-									name: 'Table Basic',
+									name: 'TableBasic',
 									props: {
-										data: []
+										data: [
+											{
+												bar: 11,
+												instances: '1',
+												title: 'foo'
+											},
+											{
+												bar: 7,
+												instances: '3',
+												title: 'sup'
+											},
+											{
+												bar: 8,
+												instances: '2',
+												title: 'yee'
+											}
+										]
 									}
 								}
 							},
@@ -3526,12 +3289,52 @@
 					presets: [
 						{
 							elements: {
-								'table-basic-1000093495797087': {
-									data: []
+								'table-flex-1000093495797087': {
+									columns: [
+										{
+											attribute: 'title',
+											displayName: 'Title',
+											sortable: false
+										},
+										{
+											attribute: 'instances',
+											sortable: true
+										},
+										{
+											attribute: 'bar',
+											displayName: 'Bar',
+											sortable: true
+										},
+										{
+											attribute: 'unsortable',
+											sortable: false
+										}
+									],
+									data: [
+										{
+											bar: 11,
+											instances: '1',
+											title: 'foo',
+											unsortable: '14'
+										},
+										{
+											bar: 7,
+											instances: '3',
+											title: 'sup',
+											unsortable: '22'
+										},
+										{
+											bar: 8,
+											instances: '2',
+											title: 'yee',
+											unsortable: '1'
+										}
+									],
+									name: 'TableFlex'
 								}
 							},
 							name: 'default',
-							rootId: 'table-basic-1000093495797087'
+							rootId: 'table-flex-1000093495797087'
 						}
 					],
 					properties: [
@@ -3583,12 +3386,52 @@
 					presets: [
 						{
 							elements: {
-								'table-basic-1000093495797087': {
-									data: []
+								'table-sortable-1000093495797087': {
+									columns: [
+										{
+											attribute: 'title',
+											displayName: 'Title',
+											sortable: false
+										},
+										{
+											attribute: 'instances',
+											sortable: true
+										},
+										{
+											attribute: 'bar',
+											displayName: 'Bar',
+											sortable: true
+										},
+										{
+											attribute: 'unsortable',
+											sortable: false
+										}
+									],
+									data: [
+										{
+											bar: 11,
+											instances: '1',
+											title: 'foo',
+											unsortable: '14'
+										},
+										{
+											bar: 7,
+											instances: '3',
+											title: 'sup',
+											unsortable: '22'
+										},
+										{
+											bar: 8,
+											instances: '2',
+											title: 'yee',
+											unsortable: '1'
+										}
+									],
+									name: 'TableSortable'
 								}
 							},
 							name: 'default',
-							rootId: 'table-basic-1000093495797087'
+							rootId: 'table-sortable-1000093495797087'
 						}
 					],
 					properties: [
@@ -3649,15 +3492,52 @@
 					presets: [
 						{
 							elements: {
-								'table-sortable-1000008201970716': {
-									Name: 'Table Sortable',
-									props: {
-										data: []
-									}
+								'table-sortable-flex-1000093495797087': {
+									columns: [
+										{
+											attribute: 'title',
+											displayName: 'Title',
+											sortable: false
+										},
+										{
+											attribute: 'instances',
+											sortable: true
+										},
+										{
+											attribute: 'bar',
+											displayName: 'Bar',
+											sortable: true
+										},
+										{
+											attribute: 'unsortable',
+											sortable: false
+										}
+									],
+									data: [
+										{
+											bar: 11,
+											instances: '1',
+											title: 'foo',
+											unsortable: '14'
+										},
+										{
+											bar: 7,
+											instances: '3',
+											title: 'sup',
+											unsortable: '22'
+										},
+										{
+											bar: 8,
+											instances: '2',
+											title: 'yee',
+											unsortable: '1'
+										}
+									],
+									name: 'TableSortableFlex'
 								}
 							},
 							name: 'default',
-							rootId: 'table-sortable-1000008201970716'
+							rootId: 'table-sortable-flex-1000093495797087'
 						}
 					],
 					properties: [
@@ -3708,10 +3588,60 @@
 							lang: 'javascript',
 							path: 'src/react/tabs-uxpin/tabs-uxpin.js'
 						},
-						presets: []
+						presets: [
+							{
+								path: 'src/react/tabs-uxpin/presets/0-default.json'
+							}
+						]
 					},
 					name: 'TabsUxpin',
-					presets: [],
+					presets: [
+						{
+							elements: {
+								'h2-1000073757650951': {
+									name: 'h2',
+									props: {
+										children: 'Neat!'
+									}
+								},
+								'span-1000073757650951': {
+									name: 'span',
+									props: {
+										children: 'So much content'
+									}
+								},
+								'tab-1000052882014382': {
+									name: 'Tab',
+									props: {
+										children: 'Wow',
+										eventKey: 1,
+										title: 'Tab 1'
+									}
+								},
+								'tab-1000052882014383': {
+									name: 'Tab',
+									props: {
+										children: {
+											uxpinPresetElementId: 'span-1000073757650951'
+										},
+										eventKey: 1,
+										title: 'Tab 1'
+									}
+								},
+								'tabs-uxpin1000076487588835': {
+									Name: 'TabsUxpin',
+									props: {
+										children: {
+											uxpinPresetElementId: 'tab-1000052882014384'
+										},
+										defaultActiveKey: 1
+									}
+								}
+							},
+							name: 'default',
+							rootId: 'tabs-uxpin1000076487588835'
+						}
+					],
 					properties: [
 						{
 							description: '',
@@ -3901,88 +3831,6 @@
 							name: 'tabWidth',
 							type: {
 								name: 'number',
-								structure: {}
-							}
-						}
-					]
-				},
-				{
-					documentation: {
-						examples: [
-							{
-								code: 'const isOdd = (data, userInput) => {\n  return data.filter(dataNum => {\n    const dataStr = dataNum.toString();\n    return dataStr.indexOf(userInput) != -1;\n  });\n};\nconst renderData = dataItem =>\n  dataItem.map((item, i) => <li key={i}>{item}</li>);\n\n<TextFilter\n  {...{\n    data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 5, 15, 124, 215, 345, 4565, 12],\n    filter: isOdd,\n    renderFilteredData: renderData\n  }}\n/>;'
-							}
-						]
-					},
-					info: {
-						dirPath: 'src/react/text-filter',
-						documentation: {
-							path: 'src/react/text-filter/text-filter.md'
-						},
-						implementation: {
-							framework: 'reactjs',
-							lang: 'javascript',
-							path: 'src/react/text-filter/text-filter.js'
-						},
-						presets: []
-					},
-					name: 'TextFilter',
-					presets: [],
-					properties: [
-						{
-							defaultValue: {
-								value: []
-							},
-							description: '',
-							isRequired: false,
-							name: 'data',
-							type: {
-								name: 'array',
-								structure: {}
-							}
-						},
-						{
-							description: '',
-							isRequired: false,
-							name: 'emptyState',
-							type: {
-								name: 'node',
-								structure: {}
-							}
-						},
-						{
-							defaultValue: {
-								value: data => data
-							},
-							description: '',
-							isRequired: false,
-							name: 'filter',
-							type: {
-								name: 'func',
-								structure: {}
-							}
-						},
-						{
-							defaultValue: {
-								value: 'Filter...'
-							},
-							description: '',
-							isRequired: false,
-							name: 'filterPlaceholderText',
-							type: {
-								name: 'string',
-								structure: {}
-							}
-						},
-						{
-							defaultValue: {
-								value: () => null
-							},
-							description: '',
-							isRequired: false,
-							name: 'renderFilteredData',
-							type: {
-								name: 'func',
 								structure: {}
 							}
 						}
@@ -4481,7 +4329,7 @@
 						{
 							elements: {
 								button1000072440215919: {
-									name: 'UI Button',
+									name: 'UIButton',
 									props: {
 										children: 'Merge!',
 										kind: 'primary',
@@ -4641,112 +4489,6 @@
 										}
 									]
 								}
-							}
-						}
-					]
-				},
-				{
-					documentation: {
-						examples: [
-							{
-								code: 'const pages = [\n  {\n    render() {\n      return (\n        <span>\n          This is the first page of the wizard. By default, the wizard cannot be\n          cancelled. The user cannot go back from the first page. Click the Next\n          button to proceed.\n        </span>\n      );\n    }\n  },\n  {\n    render() {\n      return (\n        <span>\n          This is the second page of the wizard. The user can click Back or\n          Next.\n        </span>\n      );\n    }\n  },\n  {\n    render() {\n      return (\n        <span>\n          This is the third and final page of the wizard. The user can click\n          Back or Finish\n        </span>\n      );\n    }\n  }\n];\n\n<Wizard pages={pages} style={{ border: \'1px solid #ccc\', padding: \'8px\' }} />;'
-							}
-						]
-					},
-					info: {
-						dirPath: 'src/react/wizard',
-						documentation: {
-							path: 'src/react/wizard/wizard.md'
-						},
-						implementation: {
-							framework: 'reactjs',
-							lang: 'javascript',
-							path: 'src/react/wizard/wizard.js'
-						},
-						presets: []
-					},
-					name: 'Wizard',
-					presets: [],
-					properties: [
-						{
-							defaultValue: {
-								value: []
-							},
-							description: '',
-							isRequired: false,
-							name: 'pages',
-							type: {
-								name: 'array',
-								structure: {}
-							}
-						},
-						{
-							description: '',
-							isRequired: false,
-							name: 'cancel',
-							type: {
-								name: 'func',
-								structure: {}
-							}
-						},
-						{
-							defaultValue: {
-								value: 'Cancel'
-							},
-							description: '',
-							isRequired: false,
-							name: 'cancelText',
-							type: {
-								name: 'string',
-								structure: {}
-							}
-						},
-						{
-							defaultValue: {
-								value: function noop() {}
-							},
-							description: '',
-							isRequired: false,
-							name: 'finish',
-							type: {
-								name: 'func',
-								structure: {}
-							}
-						},
-						{
-							defaultValue: {
-								value: 'Finish'
-							},
-							description: '',
-							isRequired: false,
-							name: 'finishText',
-							type: {
-								name: 'string',
-								structure: {}
-							}
-						},
-						{
-							defaultValue: {
-								value: false
-							},
-							description: '',
-							isRequired: false,
-							name: 'saving',
-							type: {
-								name: 'boolean',
-								structure: {}
-							}
-						},
-						{
-							defaultValue: {
-								value: 'Saving'
-							},
-							description: '',
-							isRequired: false,
-							name: 'savingText',
-							type: {
-								name: 'string',
-								structure: {}
 							}
 						}
 					]

@@ -2,7 +2,7 @@
   "rootId": "back-to-top1000077781097733",
   "elements": {
     "back-to-top1000077781097733": {
-      "name": "Back-to-top",
+      "name": "BackToTop",
       "props": {
         "alwaysVisible": true,
         "scollableId": "root"

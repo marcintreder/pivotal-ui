@@ -6,7 +6,30 @@
       "props": {
         "title": "Float Dropdown Menu",
         "floatMenu": true,
-        "menuAlign": "left"
+        "menuAlign": "left",
+        "children": {
+          "uxpinPresetElementId": "a1000074168146720",
+          "uxpinPresetElementId": "a1000074168146721",
+          "uxpinPresetElementId": "a1000074168146722"
+        }
+      }
+    },
+    "a1000074168146720": {
+      "name": "a",
+      "props": {
+        "children": "UXPin"
+      }
+    },
+    "a1000074168146721": {
+      "name": "a",
+      "props": {
+        "children": "UXPin Design System"
+      }
+    },
+    "a1000074168146722": {
+      "name": "a",
+      "props": {
+        "children": "UXPin Merge"
       }
     }
   }

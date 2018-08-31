@@ -14,7 +14,8 @@ const defaultChild = (icon, message) => (
 
 export default class Notifications extends React.PureComponent {
   static propTypes = {
-    size: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])
+    size: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']),
+    children: PropTypes.any
   };
 
   componentDidMount() {
