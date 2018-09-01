@@ -8,7 +8,7 @@ export default class Dialog extends React.PureComponent {
     animationDuration: PropTypes.number,
     animationEasing: PropTypes.string,
     ariaLabelledBy: PropTypes.string,
-    children: PropTypes.any,
+    children: PropTypes.node,
     className: PropTypes.string,
     dialogClassName: PropTypes.string,
     hideOnBackdropClick: PropTypes.bool,
