@@ -6,14 +6,13 @@
       "props": {
         "image": {
           "uxpinPresetElementId": "image1000061951166991"
-        },
-        "children": "Science has not yet mastered prophecy."
+        }
       }
     },
     "image1000061951166991": {
       "name": "Image",
       "props": {
-        "src": "http://placehold.it/1000x100",
+        "src": "http://placehold.it/100x100",
         "responsive": true,
         "href": "http://google.com",
         "alt": "A beautiful placeholder"

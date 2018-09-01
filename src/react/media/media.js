@@ -8,14 +8,13 @@ const paddingDirection = { left: 'r', right: 'l' };
 
 export default class Media extends React.Component {
   static propTypes = {
-    image: PropTypes.oneOfType([PropTypes.node, PropTypes.object]),
+    image: PropTypes.oneOfType([PropTypes.node, PropTypes.object]).isRequired,
     innerClassName: PropTypes.string,
     mediaSpacing: PropTypes.oneOf(['small', 'medium', 'large', 'xlarge']),
     stackSize: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large']),
-    vAlign: PropTypes.oneOf(['middle', 'bottom']),
+    vAlign: PropTypes.oneOf(['middle', 'bottom', 'top']),
     placement: PropTypes.oneOf(['left', 'right']),
-    className: PropTypes.string,
-    children: PropTypes.any
+    className: PropTypes.string
   };
 
   static defaultProps = {
@@ -23,7 +22,7 @@ export default class Media extends React.Component {
   };
 
   componentDidMount() {
-    //require('../../css/media/media.scss');
+    //require('../../css/media');
   }
 
   render() {
@@ -62,7 +61,7 @@ export default class Media extends React.Component {
     if (placement === 'right') content.reverse();
 
     return (
-      <div {...other} className={classes}>
+      <div {...this.props} className={classes}>
         {content}
       </div>
     );
@@ -71,7 +70,7 @@ export default class Media extends React.Component {
 
 export class Flag extends React.Component {
   componentDidMount() {
-    //require('../../css/media/media.scss');
+    //require('../../css/media');
   }
 
   render() {

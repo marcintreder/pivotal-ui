@@ -1,1 +1,1 @@
-export Media, { Flag } from './media';
+export Media, { Flag } from './media.js';

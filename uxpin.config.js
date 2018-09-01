@@ -28,6 +28,7 @@ module.exports = {
           'src/react/toggle/toggle.js',
           'src/react/form/form.js',
           'src/react/image/image.js',
+          'src/react/media/media.js',
           'src/react/modal-container/modal-container.js',
           'src/react/overlay-trigger/overlay-trigger.js',
           'src/react/panel/panel.js',

@@ -19,6 +19,7 @@ import Image from '../src/react/image/image';
 import Input from '../src/react/input/input';
 import List from '../src/react/list/list';
 import ListItem from '../src/react/list-item/list-item';
+import Media from '../src/react/media/media';
 import ModalContainer from '../src/react/modal-container/modal-container';
 import OverlayTrigger from '../src/react/overlay-trigger/overlay-trigger';
 import Panel from '../src/react/panel/panel';
@@ -57,6 +58,7 @@ export {
   Input,
   List,
   ListItem,
+  Media,
   ModalContainer,
   OverlayTrigger,
   Panel,
