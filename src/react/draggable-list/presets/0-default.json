@@ -8,8 +8,12 @@
         "innerClassName": "my-item-class",
         "children": [
           {
-            "uxpinPresetElementId": "draggable-list-item1000061766069306",
-            "uxpinPresetElementId": "draggable-list-item1000061766069307",
+            "uxpinPresetElementId": "draggable-list-item1000061766069306"
+          },
+          {
+            "uxpinPresetElementId": "draggable-list-item1000061766069307"
+          },
+          {
             "uxpinPresetElementId": "draggable-list-item1000061766069308"
           }
         ]
