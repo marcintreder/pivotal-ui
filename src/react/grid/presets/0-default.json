@@ -11,7 +11,7 @@
             "uxpinPresetElementId": "button1000072440215931"
           },
           {
-            "uxpinPresetElementId": "button1000072440215932"
+            "uxpinPresetElementId": "button1200072440215932"
           }
         ]
       }
@@ -24,7 +24,7 @@
         "children": "Grid Example 1"
       }
     },
-    "button1000072440215932": {
+    "button1200072440215932": {
       "name": "UIButton",
       "props": {
         "kind": "danger",
