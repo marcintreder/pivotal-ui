@@ -7,6 +7,9 @@ const charSizes = { small: 's', medium: 'm', large: 'l', xlarge: 'xl' };
 const paddingDirection = { left: 'r', right: 'l' };
 
 export default class Media extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   static propTypes = {
     image: PropTypes.oneOfType([PropTypes.node, PropTypes.object]).isRequired,
     innerClassName: PropTypes.string,
@@ -14,7 +17,8 @@ export default class Media extends React.Component {
     stackSize: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large']),
     vAlign: PropTypes.oneOf(['middle', 'bottom', 'top']),
     placement: PropTypes.oneOf(['left', 'right']),
-    className: PropTypes.string
+    className: PropTypes.string,
+    children: PropTypes.oneOfType([PropTypes.node, PropTypes.string])
   };
 
   static defaultProps = {
