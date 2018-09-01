@@ -11,7 +11,7 @@ export default class Modal extends PureComponent {
     animationDuration: PropTypes.number,
     animationEasing: PropTypes.string,
     bodyClassName: PropTypes.string,
-    children: PropTypes.any,
+    children: PropTypes.node,
     dialogClassName: PropTypes.string,
     footer: PropTypes.node,
     footerClassName: PropTypes.string,

@@ -19,7 +19,8 @@
     "input1000008198848393": {
       "name": "Input",
       "autoFocus": true,
-      "placeholder": "Tell me your darkest secrets"
+      "placeholder": "Tell me your darkest secrets",
+      "props": {}
     },
     "button1000072440215959": {
       "name": "UIButton",
