@@ -41,14 +41,14 @@ export default class Form extends React.Component {
     resetOnSubmit: PropTypes.bool
   };
 
-  /*static defaultProps = {
+  static defaultProps = {
     children: noop,
     fields: {},
     onModified: noop,
     onSubmit: noop,
     onSubmitError: () => ({}),
     afterSubmit: noop
-  };*/
+  };
 
   constructor(props) {
     super(props);

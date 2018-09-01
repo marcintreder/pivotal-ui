@@ -4,6 +4,7 @@ import { mergeProps } from '../helpers';
 
 export default class UIButton extends React.Component {
   static propTypes = {
+    children: PropTypes.string,
     alt: PropTypes.bool,
     flat: PropTypes.bool,
     href: PropTypes.string,

@@ -4,7 +4,8 @@
     "iconography1000095649168661": {
       "name": "Iconography",
       "props": {
-        "src": "add"
+        "src": "add",
+        "style": { "font-size": "16px" }
       }
     }
   }

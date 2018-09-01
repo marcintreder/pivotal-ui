@@ -6,10 +6,14 @@
       "props": {
         "gutter": true,
         "justifyContent": "center",
-        "children": {
-          "uxpinPresetElementId": "button1000072440215931",
-          "uxpinPresetElementId": "button1000072440215932"
-        }
+        "children": [
+          {
+            "uxpinPresetElementId": "button1000072440215931"
+          },
+          {
+            "uxpinPresetElementId": "button1000072440215932"
+          }
+        ]
       }
     },
     "button1000072440215931": {

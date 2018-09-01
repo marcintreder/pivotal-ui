@@ -4,7 +4,7 @@
     "flex-col1000052797549979": {
       "name": "FlexCol",
       "props": {
-        "col": 1,
+        "col": 20,
         "alignmenet": "middle",
         "contentAlignment": "middle",
         "breakpoint": "md",
