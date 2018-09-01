@@ -7,7 +7,7 @@ import { mergeProps } from '../helpers';
 
 const defaultChild = (icon, message) => (
   <div className="dropdown-notifications-none" role="presentation">
-    <Iconography src={icon} />
+    <Iconography src={icon} style={{ 'font-size': 'inherit' }} />
     <p className="type-neutral-4 em-alt mbn">{message}</p>
   </div>
 );

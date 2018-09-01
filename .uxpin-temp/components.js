@@ -22,6 +22,8 @@ import ListItem from '../src/react/list-item/list-item';
 import Media from '../src/react/media/media';
 import Modal from '../src/react/modal/modal';
 import ModalContainer from '../src/react/modal-container/modal-container';
+import Notification from '../src/react/notification/notification';
+import NotificationItem from '../src/react/notification-item/notification-item';
 import OverlayTrigger from '../src/react/overlay-trigger/overlay-trigger';
 import Panel from '../src/react/panel/panel';
 import ProgressBar from '../src/react/progress-bar/progress-bar';
@@ -62,6 +64,8 @@ export {
   Media,
   Modal,
   ModalContainer,
+  Notification,
+  NotificationItem,
   OverlayTrigger,
   Panel,
   ProgressBar,

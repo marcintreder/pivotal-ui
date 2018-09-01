@@ -11,8 +11,8 @@ export default class NotificationItem extends React.PureComponent {
   render() {
     const { href, children, ...props } = this.props;
     return (
-      <a href={href} {...props}>
-        {children}
+      <a href={href} {...this.props}>
+        {this.props.children}
       </a>
     );
   }
