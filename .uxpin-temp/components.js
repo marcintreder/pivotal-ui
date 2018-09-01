@@ -23,6 +23,7 @@ import Media from '../src/react/media/media';
 import Modal from '../src/react/modal/modal';
 import ModalContainer from '../src/react/modal-container/modal-container';
 import Notification from '../src/react/notification/notification';
+import NotificationAlert from '../src/react/notification-alert/notification-alert';
 import NotificationItem from '../src/react/notification-item/notification-item';
 import OverlayTrigger from '../src/react/overlay-trigger/overlay-trigger';
 import Panel from '../src/react/panel/panel';
@@ -65,6 +66,7 @@ export {
   Modal,
   ModalContainer,
   Notification,
+  NotificationAlert,
   NotificationItem,
   OverlayTrigger,
   Panel,

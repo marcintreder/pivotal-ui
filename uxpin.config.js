@@ -32,6 +32,7 @@ module.exports = {
           'src/react/modal/modal.js',
           'src/react/notification/notification.js',
           'src/react/notification-item/notification-item.js',
+          'src/react/notification-alert/notification-alert.js',
           'src/react/modal-container/modal-container.js',
           'src/react/overlay-trigger/overlay-trigger.js',
           'src/react/panel/panel.js',

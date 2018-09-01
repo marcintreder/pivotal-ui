@@ -7,7 +7,7 @@ import { mergeProps } from '../helpers';
 
 const defaultChild = (icon, message) => (
   <div className="dropdown-notifications-none" role="presentation">
-    <Iconography src={icon} style={{ 'font-size': 'inherit' }} />
+    <Iconography src={icon} style={{ 'font-size': '24px' }} />
     <p className="type-neutral-4 em-alt mbn">{message}</p>
   </div>
 );
@@ -15,7 +15,7 @@ const defaultChild = (icon, message) => (
 export default class Notifications extends React.PureComponent {
   static propTypes = {
     size: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']),
-    children: PropTypes.any
+    children: PropTypes.node
   };
 
   componentDidMount() {
@@ -39,7 +39,7 @@ export default class Notifications extends React.PureComponent {
     );
     const dropdownTitle = (
       <div className={dropdownTitleClasses}>
-        <Iconography src="notifications" />
+        <Iconography src="notifications" style={{ 'font-size': '24px' }} />
         {badge}
       </div>
     );
