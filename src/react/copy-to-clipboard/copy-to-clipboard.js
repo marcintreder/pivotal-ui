@@ -9,7 +9,7 @@ export default class CopyToClipboard extends React.PureComponent {
     text: PropTypes.string.isRequired,
     onClick: PropTypes.func,
     tooltip: PropTypes.string,
-    children: PropTypes.element
+    children: PropTypes.node
   };
 
   componentDidMount() {

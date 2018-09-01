@@ -5,11 +5,9 @@
       "name": "CopyToClipboard",
       "props": {
         "text": "I got copied by a button",
-        "children": [
-          {
-            "uxpinPresetElementId": "button1000072440215918"
-          }
-        ]
+        "children": {
+          "uxpinPresetElementId": "button1000072440215918"
+        }
       }
     },
     "button1000072440215918": {
