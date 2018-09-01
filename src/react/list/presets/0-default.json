@@ -5,11 +5,17 @@
       "name": "List",
       "props": {
         "kind": "list-breadcrumb",
-        "children": {
-          "uxpinPresetElementId": "list-item1000032984160181",
-          "uxpinPresetElementId": "list-item1000032984160182",
-          "uxpinPresetElementId": "list-item1000032984160183"
-        }
+        "children": [
+          {
+            "uxpinPresetElementId": "list-item1000032984160181"
+          },
+          {
+            "uxpinPresetElementId": "list-item1000032984160182"
+          },
+          {
+            "uxpinPresetElementId": "list-item1000032984160183"
+          }
+        ]
       }
     },
     "list-item1000032984160181": {

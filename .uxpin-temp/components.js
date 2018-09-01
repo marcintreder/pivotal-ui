@@ -6,7 +6,6 @@ import Checkbox from '../src/react/checkbox/checkbox';
 import CheckboxDropdown from '../src/react/checkbox-dropdown/checkbox-dropdown';
 import CopyToClipboard from '../src/react/copy-to-clipboard/copy-to-clipboard';
 import Dialog from '../src/react/dialog/dialog';
-import Divider from '../src/react/divider/divider';
 import DraggableList from '../src/react/draggable-list/draggable-list';
 import DraggableListItem from '../src/react/draggable-list-item/draggable-list-item';
 import Dropdown from '../src/react/dropdown/dropdown';
@@ -18,6 +17,8 @@ import Grid from '../src/react/grid/grid';
 import Iconography from '../src/react/iconography/iconography';
 import Image from '../src/react/image/image';
 import Input from '../src/react/input/input';
+import List from '../src/react/list/list';
+import ListItem from '../src/react/list-item/list-item';
 import ModalContainer from '../src/react/modal-container/modal-container';
 import OverlayTrigger from '../src/react/overlay-trigger/overlay-trigger';
 import Panel from '../src/react/panel/panel';
@@ -43,7 +44,6 @@ export {
   CheckboxDropdown,
   CopyToClipboard,
   Dialog,
-  Divider,
   DraggableList,
   DraggableListItem,
   Dropdown,
@@ -55,6 +55,8 @@ export {
   Iconography,
   Image,
   Input,
+  List,
+  ListItem,
   ModalContainer,
   OverlayTrigger,
   Panel,

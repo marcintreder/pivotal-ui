@@ -13,7 +13,8 @@ export default class List extends React.Component {
     ]),
     className: PropTypes.string,
     unstyled: PropTypes.bool,
-    divider: PropTypes.bool
+    divider: PropTypes.bool,
+    children: PropTypes.node
   };
 
   componentDidMount() {
