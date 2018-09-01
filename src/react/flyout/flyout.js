@@ -21,7 +21,7 @@ export default class Flyout extends React.PureComponent {
     onHide: PropTypes.func.isRequired,
     show: PropTypes.bool,
     width: PropTypes.string,
-    children: PropTypes.oneOfType([PropTypes.element, PropTypes.node])
+    children: PropTypes.node
   };
 
   static defaultProps = {
