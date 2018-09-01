@@ -14,7 +14,7 @@ export default class Iconography extends React.Component {
 
   static defaultProps = {
     size: 'inherit',
-    style: {},
+    style: { 'font-size': '16px' },
     verticalAlign: 'middle'
   };
 
