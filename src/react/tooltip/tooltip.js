@@ -6,7 +6,8 @@ export default class Tooltip extends React.PureComponent {
   static propTypes = {
     visible: PropTypes.bool,
     size: PropTypes.oneOf(['auto', 'sm', 'md', 'lg']),
-    isSticky: PropTypes.bool
+    isSticky: PropTypes.bool,
+    children: PropTypes.oneOfType([PropTypes.node, PropTypes.string])
   };
 
   static defaultProps = {
@@ -20,7 +21,7 @@ export default class Tooltip extends React.PureComponent {
   }
 
   componentDidMount() {
-    //require('../../css/tooltips/tooltips.scss');
+    require('../../css/tooltips/tooltips.scss');
   }
 
   render() {

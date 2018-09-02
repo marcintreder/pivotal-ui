@@ -37,7 +37,8 @@ export default class OverlayTrigger extends mixin(React.Component).with(Scrim) {
     pin: PropTypes.bool,
     placement: PropTypes.oneOf(['top', 'bottom', 'left', 'right']),
     theme: PropTypes.oneOf(['light', 'dark']),
-    trigger: PropTypes.oneOf(['hover', 'click', 'focus', 'manual'])
+    trigger: PropTypes.oneOf(['hover', 'click', 'focus', 'manual']),
+    children: PropTypes.oneOf([PropTypes.node, PropTypes.string])
   };
 
   static defaultProps = {
@@ -54,7 +55,7 @@ export default class OverlayTrigger extends mixin(React.Component).with(Scrim) {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    //require('../../css/tooltips/tooltips.scss');
+    //require('../../css/tooltips');
     if (prevState.display !== this.state.display) {
       const { onEntered, onExited } = this.props;
       const callback = this.state.display ? onEntered : onExited;
@@ -167,10 +168,25 @@ export default class OverlayTrigger extends mixin(React.Component).with(Scrim) {
       });
     }
 
-    children = React.cloneElement(children, {
+    /* Fix for UXPin Merge. Fully Functionality preserved */
+    const content = () => {
+      return (
+        <span
+          className="overlay-trigger"
+          tabIndex="0"
+          onMouseOver={() => this.show()}
+          onMouseOut={() => this.hide()}
+          aria-describedby={overlayId}
+        >
+          {children}
+        </span>
+      );
+    };
+
+    /*React.cloneElement(children, {
       'aria-describedby': overlayId,
       ...triggerHandlers
-    });
+    });*/
 
     const classes = classnames('tooltip', {
       'tooltip-light': theme === 'light'
@@ -183,12 +199,12 @@ export default class OverlayTrigger extends mixin(React.Component).with(Scrim) {
         : [],
       className: classes,
       classes: { 'target-attached': 'tooltip' },
-      ...props
+      ...this.props
     };
 
     return (
       <TetherComponent {...tetherProps}>
-        {children}
+        {content()}
         {display && overlay}
       </TetherComponent>
     );

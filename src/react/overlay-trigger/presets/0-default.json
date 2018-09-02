@@ -1,0 +1,28 @@
+{
+  "rootId": "overlay-trigger-item1000010719241389",
+  "elements": {
+    "overlay-trigger-item1000010719241389": {
+      "name": "OverlayTrigger",
+      "props": {
+        "placement": "left",
+        "overlay": {
+          "uxpinPresetElementId": "tooltip-1000091532370769"
+        },
+        "children": {
+          "uxpinPresetElementId": "span-1000035070238696"
+        }
+      }
+    },
+    "span-1000035070238696": {
+      "name": "span",
+      "props": {
+        "className": "overlay-trigger",
+        "tabIndex": "0"
+      }
+    },
+    "tooltip-1000091532370769": {
+      "name": "Tooltip",
+      "props": {}
+    }
+  }
+}
