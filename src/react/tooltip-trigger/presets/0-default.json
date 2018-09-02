@@ -1,0 +1,23 @@
+{
+  "rootId": "tooltip-trigger-1000013540061904",
+  "elements": {
+    "tooltip-trigger-1000013540061904": {
+      "name": "TooltipTrigger",
+      "props": {
+        "tooltip": "Merge is awesome!",
+        "trigger": "click",
+        "placement": "bottom",
+        "children": {
+          "uxpinPresetElementId": "uibutton-1000027456949812"
+        }
+      }
+    },
+    "uibutton-1000027456949812": {
+      "name": "UIButton",
+      "props": {
+        "kind": "primary",
+        "children": "Click me!"
+      }
+    }
+  }
+}

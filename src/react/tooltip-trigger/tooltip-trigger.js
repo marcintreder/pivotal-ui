@@ -6,7 +6,11 @@ import Tooltip from '../tooltip/tooltip.js';
 export default class TooltipTrigger extends React.Component {
   static propTypes = {
     display: PropTypes.bool,
-    tooltip: PropTypes.oneOfType([PropTypes.node, PropTypes.object]).isRequired,
+    tooltip: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.node,
+      PropTypes.object
+    ]).isRequired,
     placement: PropTypes.oneOf(['left', 'right', 'bottom', 'top']),
     trigger: PropTypes.oneOf(['manual', 'hover', 'click']),
     clickHideDelay: PropTypes.number,
@@ -15,7 +19,8 @@ export default class TooltipTrigger extends React.Component {
     onExited: PropTypes.func,
     theme: PropTypes.oneOf(['dark', 'light']),
     size: PropTypes.oneOf(['auto', 'sm', 'md', 'lg']),
-    isSticky: PropTypes.bool
+    isSticky: PropTypes.bool,
+    children: PropTypes.node
   };
 
   static defaultProps = {
