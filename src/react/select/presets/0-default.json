@@ -1,0 +1,13 @@
+{
+  "rootId": "select-1000088317493493",
+  "elements": {
+    "select-1000088317493493": {
+      "name": "Select",
+      "props": {
+        "className": "others",
+        "options": ["Option 1", "Option 2", "Option 3"],
+        "defaultValue": "Option1"
+      }
+    }
+  }
+}

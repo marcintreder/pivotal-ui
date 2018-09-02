@@ -1,8 +1,9 @@
 # Select
 
 ```javascript
-<Select className="input-lg" style={{ width: '300px' }}>
-  <option>Option 1</option>
-  <option>Option 2</option>
-</Select>
+<Select
+  className="input-lg"
+  options={['Option 1', 'Option 2', 'Option 3']}
+  defaultValue="Option 1"
+/>
 ```
