@@ -5,11 +5,17 @@
       "Name": "TabsUxpin",
       "props": {
         "defaultActiveKey": 1,
-        "children": {
-          "uxpinPresetElementId": "tab-1000052882014382",
-          "uxpinPresetElementId": "tab-1000052882014383",
-          "uxpinPresetElementId": "tab-1000052882014384"
-        }
+        "children": [
+          {
+            "uxpinPresetElementId": "tab-1000052882014382"
+          },
+          {
+            "uxpinPresetElementId": "tab-1000052882014383"
+          },
+          {
+            "uxpinPresetElementId": "tab-1000052882014384"
+          }
+        ]
       }
     },
     "tab-1000052882014382": {
@@ -25,10 +31,14 @@
       "props": {
         "eventKey": 1,
         "title": "Tab 1",
-        "children": {
-          "uxpinPresetElementId": "h2-1000073757650951",
-          "uxpinPresetElementId": "span-1000073757650951"
-        }
+        "children": [
+          {
+            "uxpinPresetElementId": "h2-1000073757650951"
+          },
+          {
+            "uxpinPresetElementId": "span-1000073757650951"
+          }
+        ]
       }
     },
     "h2-1000073757650951": {
