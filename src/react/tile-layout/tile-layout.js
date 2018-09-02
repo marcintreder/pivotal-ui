@@ -7,7 +7,7 @@ export default class TileLayout extends React.Component {
   static propTypes = {
     columns: PropTypes.oneOfType([PropTypes.number, PropTypes.object]),
     noGutter: PropTypes.bool,
-    children: PropTypes.element
+    children: PropTypes.node
   };
 
   componentDidMount() {

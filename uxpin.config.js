@@ -44,7 +44,9 @@ module.exports = {
           'src/react/table-basic/table-basic.js',
           'src/react/table-flex/table-flex.js',
           'src/react/tab/tab.js',
-          'src/react/tabs-uxpin/tabs-uxpin.js'
+          'src/react/tabs-uxpin/tabs-uxpin.js',
+          'src/react/tile-layout-item/tile-layout-item.js',
+          'src/react/tile-layout/tile-layout.js'
         ]
       }
     ]

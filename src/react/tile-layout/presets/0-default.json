@@ -6,11 +6,17 @@
       "props": {
         "columns": 6,
         "noGutter": false,
-        "children": {
-          "uxpinPresetElementId": "tile-layout-item-1000052882014382",
-          "uxpinPresetElementId": "tile-layout-item-1000052882014383",
-          "uxpinPresetElementId": "tile-layout-item-1000052882014384"
-        }
+        "children": [
+          {
+            "uxpinPresetElementId": "tile-layout-item-1000052882014382"
+          },
+          {
+            "uxpinPresetElementId": "tile-layout-item-1000052882014383"
+          },
+          {
+            "uxpinPresetElementId": "tile-layout-item-1000052882014384"
+          }
+        ]
       }
     },
     "tile-layout-item-1000052882014382": {
@@ -19,7 +25,10 @@
         "style": {
           "width": "200px",
           "height": "200px",
-          "backgroundColor": "#444"
+          "backgroundColor": "#444",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center"
         },
         "children": "Hello 1"
       }
@@ -30,9 +39,12 @@
         "style": {
           "width": "200px",
           "height": "200px",
-          "backgroundColor": "#444"
+          "backgroundColor": "#444",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center"
         },
-        "children": "Hello 1"
+        "children": "Hello 2"
       }
     },
     "tile-layout-item-1000052882014384": {
@@ -41,9 +53,12 @@
         "style": {
           "width": "200px",
           "height": "200px",
-          "backgroundColor": "#444"
+          "backgroundColor": "#444",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center"
         },
-        "children": "Hello 1"
+        "children": "Hello 3"
       }
     }
   }
