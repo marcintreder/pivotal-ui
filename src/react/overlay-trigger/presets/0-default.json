@@ -8,16 +8,7 @@
         "overlay": {
           "uxpinPresetElementId": "tooltip-1000091532370769"
         },
-        "children": {
-          "uxpinPresetElementId": "span-1000035070238696"
-        }
-      }
-    },
-    "span-1000035070238696": {
-      "name": "span",
-      "props": {
-        "className": "overlay-trigger",
-        "tabIndex": "0"
+        "children": "Tooltip on the left!"
       }
     },
     "tooltip-1000091532370769": {
