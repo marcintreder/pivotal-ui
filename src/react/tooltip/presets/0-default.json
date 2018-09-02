@@ -1,11 +1,22 @@
 {
-  "rootId": "tooltip-1000067066459040",
+  "rootId": "div-1000006172893775",
   "elements": {
+    "div-1000006172893775": {
+      "name": "div",
+      "props": {
+        "style": { "position": "relative", "width": "100%", "height": "40px" },
+        "visible": true,
+        "children": {
+          "uxpinPresetElementId": "tooltip-1000067066459040"
+        }
+      }
+    },
     "tooltip-1000067066459040": {
-      "Name": "Tooltip",
+      "name": "Tooltip",
       "props": {
         "size": "md",
-        "visible": true
+        "visible": true,
+        "children": "Merge!"
       }
     }
   }
