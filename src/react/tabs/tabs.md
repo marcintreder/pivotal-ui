@@ -1,7 +1,7 @@
 # Tabs
 
 ```javascript
-<Tabs defaultActiveKey={1} actions={<a>Action!</a>}>
+<Tabs defaultActiveKey={1} position="left" tabType="left" tabWidth={2}>
   <Tab eventKey={1} title="Tab 1">
     Wow!
   </Tab>

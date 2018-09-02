@@ -12,7 +12,7 @@ export default class Tab extends React.PureComponent {
     onExited: PropTypes.func,
     tabClassName: PropTypes.string,
     title: PropTypes.node.isRequired,
-    children: PropTypes.any
+    children: PropTypes.oneOfType([PropTypes.node, PropTypes.string])
   };
 
   static defaultProps = {

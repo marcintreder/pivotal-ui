@@ -1,1 +1,1 @@
-export Tabs, { LeftTabs } from './tabs';
+export Tabs from './tabs';

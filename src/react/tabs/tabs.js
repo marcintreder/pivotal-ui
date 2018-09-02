@@ -52,7 +52,7 @@ export default class Tabs extends mixin(React.Component).with(Animation) {
     smallScreenClassName: PropTypes.string,
     tabType: PropTypes.oneOf(['simple', 'simple-alt', 'left']),
     tabWidth: PropTypes.number,
-    children: PropTypes.any
+    children: PropTypes.node
   };
 
   static defaultProps = {
@@ -185,7 +185,7 @@ export default class Tabs extends mixin(React.Component).with(Animation) {
   }
 }
 
-export class LeftTabs extends React.PureComponent {
+/*export class LeftTabs extends React.PureComponent {
   static propTypes = {
     position: PropTypes.oneOf(['top', 'left']),
     tabWidth: PropTypes.number
@@ -205,4 +205,4 @@ export class LeftTabs extends React.PureComponent {
     let { tabWidth, ...props } = this.props;
     return <Tabs {...props} tabWidth={tabWidth} />;
   }
-}
+}*/

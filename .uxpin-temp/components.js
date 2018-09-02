@@ -36,7 +36,7 @@ import TableBasic from '../src/react/table-basic/table-basic';
 import TableFlex from '../src/react/table-flex/table-flex';
 import TableSortable from '../src/react/table-sortable/table-sortable';
 import TableSortableFlex from '../src/react/table-sortable-flex/table-sortable-flex';
-import TabsUxpin from '../src/react/tabs-uxpin/tabs-uxpin';
+import Tabs from '../src/react/tabs/tabs';
 import TileLayout from '../src/react/tile-layout/tile-layout';
 import TileLayoutItem from '../src/react/tile-layout-item/tile-layout-item';
 import Toggle from '../src/react/toggle/toggle';
@@ -81,7 +81,7 @@ export {
   TableFlex,
   TableSortable,
   TableSortableFlex,
-  TabsUxpin,
+  Tabs,
   TileLayout,
   TileLayoutItem,
   Toggle,

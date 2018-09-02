@@ -2,7 +2,7 @@
   "rootId": "tabs-uxpin1000076487588835",
   "elements": {
     "tabs-uxpin1000076487588835": {
-      "Name": "TabsUxpin",
+      "Name": "Tabs",
       "props": {
         "defaultActiveKey": 1,
         "children": [
