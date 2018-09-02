@@ -10,6 +10,11 @@ export default class TileLayout extends React.Component {
     children: PropTypes.node
   };
 
+  static defaultProps = {
+    columns: 3,
+    noGutter: false
+  };
+
   componentDidMount() {
     //require('../../css/tile-layout/tile-layout.scss');
   }
@@ -34,16 +39,18 @@ export default class TileLayout extends React.Component {
     const { children, columns, noGutter, ...others } = this.props;
 
     const classes = classnames(
-      this.getColumnClasses(columns),
-      noGutter ? null : 'tile-gutter',
+      this.getColumnClasses(this.props.columns),
+      this.props.noGutter ? null : 'tile-gutter',
       'tile-layout'
     );
     const props = mergeProps({ className: classes }, others);
+
     return <div {...props}>{children}</div>;
   }
 }
 
-export class TileLayoutItem extends React.Component {
+// UXPin Merge doesn't support multiple components in one file. Component moved to ./src/react/tile-layout-item
+/*export class TileLayoutItem extends React.Component {
   componentDidMount() {
     //require('../../css/tile-layout/tile-layout.scss');
   }
@@ -51,4 +58,4 @@ export class TileLayoutItem extends React.Component {
   render() {
     return <div {...mergeProps({ className: 'tile-item' }, this.props)} />;
   }
-}
+}*/
