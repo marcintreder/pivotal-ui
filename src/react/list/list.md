@@ -1,7 +1,7 @@
 # List
 
 ```javascript
-<List kind="list-breadcrumb">
+<List kind="unordered">
   <ListItem>
     <a href="#">Home</a>
   </ListItem>

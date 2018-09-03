@@ -5,12 +5,7 @@ import ListItem from '../list-item/list-item.js';
 
 export default class List extends React.Component {
   static propTypes = {
-    kind: PropTypes.oneOf([
-      'list-unstyled-ordered',
-      'list-unstyled-unordered',
-      'list-inline',
-      'list-breadcrumb'
-    ]),
+    kind: PropTypes.oneOf(['ordered', 'unordered', 'inline', 'breadcrumb']),
     className: PropTypes.string,
     unstyled: PropTypes.bool,
     divider: PropTypes.bool,
@@ -24,23 +19,39 @@ export default class List extends React.Component {
   render() {
     let { className, children, unstyled, divider, ...others } = this.props;
 
-    if (this.props.kind === 'list-breadcrumb') {
-      return <ul className="list-breadcrumb">{children}</ul>;
-    } else if (this.props.kind === 'list-inline') {
-      children = React.Children.map(children, child =>
-        React.cloneElement(child, { className: 'list-inline-divider' })
+    if (this.props.kind === 'breadcrumb') {
+      return (
+        <ul className="list-breadcrumb">{children.map(child => child)}</ul>
       );
-      return <ul className="list-inline">{children}</ul>;
-    } else if (this.props.kind === 'list-unstyled-ordered') {
+    } else if (this.props.kind === 'inline') {
+      return (
+        <ul className={`list-inline ${divider ? 'list-inline-divider' : ''}`}>
+          {children.map(child => child)}
+        </ul>
+      );
+    } else if (this.props.kind === 'ordered') {
+      return (
+        <ol
+          className={`${divider ? 'list-divider' : ''} ${
+            unstyled ? 'list-unstyled' : ''
+          }`}
+        >
+          {children.map(child => child)}
+        </ol>
+      );
+    } else if (this.props.kind === 'unordered') {
       children = React.Children.map(children, child =>
         React.cloneElement(child, { className: 'list-divider' })
       );
-      return <ol className="list-unstyled">{children}</ol>;
-    } else if (this.props.kind === 'list-unstyled-unordered') {
-      children = React.Children.map(children, child =>
-        React.cloneElement(child, { className: 'list-divider' })
+      return (
+        <ul
+          className={`${divider ? 'list-divider' : ''} ${
+            unstyled ? 'list-unstyled' : ''
+          }`}
+        >
+          {children.map(child => child)}
+        </ul>
       );
-      return <ul className="list-unstyled">{children}</ul>;
     }
   }
 }

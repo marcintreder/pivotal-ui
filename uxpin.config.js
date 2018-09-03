@@ -15,7 +15,6 @@ module.exports = {
           'src/react/grid/grid.js',
           'src/react/flex-col/flex-col.js',
           'src/react/checkbox-dropdown/checkbox-dropdown.js',
-          'src/react/copy-to-clipboard/copy-to-clipboard.js',
           'src/react/list/list.js',
           'src/react/list-item/list-item.js',
           'src/react/draggable-list-item/draggable-list-item.js',
