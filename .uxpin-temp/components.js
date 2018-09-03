@@ -12,7 +12,6 @@ import Dropdown from '../src/react/dropdown/dropdown';
 import FlexCol from '../src/react/flex-col/flex-col';
 import Flyout from '../src/react/flyout/flyout';
 import FlyoutContainer from '../src/react/flyout-container/flyout-container';
-import Form from '../src/react/form/form';
 import Grid from '../src/react/grid/grid';
 import Iconography from '../src/react/iconography/iconography';
 import Image from '../src/react/image/image';
@@ -58,7 +57,6 @@ export {
   FlexCol,
   Flyout,
   FlyoutContainer,
-  Form,
   Grid,
   Iconography,
   Image,
