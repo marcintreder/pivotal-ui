@@ -5,7 +5,6 @@
       "name": "RadioGroup",
       "props": {
         "value": "UXPin",
-        "name": "radio-group",
         "children": [
           {
             "uxpinPresetElementId": "radio-1000088317493495"
