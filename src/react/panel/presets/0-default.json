@@ -1,0 +1,22 @@
+{
+  "rootId": "div-1000079966343980",
+  "elements": {
+    "div-1000079966343980": {
+      "name": "div",
+      "props": {
+        "className": "bg-neutral-8 pal",
+        "children": {
+          "uxpinPresetElementId": "panel-1000098562917917"
+        }
+      }
+    },
+    "panel-1000098562917917": {
+      "name": "Panel",
+      "props": {
+        "header": "Welcome to Merge",
+        "loading": true,
+        "children": "Merge is a revolutionary technology that renders React.js components inside of UXPin editor."
+      }
+    }
+  }
+}

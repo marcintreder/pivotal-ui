@@ -16,7 +16,8 @@ export default class Panel extends React.Component {
     loading: PropTypes.bool,
     bodyClassName: PropTypes.string,
     footer: PropTypes.node,
-    footerClassName: PropTypes.string
+    footerClassName: PropTypes.string,
+    children: PropTypes.oneOfType([PropTypes.node, PropTypes.string])
   };
 
   static defaultProps = {
