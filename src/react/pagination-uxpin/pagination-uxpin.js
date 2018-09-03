@@ -38,6 +38,8 @@ export default class PaginationUxpin extends React.Component {
         items={this.props.items}
         activePage={this.state.activePage}
         onSelect={this.handleSelect}
+        next={this.props.next}
+        prev={this.props.prev}
       />
     );
   }
