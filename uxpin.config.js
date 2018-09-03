@@ -45,6 +45,7 @@ module.exports = {
           'src/react/table-flex/table-flex.js',
           'src/react/tab/tab.js',
           'src/react/tabs/tabs.js',
+          'src/react/pagination-uxpin/pagination-uxpin.js',
           'src/react/tile-layout-item/tile-layout-item.js',
           'src/react/tile-layout/tile-layout.js'
         ]

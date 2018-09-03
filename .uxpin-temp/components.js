@@ -26,6 +26,7 @@ import Notification from '../src/react/notification/notification';
 import NotificationAlert from '../src/react/notification-alert/notification-alert';
 import NotificationItem from '../src/react/notification-item/notification-item';
 import OverlayTrigger from '../src/react/overlay-trigger/overlay-trigger';
+import PaginationUxpin from '../src/react/pagination-uxpin/pagination-uxpin';
 import Panel from '../src/react/panel/panel';
 import ProgressBar from '../src/react/progress-bar/progress-bar';
 import Radio from '../src/react/radio/radio';
@@ -71,6 +72,7 @@ export {
   NotificationAlert,
   NotificationItem,
   OverlayTrigger,
+  PaginationUxpin,
   Panel,
   ProgressBar,
   Radio,

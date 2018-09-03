@@ -1,0 +1,12 @@
+{
+  "rootId": "pagination-uxpin1000088317493493",
+  "elements": {
+    "pagination-uxpin1000088317493493": {
+      "name": "PaginationUxpin",
+      "props": {
+        "item": 10,
+        "activePage": 1
+      }
+    }
+  }
+}

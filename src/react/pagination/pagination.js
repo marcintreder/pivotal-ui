@@ -64,7 +64,7 @@ export default class Pagination extends React.PureComponent {
   };
 
   componentDidMount() {
-    require('../../css/pagination/pagination.scss');
+    //  require('../../css/pagination/pagination.scss');
   }
 
   render() {
