@@ -72,7 +72,7 @@ export default class Media extends React.Component {
   }
 }
 
-export class Flag extends React.Component {
+/*export class Flag extends React.Component {
   componentDidMount() {
     //require('../../css/media');
   }
@@ -80,4 +80,4 @@ export class Flag extends React.Component {
   render() {
     return <Media {...this.props} vAlign="middle" />;
   }
-}
+}*/
