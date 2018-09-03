@@ -27,7 +27,7 @@ export default class PaginationUxpin extends React.Component {
   handleSelect(event, selectedEvent) {
     const newActivePage = selectedEvent.newActivePage;
     this.setState({ activePage: newActivePage });
-    if (this.props.linkedPages[newActivePage]) {
+    if (this.props.linkedPages && this.props.linkedPages[newActivePage]) {
       window.open(this.props.linkedPages[newActivePage]);
     }
   }
