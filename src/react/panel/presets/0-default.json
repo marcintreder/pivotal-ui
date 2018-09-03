@@ -1,15 +1,6 @@
 {
-  "rootId": "div-1000079966343980",
+  "rootId": "panel-1000098562917917",
   "elements": {
-    "div-1000079966343980": {
-      "name": "div",
-      "props": {
-        "className": "bg-neutral-8 pal",
-        "children": {
-          "uxpinPresetElementId": "panel-1000098562917917"
-        }
-      }
-    },
     "panel-1000098562917917": {
       "name": "Panel",
       "props": {

@@ -24,7 +24,6 @@ import ModalContainer from '../src/react/modal-container/modal-container';
 import Notification from '../src/react/notification/notification';
 import NotificationAlert from '../src/react/notification-alert/notification-alert';
 import NotificationItem from '../src/react/notification-item/notification-item';
-import OverlayTrigger from '../src/react/overlay-trigger/overlay-trigger';
 import PaginationUxpin from '../src/react/pagination-uxpin/pagination-uxpin';
 import Panel from '../src/react/panel/panel';
 import ProgressBar from '../src/react/progress-bar/progress-bar';
@@ -40,8 +39,6 @@ import Tabs from '../src/react/tabs/tabs';
 import TileLayout from '../src/react/tile-layout/tile-layout';
 import TileLayoutItem from '../src/react/tile-layout-item/tile-layout-item';
 import Toggle from '../src/react/toggle/toggle';
-import Tooltip from '../src/react/tooltip/tooltip';
-import TooltipTrigger from '../src/react/tooltip-trigger/tooltip-trigger';
 import UIButton from '../src/react/UIButton/UIButton';
 import Wrapper from '../Wrapper/UXPinWrapper.js';
 export {
@@ -69,7 +66,6 @@ export {
   Notification,
   NotificationAlert,
   NotificationItem,
-  OverlayTrigger,
   PaginationUxpin,
   Panel,
   ProgressBar,
@@ -85,8 +81,6 @@ export {
   TileLayout,
   TileLayoutItem,
   Toggle,
-  Tooltip,
-  TooltipTrigger,
   UIButton,
   Wrapper,
   React,
