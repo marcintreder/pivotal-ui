@@ -1,7 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import Alerts from '../src/react/alerts/alerts';
-import BackToTop from '../src/react/back-to-top/back-to-top';
 import Checkbox from '../src/react/checkbox/checkbox';
 import CheckboxDropdown from '../src/react/checkbox-dropdown/checkbox-dropdown';
 import DraggableList from '../src/react/draggable-list/draggable-list';
@@ -38,7 +37,6 @@ import UIButton from '../src/react/UIButton/UIButton';
 import Wrapper from '../Wrapper/UXPinWrapper.js';
 export {
   Alerts,
-  BackToTop,
   Checkbox,
   CheckboxDropdown,
   DraggableList,

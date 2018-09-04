@@ -5,11 +5,12 @@ import classnames from 'classnames';
 export default class RadioGroup extends React.Component {
   static propTypes = {
     id: PropTypes.string,
-    name: PropTypes.string,
     onChange: PropTypes.func,
     value: PropTypes.string,
     children: PropTypes.node
   };
+
+  // name: PropTypes.string, Deleted to meet Merge criteria
 
   constructor(props) {
     super(props);

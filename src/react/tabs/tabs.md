@@ -8,5 +8,8 @@
   <Tab eventKey={2} title="Tab 2">
     Hello!
   </Tab>
+  <Tab eventKey={3} title="Tab 3">
+    Merge!
+  </Tab>
 </Tabs>
 ```

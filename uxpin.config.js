@@ -9,7 +9,6 @@ module.exports = {
           'src/react/progress-bar/progress-bar.js',
           'src/react/alerts/alerts.js',
           'src/react/UIButton/UIButton.js',
-          'src/react/back-to-top/back-to-top.js',
           'src/react/dropdown/dropdown.js',
           'src/react/grid/grid.js',
           'src/react/flex-col/flex-col.js',
