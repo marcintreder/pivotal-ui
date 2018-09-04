@@ -5,8 +5,8 @@
       "name": "Iconography",
       "props": {
         "src": "add",
-        "size": 24,
-        "fill": "#444444"
+        "size": 16,
+        "fill": "#243641"
       }
     }
   }

@@ -1,5 +1,5 @@
 # Pagination UXPin
 
 ```javascript
-<PaginationUxpin items={20} activePage={1} />
+<PaginationUxpin items={10} activePage={1} />
 ```
