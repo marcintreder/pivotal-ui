@@ -4,18 +4,10 @@
     "media1000029339783649": {
       "name": "Media",
       "props": {
-        "image": {
-          "uxpinPresetElementId": "image1000061951166991"
-        }
-      }
-    },
-    "image1000061951166991": {
-      "name": "Image",
-      "props": {
-        "src": "http://placehold.it/100x100",
-        "responsive": true,
-        "href": "http://google.com",
-        "alt": "A beautiful placeholder"
+        "vAlign": "middle",
+        "imageSrc": "https://placehold.it/50x50",
+        "imageAlt": "A sample media object",
+        "children": "Hello Merge!"
       }
     }
   }

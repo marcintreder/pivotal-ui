@@ -1,4 +1,4 @@
-@import "../pui-variables";
+@import '../pui-variables';
 
 .dropdown.dropdown-notifications {
   &.open {
@@ -29,7 +29,8 @@
       align-items: center;
       justify-content: center;
 
-      .dropdown-notifications-alert, .dropdown-notifications-badge {
+      .dropdown-notifications-alert,
+      .dropdown-notifications-badge {
         font-size: 0.55em;
         left: 1.25em;
         position: absolute;
@@ -48,7 +49,8 @@
       text-align: center;
     }
 
-    .dropdown-notifications-has-notifications, .dropdown-notifications-has-alerts {
+    .dropdown-notifications-has-notifications,
+    .dropdown-notifications-has-alerts {
       svg {
         fill: $navy-5;
       }
@@ -84,4 +86,3 @@
     }
   }
 }
-

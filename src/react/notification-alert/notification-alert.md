@@ -2,7 +2,7 @@
 
 ```javascript
 <NotificationAlert>
-  <NotificationItem href="http://media.giphy.com/media/Qvw9p4uX7IBy0/giphy.gif">
+  <NotificationItem>
     <Media
       vAlign="middle"
       image={

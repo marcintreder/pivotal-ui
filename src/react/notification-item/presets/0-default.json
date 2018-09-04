@@ -4,8 +4,7 @@
     "notification-item1000010719241389": {
       "name": "NotificationItem",
       "props": {
-        "key": 1,
-        "children": "Stuff"
+        "children": "Merge!"
       }
     }
   }

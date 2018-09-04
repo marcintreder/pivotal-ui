@@ -9,12 +9,13 @@ export default class Iconography extends React.Component {
     src: PropTypes.string.isRequired,
     style: PropTypes.object,
     verticalAlign: PropTypes.oneOf(['middle', 'baseline']),
-    size: PropTypes.string.isRequired
+    size: PropTypes.number.isRequired,
+    fill: PropTypes.string.isRequired
   };
 
   static defaultProps = {
-    size: 'inherit',
-    style: { 'font-size': '16px' },
+    size: 16,
+    fill: '#243641',
     verticalAlign: 'middle'
   };
 
@@ -23,7 +24,20 @@ export default class Iconography extends React.Component {
   }
 
   render() {
+    if (this.props.style) {
+      this.props.style = Object.assign(this.props.style, {
+        fontSize: `${this.props.size}px`,
+        fill: this.props.fill
+      });
+    } else {
+      this.props.style = {
+        fontSize: `${this.props.size}px`,
+        fill: this.props.fill
+      };
+    }
+
     const { src, verticalAlign, ...others } = this.props;
+
     const props = mergeProps(others, {
       className: classnames('icon', `icon-${verticalAlign}`, {
         spinner: src.indexOf('spinner') === 0

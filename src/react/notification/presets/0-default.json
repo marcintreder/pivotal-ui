@@ -20,16 +20,11 @@
     },
     "media1000029339783641": {
       "name": "Media",
-      "vAlign": "middle",
-      "image": {
-        "uxpinPresetElementId": "h31000072036515729"
-      }
-    },
-    "h31000072036515729": {
-      "name": "h3",
       "props": {
-        "className": "mvn btn btn-brand btn-sm phl",
-        "children": "New"
+        "new": true,
+        "vAlign": "middle",
+        "header": "Notification!",
+        "children": "Welcome."
       }
     }
   }

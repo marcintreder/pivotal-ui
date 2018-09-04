@@ -1,5 +1,9 @@
 # Notification Item
 
 ```javascript
-<NotificationItem key={1}>Stuff</NotificationItem>
+<NotificationItem>
+  <Media new vAlign="middle" header="Notification!">
+    Welcome.
+  </Media>
+</NotificationItem>
 ```
