@@ -29,28 +29,17 @@
     "tab-1000052882014383": {
       "name": "Tab",
       "props": {
-        "eventKey": 1,
-        "title": "Tab 1",
-        "children": [
-          {
-            "uxpinPresetElementId": "h2-1000073757650951"
-          },
-          {
-            "uxpinPresetElementId": "span-1000073757650951"
-          }
-        ]
+        "eventKey": 2,
+        "title": "Tab 2",
+        "children": "Merge!"
       }
     },
-    "h2-1000073757650951": {
-      "name": "h2",
+    "tab-1000052882014384": {
+      "name": "Tab",
       "props": {
-        "children": "Neat!"
-      }
-    },
-    "span-1000073757650951": {
-      "name": "span",
-      "props": {
-        "children": "So much content"
+        "eventKey": 3,
+        "title": "Tab 3",
+        "children": "Welcome!"
       }
     }
   }

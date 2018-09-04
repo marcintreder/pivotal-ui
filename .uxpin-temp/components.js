@@ -4,13 +4,10 @@ import Alerts from '../src/react/alerts/alerts';
 import BackToTop from '../src/react/back-to-top/back-to-top';
 import Checkbox from '../src/react/checkbox/checkbox';
 import CheckboxDropdown from '../src/react/checkbox-dropdown/checkbox-dropdown';
-import Dialog from '../src/react/dialog/dialog';
 import DraggableList from '../src/react/draggable-list/draggable-list';
 import DraggableListItem from '../src/react/draggable-list-item/draggable-list-item';
 import Dropdown from '../src/react/dropdown/dropdown';
 import FlexCol from '../src/react/flex-col/flex-col';
-import Flyout from '../src/react/flyout/flyout';
-import FlyoutContainer from '../src/react/flyout-container/flyout-container';
 import Grid from '../src/react/grid/grid';
 import Iconography from '../src/react/iconography/iconography';
 import Image from '../src/react/image/image';
@@ -18,7 +15,6 @@ import Input from '../src/react/input/input';
 import List from '../src/react/list/list';
 import ListItem from '../src/react/list-item/list-item';
 import Media from '../src/react/media/media';
-import Modal from '../src/react/modal/modal';
 import ModalContainer from '../src/react/modal-container/modal-container';
 import Notification from '../src/react/notification/notification';
 import NotificationAlert from '../src/react/notification-alert/notification-alert';
@@ -45,13 +41,10 @@ export {
   BackToTop,
   Checkbox,
   CheckboxDropdown,
-  Dialog,
   DraggableList,
   DraggableListItem,
   Dropdown,
   FlexCol,
-  Flyout,
-  FlyoutContainer,
   Grid,
   Iconography,
   Image,
@@ -59,7 +52,6 @@ export {
   List,
   ListItem,
   Media,
-  Modal,
   ModalContainer,
   Notification,
   NotificationAlert,

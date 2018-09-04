@@ -39,10 +39,10 @@ export default class Tabs extends mixin(React.Component).with(Animation) {
   }
 
   static propTypes = {
-    actions: PropTypes.oneOfType([PropTypes.node, PropTypes.object]),
+    actions: PropTypes.node,
     activeKey: PropTypes.number,
     animation: PropTypes.bool,
-    defaultActiveKey: PropTypes.any,
+    defaultActiveKey: PropTypes.number,
     id: PropTypes.string,
     largeScreenClassName: PropTypes.string,
     onSelect: PropTypes.func,

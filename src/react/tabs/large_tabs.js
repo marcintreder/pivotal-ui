@@ -11,7 +11,7 @@ import Grid from '../grid/grid.js';
 export class LargeTabs extends mixin(React.Component).with(Animation) {
   static propTypes = {
     actions: PropTypes.oneOfType([PropTypes.node, PropTypes.object]),
-    activeKey: PropTypes.any,
+    activeKey: PropTypes.number,
     childArray: PropTypes.array,
     handleClick: PropTypes.func,
     id: PropTypes.string,
