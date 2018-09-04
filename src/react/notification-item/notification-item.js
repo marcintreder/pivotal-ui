@@ -5,7 +5,7 @@ import { mergeProps } from '../helpers';
 export default class NotificationItem extends React.PureComponent {
   static propTypes = {
     href: PropTypes.string,
-    children: PropTypes.oneOfType(PropTypes.string, PropTypes.node)
+    children: PropTypes.oneOfType([PropTypes.string, PropTypes.node])
   };
 
   render() {
