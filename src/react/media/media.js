@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import Image from '../image/image.js';
+import Image from '../image/image';
+import Iconography from '../iconography/iconography';
 
 const shortSizes = { xsmall: 'xs', small: 'sm', medium: 'md', large: 'lg' };
 const charSizes = { small: 's', medium: 'm', large: 'l', xlarge: 'xl' };
@@ -16,6 +17,7 @@ export default class Media extends React.Component {
     imageAlt: PropTypes.string,
     imageProxy: PropTypes.oneOfType([PropTypes.node, PropTypes.object]),
     new: PropTypes.bool,
+    warning: PropTypes.bool,
     innerClassName: PropTypes.string,
     mediaSpacing: PropTypes.oneOf(['small', 'medium', 'large', 'xlarge']),
     stackSize: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large']),
@@ -65,7 +67,13 @@ export default class Media extends React.Component {
     const imageSelector = () => {
       if (this.props.new) {
         return <h3 className="mvn btn btn-brand btn-sm phl">New</h3>;
-      } else if (this.props.imageProxy && !this.props.new) {
+      } else if (this.props.warning) {
+        return <Iconography src="warning" className="h4 mrm" fill="#B38F1B" />;
+      } else if (
+        this.props.imageProxy &&
+        !this.props.new &&
+        !this.props.warning
+      ) {
         return this.props.imageProxy;
       } else {
         return <Image src={this.props.imageSrc} alt={this.props.imageAlt} />;

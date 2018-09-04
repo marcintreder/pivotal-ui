@@ -4,6 +4,7 @@
     "notification-alert1000060976692595": {
       "name": "Notification",
       "props": {
+        "size": "h3",
         "children": {
           "uxpinPresetElementId": "notification-item1000010719341189"
         }
@@ -12,27 +13,17 @@
     "notification-item1000010719341189": {
       "name": "NotificationItem",
       "props": {
-        "href": "http://media.giphy.com/media/Qvw9p4uX7IBy0/giphy.gif",
         "children": {
           "uxpinPresetElementId": "media1000029339783641"
-        },
-        "props": {}
+        }
       }
     },
     "media1000029339783641": {
       "name": "Media",
-      "vAlign": "middle",
-      "image": {
-        "uxpinPresetElementId": "iconography1000095649168661"
-      },
-      "props": {}
-    },
-    "iconography1000095649168661": {
-      "name": "Iconography",
       "props": {
-        "src": "warning",
-        "className": "h4 mrm",
-        "style": { "fill": "#B38F1B" }
+        "warning": true,
+        "vAlign": "middle",
+        "header": "Merge!"
       }
     }
   }
