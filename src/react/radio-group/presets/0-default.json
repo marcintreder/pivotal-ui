@@ -16,27 +16,27 @@
             "uxpinPresetElementId": "radio-1000088317493497"
           }
         ]
-      },
-      "radio-1000088317493495": {
-        "name": "Radio",
-        "props": {
-          "value": "UXPin",
-          "children": "UXPin"
-        }
-      },
-      "radio-1000088317493496": {
-        "name": "Radio",
-        "props": {
-          "value": "Merge",
-          "children": "Merge"
-        }
-      },
-      "radio-1000088317493497": {
-        "name": "Radio",
-        "props": {
-          "value": "UXPin Merge",
-          "children": "UXPin Merge"
-        }
+      }
+    },
+    "radio-1000088317493495": {
+      "name": "Radio",
+      "props": {
+        "value": "UXPin",
+        "children": "UXPin"
+      }
+    },
+    "radio-1000088317493496": {
+      "name": "Radio",
+      "props": {
+        "value": "Merge",
+        "children": "Merge"
+      }
+    },
+    "radio-1000088317493497": {
+      "name": "Radio",
+      "props": {
+        "value": "UXPin Merge",
+        "children": "UXPin Merge"
       }
     }
   }
