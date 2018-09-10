@@ -40,9 +40,6 @@ export default class List extends React.Component {
         </ol>
       );
     } else if (this.props.kind === 'unordered') {
-      children = React.Children.map(children, child =>
-        React.cloneElement(child, { className: 'list-divider' })
-      );
       return (
         <ul
           className={`${divider ? 'list-divider' : ''} ${

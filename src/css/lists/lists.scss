@@ -17,7 +17,7 @@ ul, ol {
 .list-inline {
   @extend .list-unstyled;
 
-  font-size: 0;
+  font-size: $font-size-base;
   margin-left: $base-unit * -1;
 
   > li {
@@ -74,7 +74,7 @@ ul, ol {
   font-family: "Consolas", "Menlo", "Monaco", "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
 
   > li {
-    font-size: 0;
+    font-size: $font-size-base;
     padding-left: 0;
     padding-right: 0;
 
