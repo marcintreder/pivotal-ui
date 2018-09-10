@@ -22,7 +22,8 @@ export default class Input extends React.Component {
           className: classnames(props.className, {
             'input-sm': ['sm', 'small'].indexOf(size) !== -1,
             'input-lg': ['lg', 'large'].indexOf(size) !== -1
-          })
+          }),
+          style: {paddingLeft: '32px'}
         }}
       />
     );
