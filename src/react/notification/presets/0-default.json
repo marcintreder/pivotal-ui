@@ -12,7 +12,6 @@
     "notification-item1000010719341369": {
       "name": "NotificationItem",
       "props": {
-        "href": "http://media.giphy.com/media/Qvw9p4uX7IBy0/giphy.gif",
         "children": {
           "uxpinPresetElementId": "media1000029339783641"
         }
