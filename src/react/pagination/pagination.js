@@ -34,7 +34,7 @@ export class PaginationButton extends React.PureComponent {
     return (
       <UIButton
         {...{
-          kind: { buttonType },
+          kind: buttonType,
           onClick: this.click,
           flat: true,
           className: classnames({ active: active }),
