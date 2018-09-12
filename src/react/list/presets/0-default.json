@@ -4,7 +4,7 @@
     "list1000095673228112": {
       "name": "List",
       "props": {
-        "kind": "list-breadcrumb",
+        "kind": "breadcrumb",
         "children": [
           {
             "uxpinPresetElementId": "list-item1000032984160181"

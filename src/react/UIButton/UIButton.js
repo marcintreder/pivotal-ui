@@ -96,7 +96,6 @@ export default class UIButton extends React.Component {
         </span>
       );
     }
-    console.log(kind, this.props.kind);
     return this.props.href ? (
       <a {...props}>{buttonContent}</a>
     ) : (
